@@ -41,24 +41,41 @@
         </div>
         <div class="autorization">
           <form class="autorization-form">
-            <h2 class="autorization-title">Авторизируйтесь</h2><span class="autorization-decore">-</span>
-            <label for="login">
-              <input type="text" id="login">
-            </label>
-            <label for="password">
-              <input type="password" id="password">
-            </label>
-            <label for="human">
-              <input type="checkbox" id="human">
+            <h2 class="autorization-title">Авторизируйтесь</h2>
+            <div class="decore-line"></div>
+            <div class="autorization-form__row">
+              <label for="login">
+                <div class="custom-input"> 
+                  <svg class="social-icon__login">
+                    <use xlink:href="assets/img/sprite.svg#login"></use>
+                  </svg>
+                </div>
+              </label>
+              <input class="autorization-input" type="text" id="login" placeholder="Login">
+            </div>
+            <div class="autorization-form__row">
+              <label for="password">
+                <div class="custom-input"> 
+                  <svg class="social-icon__password">
+                    <use xlink:href="assets/img/sprite.svg#password"></use>
+                  </svg>
+                </div>
+              </label>
+              <input class="autorization-input" type="password" id="password" placeholder="Password">
+            </div>
+            <label class="autorization-question__checkbox" for="human">Я человек
+              <input class="autorization-checkbox" type="checkbox" id="human">
             </label>
             <div class="title-radio">Вы точно не робот?</div>
-            <label for="answer">Да
-              <input type="radio" id="answer">
-            </label>
-            <label for="answer">Не уверен
-              <input type="radio" id="answer">
-            </label>
-          </form><a class="autorization-link" href="index.html">На главную</a>
+            <div class="autorization-row">
+              <label class="autorization-answer__radio" for="answer">Да
+                <input class="autorization-radio" type="radio" id="answer">
+              </label>
+              <label class="autorization-answer__radio" for="answer">Не уверен
+                <input class="autorization-radio" type="radio" id="answer">
+              </label>
+            </div>
+          </form><a class="navigation-link navigation-link__autorization" href="index.html">На главную</a>
           <button class="form-login">Войти</button>
         </div>
       </div>
