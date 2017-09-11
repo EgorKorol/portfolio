@@ -1,0 +1,28 @@
+extends ../_template
+
+block variables
+  - var title = 'Блог'
+
+block content
+  .wrapper
+    .section.section--welcome
+      ul.social__list
+        li.social-item
+          a.social-link(href='#')
+            svg.social-icon__vk.social-icon__white
+              use(xlink:href='assets/img/sprite.svg#vk')
+        li.social-item
+          a.social-link(href='#')
+            svg.social-icon__github.social-icon__white
+              use(xlink:href='assets/img/sprite.svg#github')
+      a.hamburger-menu(href='#')
+        svg.hamburger-icon
+          use(href='assets/img/sprite.svg#hamburger')
+      ul.welcome-list.welcome-list__main
+        li.welcome-photo
+          img.welcome-photo__photo(src="assets/img/myphoto.png", alt="my photo")
+        h1.blog-title Блог
+        .blog-line
+      a.arrow(href='#')
+        svg.arrow-down
+          use(href='assets/img/sprite.svg#arrow_down')

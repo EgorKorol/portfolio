@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Главная</title>
+    <meta content="" name="author">
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <link rel="stylesheet" href="/assets/css/foundation.css">
+    <link rel="stylesheet" href="/assets/css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i&amp;amp;subset=cyrillic" rel="stylesheet">
+    <script src="/assets/js/foundation.js" defer></script>
+    <script src="/assets/js/app.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="section section--welcome"> 
+        <div class="welcome">
+          <div class="welcome-about">
+            <ul class="welcome-list">
+              <li class="welcome-photo"><img class="welcome-photo__photo" src="assets/img/myphoto.png" alt="my photo"></li>
+              <li class="welcome-name">Егор Король</li>
+              <li class="welcome-description">Личный сайт веб разработчика</li>
+              <li class="welcome-social">
+                <ul class="welcome-social__list">
+                  <li class="social-item"><a class="social-link" href="#">
+                      <svg class="social-icon__vk">
+                        <use xlink:href="assets/img/sprite.svg#vk"></use>
+                      </svg></a></li>
+                  <li class="social-item"><a class="social-link" href="#">
+                      <svg class="social-icon__github">
+                        <use xlink:href="assets/img/sprite.svg#github"></use>
+                      </svg></a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <nav class="navigation"><a class="navigation-link" href="my-works.pug">Мои работы</a><a class="navigation-link" href="about.pag">Обо мне</a><a class="navigation-link" href="blog.pug">Блог</a></nav>
+        </div>
+        <div class="autorization">
+          <form class="autorization-form">
+            <h2 class="autorization-title">Авторизируйтесь</h2><span class="autorization-decore">-</span>
+            <label for="login">
+              <input type="text" id="login">
+            </label>
+            <label for="password">
+              <input type="password" id="password">
+            </label>
+            <label for="human">
+              <input type="checkbox" id="human">
+            </label>
+            <div class="title-radio">Вы точно не робот?</div>
+            <label for="answer">Да
+              <input type="radio" id="answer">
+            </label>
+            <label for="answer">Не уверен
+              <input type="radio" id="answer">
+            </label>
+          </form><a class="autorization-link" href="index.html">На главную</a>
+          <button class="form-login">Войти</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

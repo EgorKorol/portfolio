@@ -1,0 +1,41 @@
+.welcome {
+    margin: 0 auto;
+    width: rem(384.6px);
+    background-color: rgba(#122620, .6)
+}
+
+.welcome-about {
+    padding: rem(40px) 0;
+}
+
+
+.social-item {
+    display: inline-block;
+    margin-right: rem(30px);
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.navigation-link {
+    color: #fff;
+    display: inline-block;
+    background-color: $green;
+    transition: .3s;
+    padding: rem(14px) rem(32px);
+    font-weight: 500;
+    font-size: rem(16px);
+    margin-right: rem(1px);
+    box-shadow: 1px 0 rgba(#fff, .7);
+
+    &:last-child {
+        margin-right: 0;
+        box-shadow: none;
+    }
+
+    &:hover {
+        background-color: $lgreen;
+    }
+}
+

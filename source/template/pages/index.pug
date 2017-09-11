@@ -1,0 +1,46 @@
+extends ../_template
+
+block variables
+  - var title = 'Главная'
+
+block content
+  .wrapper
+    .section.section--welcome  
+      .welcome
+        .welcome-about
+          ul.welcome-list
+            li.welcome-photo
+              img.welcome-photo__photo(src="assets/img/myphoto.png", alt="my photo")
+            li.welcome-name Егор Король
+            li.welcome-description Личный сайт веб разработчика
+            li.welcome-social
+              ul.welcome-social__list
+                li.social-item
+                  a.social-link(href='#')
+                    svg.social-icon__vk
+                      use(xlink:href='assets/img/sprite.svg#vk')
+                li.social-item
+                  a.social-link(href='#')
+                    svg.social-icon__github
+                      use(xlink:href='assets/img/sprite.svg#github')
+        nav.navigation
+          a.navigation-link(href='my-works.pug') Мои работы
+          a.navigation-link(href='about.pag') Обо мне
+          a.navigation-link(href='blog.pug') Блог
+      .autorization
+        form.autorization-form
+          h2.autorization-title Авторизируйтесь
+          span.autorization-decore -
+          label(for="login")
+            input(type="text" id="login")
+          label(for="password")
+            input(type="password" id="password")
+          label(for="human")
+            input(type="checkbox" id="human")
+          .title-radio Вы точно не робот?
+          label(for="answer") Да
+            input(type="radio" id="answer")
+          label(for="answer") Не уверен
+            input(type="radio" id="answer")
+        a.autorization-link(href="index.html") На главную
+        button.form-login Войти

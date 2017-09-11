@@ -1,0 +1,31 @@
+//responsive
+
+@function rem($px) {
+  @return $px / 16px+0rem;
+}
+
+//media queries
+
+@mixin bigdp {
+  @media screen and (max-width: $bigdescktop) {
+    @content;
+  }
+}
+
+@mixin dp {
+  @media screen and (max-width: $bigdescktop) {
+    @content;
+  }
+}
+
+@mixin ipad {
+  @media screen and (max-width: $ipad) {
+    @content;
+  }
+}
+
+@mixin iphone {
+  @media screen and (max-width: $ipad) {
+    @content;
+  }
+}
