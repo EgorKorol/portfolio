@@ -30,17 +30,26 @@ block content
       .autorization
         form.autorization-form
           h2.autorization-title Авторизируйтесь
-          span.autorization-decore -
-          label(for="login")
-            input(type="text" id="login")
-          label(for="password")
-            input(type="password" id="password")
-          label(for="human")
-            input(type="checkbox" id="human")
+          .decore-line
+          .autorization-form__row
+            label(for="login")
+              .custom-input 
+                svg.social-icon__login
+                    use(xlink:href='assets/img/sprite.svg#login')
+            input.autorization-input(type="text" id="login" placeholder="Login")
+          .autorization-form__row
+            label(for="password")
+              .custom-input 
+                svg.social-icon__password
+                    use(xlink:href='assets/img/sprite.svg#password')
+            input.autorization-input(type="password" id="password" placeholder="Password")
+          label.autorization-question__checkbox(for="human") Я человек
+            input.autorization-checkbox(type="checkbox" id="human")
           .title-radio Вы точно не робот?
-          label(for="answer") Да
-            input(type="radio" id="answer")
-          label(for="answer") Не уверен
-            input(type="radio" id="answer")
-        a.autorization-link(href="index.html") На главную
+          .autorization-row
+            label.autorization-answer__radio(for="answer") Да
+              input.autorization-radio(type="radio" id="answer")
+            label.autorization-answer__radio(for="answer") Не уверен
+              input.autorization-radio(type="radio" id="answer")
+        a.navigation-link.navigation-link__autorization(href="index.html") На главную
         button.form-login Войти
