@@ -27,6 +27,7 @@ $.gulp.task('default', $.gulp.series(
     'js:foundation',
     'js:process',
     'copy:image',
+    'copy:fonts',
     'css:foundation',
     'sprite:svg',
     'webpack'
@@ -34,5 +35,21 @@ $.gulp.task('default', $.gulp.series(
   $.gulp.parallel(
     'watch',
     'serve'
+  )
+));
+
+$.gulp.task('build', $.gulp.series(
+  'clean',
+  $.gulp.parallel(
+    'sass',
+    'pug',
+    'js:foundation',
+    'js:process',
+    'copy:image',
+    'copy:fonts',
+    'css:foundation',
+    'sprite:svg',
+    'webpack',
+    'immin'
   )
 ));

@@ -1,16 +1,80 @@
-.blog-title {
-    font-family: "sansus_webissimo";
-    font-size: rem(63px);
-    font-weight: 400;
-    text-transform: uppercase;
-    margin: 0;
+.blog {
+  display: flex;
+  justify-content: space-between;
+  color: $gray;
+  width: 100%;
 }
 
-.decore-line {
-    width: rem(90px);
-    height: rem(3px);
-    background-color: #fff;
-    margin: rem(20px) auto 0;
-    border-radius: rem(5px);
-    margin-bottom: rem(30px);
+.blog-left {
+  background-color: #faf8f0;
+  flex-shrink: 1;
+}
+
+.blog-right {
+  background-color: #faf8f0;
+  flex-shrink: 3;
+  padding: 0 120px;
+}
+
+.triangle--color {
+  fill: #faf8f0;
+}
+
+.aside-nav {
+  padding: 0 20px;
+  text-align: right;
+}
+
+.aside-nav__title {
+  font-size: 16px;
+  font-weight: 400;
+  color: $gray;
+  transition: .2s;
+  padding: 10px 10px;
+  margin-bottom: 30px;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  
+    &:hover, &:active {
+      color: $green;
+
+      &::after {display: inline-block;}
+    }
+
+    &::after {
+      content: "";
+      display: none;
+      position: absolute;
+      right: -10px;
+      top: 50%;
+      transform: translateY(-50%);
+      margin-left: 15px;
+      width: 3px;
+      height: 42px;
+      background-color: $green;
+    }
+}
+
+.article {
+  margin-bottom: 50px;
+
+  &::after {
+    content: "";
+    margin-top: 50px;
+    display: block;
+    width: 681px;
+    height: 5px;
+    background-color: rgba(#373e42, .07);
+  }
+}
+
+.article-header__title {
+  font-family: "sansus_webissimo";
+  font-size: 35px;
+  font-weight: 400;
+}
+
+.article-date {
+  color: $lgreen;
 }

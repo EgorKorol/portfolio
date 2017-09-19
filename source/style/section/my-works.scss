@@ -1,0 +1,40 @@
+.works-title {
+  height: 20%;
+  background-color: #f8f9f5;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-title__icon {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -55%);
+  fill: rgba(#93c42e, .15);
+}
+
+.works-slider {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 80vh;
+}
+
+.slider-info {
+  background-color: #ebefe2;
+  width: 50%;
+  height: 100%;
+}
+
+.slider-slide {
+  width: 50%;
+  height: 70%;
+  background-color: #e1e4d7;
+}
+
+.slider-buttons {
+  width: 50%;
+  height: 30%;
+}

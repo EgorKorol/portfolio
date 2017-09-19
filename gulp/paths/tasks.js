@@ -10,8 +10,11 @@ module.exports = [
   './gulp/tasks/css.foundation.js',
   './gulp/tasks/js.process.js',
   './gulp/tasks/copy.image.js',
+  './gulp/tasks/copy.fonts.js',
   './gulp/tasks/sprite.svg.js',
   './gulp/tasks/imageMin.js',
+  './gulp/tasks/compress-js.js',
+  './gulp/tasks/compress-css.js',
   './gulp/tasks/webpack.js'
 ];
 

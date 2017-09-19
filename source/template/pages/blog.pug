@@ -4,25 +4,53 @@ block variables
   - var title = 'Блог'
 
 block content
-  .wrapper
-    .section.section--welcome
-      ul.social__list
-        li.social-item
-          a.social-link(href='#')
-            svg.social-icon__vk.social-icon__white
-              use(xlink:href='assets/img/sprite.svg#vk')
-        li.social-item
-          a.social-link(href='#')
-            svg.social-icon__github.social-icon__white
-              use(xlink:href='assets/img/sprite.svg#github')
-      a.hamburger-menu(href='#')
-        svg.hamburger-icon
-          use(href='assets/img/sprite.svg#hamburger')
-      ul.welcome-list.welcome-list__main
-        li.welcome-photo
-          img.welcome-photo__photo(src="assets/img/myphoto.png", alt="my photo")
-        h1.blog-title Блог
-        .decore-line
-      a.arrow(href='#')
-        svg.arrow-down
-          use(href='assets/img/sprite.svg#arrow_down')
+  include ../common/welcome-page_blog
+  section.blog
+    .blog-left
+      .blog-left__content
+        aside.aside
+          nav.aside-nav
+            ul.aside-nav__list
+              li.aside-nav__item
+                a.aside-nav__link(href="#")
+                  h3.aside-nav__title Препроцессоры или кастомные свойства CSS
+              li.aside-nav__item
+                a.aside-nav__link(href="#")
+                  h3.aside-nav__title Прибиваем футер к низу страницы
+              li.aside-nav__item
+                a.aside-nav__link(href="#")
+                  h3.aside-nav__title Набор необходимых Gulp плагинов
+              li.aside-nav__item
+                a.aside-nav__link(href="#")
+                  h3.aside-nav__title Почему я выбрал Pug
+    .blog-right
+      .blog-right__content
+        article.article
+          header.article-header
+            h2.article-header__title Препроцессоры или кастомные свойства
+          p.article-date 18 сентября 2017
+          .article-text
+            p.article-text__content Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, et eum. Odit sequi adipisci tempora saepe sint itaque, quo at?
+            p.article-text__content Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum dolorem facere dolore earum sit esse cupiditate dolorum repellat sed molestiae atque ratione consequuntur nostrum incidunt suscipit quibusdam doloribus rem labore eos, officiis, quam autem ipsa optio dignissimos? Quasi, inventore fugit.
+        article.article
+          header.article-header
+            h2.article-header__title Прибиваем футер к низу страницы
+          p.article-date 19 августа 2017
+          .article-text
+            p.article-text__content Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, et eum. Odit sequi adipisci tempora saepe sint itaque, quo at?
+            p.article-text__content Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum dolorem facere dolore earum sit esse cupiditate dolorum repellat sed molestiae atque ratione consequuntur nostrum incidunt suscipit quibusdam doloribus rem labore eos, officiis, quam autem ipsa optio dignissimos? Quasi, inventore fugit.
+        article.article
+          header.article-header
+            h2.article-header__title Набор необходимых Gulp плагинов
+          p.article-date 12 июля 2017
+          .article-text
+            p.article-text__content Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, et eum. Odit sequi adipisci tempora saepe sint itaque, quo at?
+            p.article-text__content Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum dolorem facere dolore earum sit esse cupiditate dolorum repellat sed molestiae atque ratione consequuntur nostrum incidunt suscipit quibusdam doloribus rem labore eos, officiis, quam autem ipsa optio dignissimos? Quasi, inventore fugit.
+        article.article
+          header.article-header
+            h2.article-header__title Почему я выбрал Pug
+          p.article-date 1 июня 2017
+          .article-text
+            p.article-text__content Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, et eum. Odit sequi adipisci tempora saepe sint itaque, quo at?
+            p.article-text__content Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum dolorem facere dolore earum sit esse cupiditate dolorum repellat sed molestiae atque ratione consequuntur nostrum incidunt suscipit quibusdam doloribus rem labore eos, officiis, quam autem ipsa optio dignissimos? Quasi, inventore fugit.
+  include ../common/footer

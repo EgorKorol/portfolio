@@ -11,34 +11,163 @@
     <link rel="stylesheet" href="/assets/css/foundation.css">
     <link rel="stylesheet" href="/assets/css/app.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i&amp;amp;subset=cyrillic" rel="stylesheet">
-    <script src="/assets/js/foundation.js" defer></script>
-    <script src="/assets/js/app.js" defer></script>
   </head>
   <body>
     <div class="wrapper">
-      <div class="section section--welcome">
-        <ul class="social__list">
-          <li class="social-item"><a class="social-link" href="#">
-              <svg class="social-icon__vk social-icon__white">
-                <use xlink:href="assets/img/sprite.svg#vk"></use>
-              </svg></a></li>
-          <li class="social-item"><a class="social-link" href="#">
-              <svg class="social-icon__github social-icon__white">
-                <use xlink:href="assets/img/sprite.svg#github"></use>
-              </svg></a></li>
-        </ul><a class="hamburger-menu" href="#">
-          <svg class="hamburger-icon">
-            <use href="assets/img/sprite.svg#hamburger"></use>
-          </svg></a>
-        <ul class="welcome-list welcome-list__main">
-          <li class="welcome-photo"><img class="welcome-photo__photo" src="assets/img/myphoto.png" alt="my photo"></li>
-          <li class="welcome-name">Егор Король</li>
-          <li class="welcome-description">Личный сайт веб разработчика</li>
-        </ul><a class="arrow" href="#">
-          <svg class="arrow-down">
-            <use href="assets/img/sprite.svg#arrow_down"></use>
-          </svg></a>
-      </div>
+      <section class="welcome-page">
+        <div class="social welcome-social">
+          <ul class="social-list">
+            <li class="social-item"><a class="social-link" href="https://vk.com/korol_egor" target="_blank">
+                <svg class="social-icon" width="31" height="17">
+                  <use xlink:href="assets/img/sprite.svg#vk"></use>
+                </svg></a></li>
+            <li class="social-item"><a class="social-link" href="https://github.com/EgorKorol" target="_blank">
+                <svg class="social-icon" width="26" height="22">
+                  <use xlink:href="assets/img/sprite.svg#github"></use>
+                </svg></a></li>
+          </ul>
+        </div>
+        <div class="hamburger-menu"><a class="hamburger-link" href="#">
+            <svg class="social-icon" width="40" height="35">
+              <use xlink:href="assets/img/sprite.svg#hamburger"></use>
+            </svg></a></div>
+        <div class="portfolio-img">
+          <svg class="portfolio-icon" width="1176" height="313">
+            <use xlink:href="assets/img/sprite.svg#portfolio_header"></use>
+          </svg>
+        </div>
+        <div class="hero">
+          <div class="hero-img"><img class="hero-avatar" src="assets/img/myphoto.png" alt="Моя фотография"></div>
+          <div class="hero-info">
+            <h2 class="hero-name">Егор Король</h2>
+            <div class="hero-info">Личный сайт веб разработчика</div>
+          </div>
+        </div>
+        <div class="arrow-down"><a class="arrow-link" href="#">
+            <svg class="arrow-icon" width="26" height="16">
+              <use xlink:href="assets/img/sprite.svg#arrow_down"></use>
+            </svg></a></div>
+        <div class="blog-triangle">
+          <div class="blog-triangle__left">
+            <svg class="triangle triangle--color" viewBox="0 0 1000 100" preserveAspectRatio="none">
+              <polygon points="0,0 0,100 1000,100"></polygon>
+            </svg>
+          </div>
+          <div class="blog-triangle__right">
+            <svg class="triangle triangle--color" viewBox="0 0 1000 100" preserveAspectRatio="none">
+              <polygon points="0,100 1000,100 1000,0"></polygon>
+            </svg>
+          </div>
+        </div>
+      </section>
+      <section class="works">
+        <div class="works-title">
+          <h1 class="about-title">Мои работы</h1>
+          <svg class="about-title__icon" width="506" height="165">
+            <use xlink:href="assets/img/sprite.svg#works_header"></use>
+          </svg>
+        </div>
+        <div class="works-slider">
+          <div class="slider-info">
+            <ul class="slider-info__list">
+              <li class="slider-info__item">
+                <div class="slider-info__title">
+                  <h2 class="subtitle">Сайт школы онлайн образования</h2>
+                </div>
+                <div class="slider-info__description">
+                  <div class="slider-info__description-text">HTML, CSS, webkit-javascript-ident</div>
+                </div>
+                <div class="slider-info__btn"><a class="slider-info__btn-link" href="#" target="_blank">Посмотреть сайт
+                    <svg class="slider-info__btn-icon" width="20" height="19">
+                      <use xlink:href="assets/img/sprite.svg#link"></use>
+                    </svg></a></div>
+              </li>
+            </ul>
+          </div>
+          <div class="slider-slide">
+            <ul class="slide-list">
+              <li class="slide-item"><img class="slide-img" src="assets/img/work_loft.jpg" alt="Сайт школы LoftSchool"></li>
+              <li class="slide-item"><img class="slide-img" src="assets/img/work_ioga.jpg" alt="Сайт йоги"></li>
+              <li class="slide-item"><img class="slide-img" src="assets/img/work_trialog.jpg" alt="Сайт мебели"></li>
+            </ul>
+          </div>
+          <div class="slider-buttons">
+            <div class="slider-buttons__left">
+              <div class="slider-buttons__left-img"></div>
+              <div class="slider-buttons__left-arrow">
+                <svg class="arrow-icon" width="43" height="27">
+                  <use xlink:href="assets/img/sprite.svg#portf_arrow_down"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="slider-buttons__right">
+              <div class="slider-buttons__right-img"></div>
+              <div class="slider-buttons__right-arrow">
+                <svg class="arrow-icon" width="43" height="27">
+                  <use xlink:href="assets/img/sprite.svg#portf_arrow_up "></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="comment">
+        <div class="comment-title">
+          <h1 class="about-title">Что обо мне говорят</h1>
+          <svg class="about-title__icon" width="499" height="175">
+            <use xlink:href="assets/img/sprite.svg#about_header"></use>
+          </svg>
+        </div>
+        <div class="comment-info">
+          <ul class="comment-info-list">
+            <li class="comment-info-item">
+              <div class="comment-description">
+                <div class="comment-description__img"><img class="comment-description__avatar" src="assets/img/dkovaldn.jpg" alt=""></div>
+                <div class="comment-description__text">Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 4 месяца только самых тяжелых испытаний и бессонных ночей!</div>
+                <div class="comment-description__from">
+                  <div class="comment-description__from-autor">Ковальчук Дмитрий</div>
+                  <div class="comment-description__from-position">- основатель LoftSchool</div>
+                </div>
+              </div>
+            </li>
+            <li class="comment-info-item">
+              <div class="comment-description">
+                <div class="comment-description__img"><img class="comment-description__avatar" src="assets/img/vsabanc.jpg" alt=""></div>
+                <div class="comment-description__text">Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!</div>
+                <div class="comment-description__from">
+                  <div class="comment-description__from-autor">Владимир Сабанцев</div>
+                  <div class="comment-description__from-position">- преподаватель в LoftSchool</div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="comment-form">
+          <form class="form" action="">
+            <div class="form-title">
+              <h2 class="subtitle">Связаться со мной</h2>
+            </div>
+            <input class="input-form__comment" id="name" type="text" placeholder="Имя">
+            <label class="visuallyhidden" for="name">Ваше имя</label>
+            <input class="input-form__comment" id="email" type="text" placeholder="Email">
+            <label class="visuallyhidden" for="Email">Ваш email</label>
+            <textarea class="textarea-form__comment" id="message" name="message" placeholder="Ваше сообщение"></textarea>
+            <label class="visuallyhidden" for="message">Вашу сообщение</label>
+            <nav class="nav-menu">
+              <ul class="nav-menu__list">
+                <li class="nav-menu__item">
+                  <button class="nav-menu__link nav-menu__link--form" form="data-comment" type="submit">Отправить</button>
+                </li>
+                <li class="nav-menu__item">
+                  <button class="nav-menu__link nav-menu__link--form" form="data-comment" type="reset">Очистить</button>
+                </li>
+              </ul>
+            </nav>
+          </form>
+        </div>
+      </section>
     </div>
+    <script src="/assets/js/foundation.js" defer></script>
+    <script src="/assets/js/app.js" defer></script>
   </body>
 </html>
