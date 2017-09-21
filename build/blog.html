@@ -8,8 +8,8 @@
     <meta content="" name="keywords">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
-    <link rel="stylesheet" href="/assets/css/foundation.css">
-    <link rel="stylesheet" href="/assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/foundation.css">
+    <link rel="stylesheet" href="assets/css/app.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i&amp;amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
@@ -28,10 +28,13 @@
                   </svg></a></li>
             </ul>
           </div>
-          <div class="hamburger-menu"><a class="hamburger-link" href="#">
+          <div class="hamburger-menu">
+            <button class="hamburger-link" type="button" href="#">
               <svg class="social-icon" width="40" height="35">
                 <use xlink:href="assets/img/sprite.svg#hamburger"></use>
-              </svg></a></div>
+              </svg>
+            </button>
+          </div>
           <div class="blog-img">
             <svg class="blog-icon" width="303" height="208">
               <use xlink:href="assets/img/sprite.svg#blog_header"></use>
@@ -45,19 +48,19 @@
             </div>
           </div>
         </div>
-        <div class="blog-triangle">
-          <div class="blog-triangle__left">
-            <svg class="triangle triangle--color" viewBox="0 0 1000 150" preserveAspectRatio="none">
-              <polygon points="0,0 0,150 1000,150"></polygon>
-            </svg>
-          </div>
-          <div class="blog-triangle__right">
-            <svg class="triangle triangle--color" viewBox="0 0 1000 150" preserveAspectRatio="none">
-              <polygon points="0,150 1000,150 1000,0"></polygon>
-            </svg>
-          </div>
-        </div>
       </section>
+      <div class="triangle">
+        <div class="triangle-left">
+          <svg class="triangle-svg triangle--blog-white" viewBox="0 0 1000 100" preserveAspectRatio="none">
+            <polygon points="0,0 0,100 1000,100"></polygon>
+          </svg>
+        </div>
+        <div class="triangle-right">
+          <svg class="triangle-svg triangle--blog-white" viewBox="0 0 1000 100" preserveAspectRatio="none">
+            <polygon points="0,100 1000,100 1000,0"></polygon>
+          </svg>
+        </div>
+      </div>
       <section class="blog">
         <div class="blog-left">
           <div class="blog-left__content">
@@ -80,43 +83,43 @@
         <div class="blog-right">
           <div class="blog-right__content">
             <article class="article">
-              <header class="article-header">
-                <h2 class="article-header__title">Препроцессоры или кастомные свойства</h2>
-              </header>
-              <p class="article-date">18 сентября 2017</p>
+              <h2 class="article-header__title">Препроцессоры или кастомные свойства</h2>
+              <div class="article-date">
+                <time datetime="2017-09-18">18 сентября 2017</time>
+              </div>
               <div class="article-text">
-                <p class="article-text__content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, et eum. Odit sequi adipisci tempora saepe sint itaque, quo at?</p>
-                <p class="article-text__content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum dolorem facere dolore earum sit esse cupiditate dolorum repellat sed molestiae atque ratione consequuntur nostrum incidunt suscipit quibusdam doloribus rem labore eos, officiis, quam autem ipsa optio dignissimos? Quasi, inventore fugit.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, et eum. Odit sequi adipisci tempora saepe sint itaque, quo at?</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum dolorem facere dolore earum sit esse cupiditate dolorum repellat sed molestiae atque ratione consequuntur nostrum incidunt suscipit quibusdam doloribus rem labore eos, officiis, quam autem ipsa optio dignissimos? Quasi, inventore fugit.</p>
               </div>
             </article>
             <article class="article">
-              <header class="article-header">
-                <h2 class="article-header__title">Прибиваем футер к низу страницы</h2>
-              </header>
-              <p class="article-date">19 августа 2017</p>
+              <h2 class="article-header__title">Прибиваем футер к низу страницы</h2>
+              <div class="article-date">
+                <time datetime="2017-09-18">18 сентября 2017</time>
+              </div>
               <div class="article-text">
-                <p class="article-text__content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, et eum. Odit sequi adipisci tempora saepe sint itaque, quo at?</p>
-                <p class="article-text__content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum dolorem facere dolore earum sit esse cupiditate dolorum repellat sed molestiae atque ratione consequuntur nostrum incidunt suscipit quibusdam doloribus rem labore eos, officiis, quam autem ipsa optio dignissimos? Quasi, inventore fugit.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, et eum. Odit sequi adipisci tempora saepe sint itaque, quo at?</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum dolorem facere dolore earum sit esse cupiditate dolorum repellat sed molestiae atque ratione consequuntur nostrum incidunt suscipit quibusdam doloribus rem labore eos, officiis, quam autem ipsa optio dignissimos? Quasi, inventore fugit.</p>
               </div>
             </article>
             <article class="article">
-              <header class="article-header">
-                <h2 class="article-header__title">Набор необходимых Gulp плагинов</h2>
-              </header>
-              <p class="article-date">12 июля 2017</p>
+              <h2 class="article-header__title">Набор необходимых Gulp плагинов</h2>
+              <div class="article-date">
+                <time datetime="2017-09-18">18 сентября 2017</time>
+              </div>
               <div class="article-text">
-                <p class="article-text__content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, et eum. Odit sequi adipisci tempora saepe sint itaque, quo at?</p>
-                <p class="article-text__content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum dolorem facere dolore earum sit esse cupiditate dolorum repellat sed molestiae atque ratione consequuntur nostrum incidunt suscipit quibusdam doloribus rem labore eos, officiis, quam autem ipsa optio dignissimos? Quasi, inventore fugit.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, et eum. Odit sequi adipisci tempora saepe sint itaque, quo at?</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum dolorem facere dolore earum sit esse cupiditate dolorum repellat sed molestiae atque ratione consequuntur nostrum incidunt suscipit quibusdam doloribus rem labore eos, officiis, quam autem ipsa optio dignissimos? Quasi, inventore fugit.</p>
               </div>
             </article>
             <article class="article">
-              <header class="article-header">
-                <h2 class="article-header__title">Почему я выбрал Pug</h2>
-              </header>
-              <p class="article-date">1 июня 2017</p>
+              <h2 class="article-header__title">Почему я выбрал Pug</h2>
+              <div class="article-date">
+                <time datetime="2017-09-18">18 сентября 2017</time>
+              </div>
               <div class="article-text">
-                <p class="article-text__content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, et eum. Odit sequi adipisci tempora saepe sint itaque, quo at?</p>
-                <p class="article-text__content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum dolorem facere dolore earum sit esse cupiditate dolorum repellat sed molestiae atque ratione consequuntur nostrum incidunt suscipit quibusdam doloribus rem labore eos, officiis, quam autem ipsa optio dignissimos? Quasi, inventore fugit.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, et eum. Odit sequi adipisci tempora saepe sint itaque, quo at?</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum dolorem facere dolore earum sit esse cupiditate dolorum repellat sed molestiae atque ratione consequuntur nostrum incidunt suscipit quibusdam doloribus rem labore eos, officiis, quam autem ipsa optio dignissimos? Quasi, inventore fugit.</p>
               </div>
             </article>
           </div>
@@ -136,7 +139,7 @@
             </ul>
           </nav>
           <div class="social">
-            <ul class="social-list">
+            <ul class="social-list social-list__footer">
               <li class="social-item"><a class="social-link" href="https://vk.com/korol_egor" target="_blank">
                   <svg class="social-icon social-icon--footer" width="31" height="17">
                     <use xlink:href="assets/img/sprite.svg#vk"></use>
@@ -150,13 +153,13 @@
         </div>
         <div class="footer-col">
           <blockquote>
-            <p class="quote">В будущем на рынке останется два вида компаний: те, кто в Интернет и те, кто вышел из бизнеса.</p>
-            <p class="autor">-Билл Гейтс</p>
+            <div class="quote">В будущем на рынке останется два вида компаний: те, кто в Интернет и те, кто вышел из бизнеса.</div>
+            <cite>-Билл Гейтс</cite>
           </blockquote>
         </div>
       </footer>
     </div>
-    <script src="/assets/js/foundation.js" defer></script>
-    <script src="/assets/js/app.js" defer></script>
+    <script src="assets/js/foundation.js" defer></script>
+    <script src="assets/js/app.js" defer></script>
   </body>
 </html>

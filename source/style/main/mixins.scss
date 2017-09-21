@@ -7,7 +7,7 @@
 }
 
 @mixin dp {
-  @media screen and (max-width: $bigdescktop) {
+  @media screen and (max-width: $descktop) {
     @content;
   }
 }
@@ -19,7 +19,7 @@
 }
 
 @mixin iphone {
-  @media screen and (max-width: $ipad) {
+  @media screen and (max-width: $iphone) {
     @content;
   }
 }

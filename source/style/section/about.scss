@@ -1,33 +1,54 @@
 .about {
   display: flex;
   color: $gray;
+
+  @include ipad () {
+    flex-direction: column;
+  }
 }
 
 .about-left {
-  width: 50%;
-  position: relative;
   background-color: #eaefe2;
-}
+  width: 50%;
 
-.triangle--fill-beige {
-  fill: #eaefe2;
+  @include ipad () {
+    width: 100%;
+  }
 }
 
 .about-right {
-  width: 50%;
-  position: relative;
   background-color: #f4f5f0;
+  width: 50%;
+
+  @include ipad () {
+    width: 100%;
+  }
+
+  @include iphone () {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .about-info {
   display: flex;
   align-items: flex-start;
   padding: 20px 0;
+
+  @include ipad () {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .about-left__title {
   position: relative;
   width: 50%;
+
+  @include ipad () {
+    margin-bottom: 40px;
+  }
 }
 
 .about-title__img {
@@ -43,10 +64,6 @@
 }
 
 .about-title {
-  font-family: "sansus_webissimo";
-  font-size: 63px;
-  font-weight: 400;
-  text-transform: uppercase;
   text-align: center;
   color: $dgray;
 
@@ -61,83 +78,41 @@
   }
 }
 
+.user-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .user-description__avatat {
   width: 95%;
+
+  @include ipad () {
+    width: 100%;
+  }
+
+  @include iphone () {
+    width: 300px;
+  }
 }
 
 .user-description__title {
   padding: 0 30%;
-}
 
-.subtitle {
-  font-family: "sansus_webissimo";
-  font-size: 35px;
-  font-weight: 400;
-  text-transform: uppercase;
-  text-align: center;
-  padding: 20px 0;
-
-  &::after {
-    content: "";
-    width: 89px;
-    height: 3px;
-    display: block;
-    margin: 0 auto;
-    background: $gray;
-    margin-top: 15px;
+  @include iphone () {
+    padding: 0 20%;
   }
 }
 
 .description-text {
   padding: 0 3%;
+
+  @include iphone () {
+    width: 300px;
+  }
 }
 
 .about-right__content {
   padding: 0 3%;
-}
-
-.map {
-  background-image: url(../img/map.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.map-card {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(#f4f5f0, .85);
-}
-
-.map-card {
-  color: $gray;
-  padding: 0 20px 20px 10px;
-}
-
-.contacts-item {
-  display: flex;
-  align-items: center;
-}
-
-.contacts-icon {
-  fill: $lgreen;
-  transition: .1s;
-  padding: 10px;
-
-  &:hover {
-    transform: scale(1.08);
-  }
-}
-
-.contacts-description {
-  color: $gray;
-  font-weight: 500;
-  transition: .2s;
-  padding: 10px;
-
-  &:hover {
-    color: $dgray;
-  }
 }

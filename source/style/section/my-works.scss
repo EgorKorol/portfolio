@@ -1,10 +1,10 @@
 .works-title {
-  height: 20%;
   background-color: #f8f9f5;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 30px 0;
 }
 
 .about-title__icon {
@@ -19,22 +19,231 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 80vh;
+  height: 100vh;
+
+  @include ipad () {
+    flex-wrap: nowrap;
+  }
 }
 
 .slider-info {
   background-color: #ebefe2;
   width: 50%;
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include ipad () {
+    width: 100%;
+    height: 40%;
+  }
+}
+
+.slider-info__list {
+  width: 400px;
+  height: 300px;
+  overflow: hidden;
+
+  @include ipad () {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.slider-info__item {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.slider-info__title {
+  width: 80%;
+  color: $gray;
+  margin: 0 auto;
+}
+
+.slider-info__description {
+  margin-bottom: 30px;
+}
+
+.slider-info__description-text {
+  color: $green;
+  font-weight: 500;
+}
+
+.slider-info__btn-link {
+  background-color: $lgreen;
+  display: inline-block;
+  padding: 10px 20px;
+  position: relative;
+  border-radius: 20px;
+  color: #fff;
+  font-weight: 500;
+  display: inline-flex;
+  transition: .2s;
+
+  &:hover {
+    background-color: $green;
+  }
+
+  &:focus {
+    background-color: $green;
+  }
+
+  &:active {
+    background-color: $lgreen;
+  }
+}
+
+.slider-info__btn-icon {
+  fill: #fff;
+  order: -1;
+  margin-right: 10px;
 }
 
 .slider-slide {
   width: 50%;
   height: 70%;
   background-color: #e1e4d7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include ipad () {
+    width: 100%;
+    order: -1;
+    height: 60%;
+  }
+}
+
+.slide-list {
+  width: 600px;
+  height: 400px;
+  overflow: hidden;
+
+  @include ipad () {
+    height: 100%;
+  }
+}
+
+.slide-item {
+  margin-bottom: 200px;
+  text-align: center;
+}
+
+.slide-img {
+  width: 100%;
+
+  @include ipad () {
+    width: 70%;
+  }
 }
 
 .slider-buttons {
   width: 50%;
   height: 30%;
+  display: flex;
+
+  @include ipad () {
+    width: 100%;
+  }
+}
+
+.slider-buttons__left, .slider-buttons__right {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-buttons__arrow {
+  background: none;
+  border: none;
+}
+
+.arrow-icon__slider {
+  fill: #000;
+}
+
+.comment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+  background-image: url(../img/bg-comment.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.comment-info {
+  padding: 0 30px 30px;
+}
+
+.comment-title {
+  margin: 50px auto 0;
+  position: relative;
+  width: 50%;
+}
+
+.about-title__comment {
+  font-size: 63px;
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.comment-info-list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.comment-info-item {
+  width: 35%;
+}
+
+.comment-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.comment-description__from-autor {
+  color: $green;
+}
+
+.form-markup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0 0;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.form-title {
+  color: $gray;
+}
+
+.input-form__comment {
+  padding: 15px;
+  width: 320px;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  border: none;
+}
+
+.textarea-form__comment{
+  padding: 15px;
+  width: 320px;
+  height: 130px;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  border: none;
+}
+
+.nav-menu__link--form {
+  cursor: pointer;
 }

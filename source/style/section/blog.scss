@@ -8,16 +8,27 @@
 .blog-left {
   background-color: #faf8f0;
   flex-shrink: 1;
+  padding-top: 50px;
+
+  @include ipad () {
+    display: none;
+  }
 }
 
 .blog-right {
   background-color: #faf8f0;
   flex-shrink: 3;
-  padding: 0 120px;
-}
+  padding: 50px 120px 0 120px;
 
-.triangle--color {
-  fill: #faf8f0;
+  @include ipad () {
+    padding: 20px 30px 0 30px;
+    width: 100%;
+  }
+
+  @include iphone () {
+    padding: 20px 10px 0 10px;
+    width: 100%;
+  }
 }
 
 .aside-nav {
@@ -70,11 +81,20 @@
 }
 
 .article-header__title {
-  font-family: "sansus_webissimo";
   font-size: 35px;
-  font-weight: 400;
+  padding: 0 0 10px 0;
+
+  @include iphone () {
+    font-size: 21px;
+    padding: 0;
+  }
 }
 
 .article-date {
   color: $lgreen;
+  padding: 15px 0;
+
+  @include iphone () {
+    padding: 5px 0;
+  }
 }

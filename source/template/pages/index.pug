@@ -7,7 +7,7 @@ block content
   .welcome-page
     .welcome-autorization
       button.autorization-btn(type="button") Авторизоваться
-    .welcome-card
+    .welcome-card.visuallyhidden
       .welcome-info
         .hero-img
           img.hero-avatar(src="assets/img/myphoto.png" alt="Моя фотография")
@@ -18,11 +18,11 @@ block content
           ul.social-list.social-list--welcome
             li.social-item
               a.social-link(href="https://vk.com/korol_egor" target="_blank")
-                svg.social-icon.social-icon--welcome.social-icon--vk(width="31" height="17")
+                svg.social-icon(width="31" height="17")
                   use(xlink:href="assets/img/sprite.svg#vk")
             li.social-item
               a.social-link(href="https://github.com/EgorKorol" target="_blank")
-                svg.social-icon.social-icon--welcome.social-icon--github(width="26" height="22")
+                svg.social-icon(width="26" height="22")
                   use(xlink:href="assets/img/sprite.svg#github")
       nav.nav-menu
         ul.nav-menu__list
@@ -53,10 +53,10 @@ block content
             label.label-checkbox(for="checkbox") Я человек
           .welcome-radio
             .welcome-radio__question Вы точно не робот?
-            input.form-radio(type="radio" id="radiobtn")
-            label.label-radio(for="radiobtn") Да
-            input.form-radio(type="radio" id="radiobtn")
-            label.label-radio(for="radiobtn") Не уверен
+            input.form-radio(type="radio" id="radiobtnYes" name="robot")
+            label.label-radio(for="radiobtnYes") Да
+            input.form-radio(type="radio" id="radiobtnNo" name="robot")
+            label.label-radio(for="radiobtnNo") Не уверен
       nav.nav-menu
         ul.nav-menu__list
           li.nav-menu__item

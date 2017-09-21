@@ -2,6 +2,12 @@
   position: absolute;
   top: 30px;
   right: 30px;
+
+  @include iphone () {
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 .autorization-btn {
@@ -16,6 +22,14 @@
 
   &:hover {
     transform: scale(1.05);
+  }
+
+  &:focus {
+    transform: scale(1.05);
+  }
+
+  &:active {
+    color: #BDAEAE;
   }
 }
 
@@ -32,17 +46,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @include iphone () {
+    padding: 10px 20px;
+  }
 }
 
 .social-list--welcome {
   padding-top: 30px;
-}
 
-.social-icon--welcome {
-  fill: rgba(#fff, .6);
-  
-  &:hover {
-    fill: $green;
+  @include iphone () {
+    padding: 20px 0;
   }
 }
 
@@ -65,11 +79,23 @@
   background-color: $lgreen;
   color: #fff;
   font-weight: 500;
-  padding: 15px 30px;
   transition: .3s;
+  padding: 15px 30px;
+
+  @include iphone () {
+
+  }
 
   &:hover {
     background-color: $green;
+  }
+
+  &:focus {
+    background-color: $green;
+  }
+
+  &:active {
+    background-color: $lgreen;
   }
 }
 
@@ -122,11 +148,88 @@
   padding: 5px;
 }
 
+.form-checkbox {
+  display: none;
+
+  &:checked {
+    +.label-checkbox {
+      &::after {
+        content: "";
+        position: absolute;
+        width: 12px;
+        height: 9px;
+        top: 6px;
+        left: 5px;
+        display: inline-block; 
+        background-image: url(../img/check.png); 
+        background-repeat: no-repeat;
+
+        @include iphone () {
+          top: 5px;
+        }
+      }
+    }
+  }
+}
+
+.label-checkbox {
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    background-color: $lgreen;
+  }
+}
+
+
+.form-radio {
+  display: none;
+
+  &:checked {
+    +.label-radio {
+      &::after {
+        content: "";
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: $lgreen;
+        top: 7px;
+        left: 6px;
+        display: inline-block; 
+
+        @include iphone () {
+          top: 5px;
+        }
+      }
+    }
+  }
+}
+
 .label-radio {
   margin-right: 40px;
   position: relative;
   color: #fff;
-  padding-left: 5px;
+  margin-left: 5px;
+  position: relative;
+  
+    &::before {
+      content: "";
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 10px;
+      background-color: #fff;
+    }
+
 
   &:last-child {
     margin-right: 0;
@@ -141,6 +244,6 @@
 .welcome-card--form {
   position: absolute;
   top: 50%;
-  left: 65%;
-  transform: translateY(-50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

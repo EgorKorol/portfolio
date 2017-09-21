@@ -8,8 +8,8 @@
     <meta content="" name="keywords">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
-    <link rel="stylesheet" href="/assets/css/foundation.css">
-    <link rel="stylesheet" href="/assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/foundation.css">
+    <link rel="stylesheet" href="assets/css/app.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i&amp;amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
@@ -18,7 +18,7 @@
         <div class="welcome-autorization">
           <button class="autorization-btn" type="button">Авторизоваться</button>
         </div>
-        <div class="welcome-card">
+        <div class="welcome-card visuallyhidden">
           <div class="welcome-info">
             <div class="hero-img"><img class="hero-avatar" src="assets/img/myphoto.png" alt="Моя фотография"></div>
             <div class="hero-info">
@@ -28,11 +28,11 @@
             <div class="social">
               <ul class="social-list social-list--welcome">
                 <li class="social-item"><a class="social-link" href="https://vk.com/korol_egor" target="_blank">
-                    <svg class="social-icon social-icon--welcome social-icon--vk" width="31" height="17">
+                    <svg class="social-icon" width="31" height="17">
                       <use xlink:href="assets/img/sprite.svg#vk"></use>
                     </svg></a></li>
                 <li class="social-item"><a class="social-link" href="https://github.com/EgorKorol" target="_blank">
-                    <svg class="social-icon social-icon--welcome social-icon--github" width="26" height="22">
+                    <svg class="social-icon" width="26" height="22">
                       <use xlink:href="assets/img/sprite.svg#github"></use>
                     </svg></a></li>
               </ul>
@@ -74,10 +74,10 @@
               </div>
               <div class="welcome-radio">
                 <div class="welcome-radio__question">Вы точно не робот?</div>
-                <input class="form-radio" type="radio" id="radiobtn">
-                <label class="label-radio" for="radiobtn">Да</label>
-                <input class="form-radio" type="radio" id="radiobtn">
-                <label class="label-radio" for="radiobtn">Не уверен</label>
+                <input class="form-radio" type="radio" id="radiobtnYes" name="robot">
+                <label class="label-radio" for="radiobtnYes">Да</label>
+                <input class="form-radio" type="radio" id="radiobtnNo" name="robot">
+                <label class="label-radio" for="radiobtnNo">Не уверен</label>
               </div>
             </form>
           </div>
@@ -92,7 +92,7 @@
         </div>
       </div>
     </div>
-    <script src="/assets/js/foundation.js" defer></script>
-    <script src="/assets/js/app.js" defer></script>
+    <script src="assets/js/foundation.js" defer></script>
+    <script src="assets/js/app.js" defer></script>
   </body>
 </html>

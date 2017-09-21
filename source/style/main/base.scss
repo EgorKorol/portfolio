@@ -18,6 +18,10 @@ body, html {
 body {
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
+
+    @include iphone () {
+        font-size: 14px;
+    }
 }
 
 ul {
@@ -31,8 +35,24 @@ a {
     text-decoration: none;
 }
 
-h1,h2,h3,h4,h5,h6 {
-    margin: 0;
+h1 {
+    font-family: "sansus_webissimo";
+    font-size: 63px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 5px 10px;
+
+    @include iphone () {
+        font-size: 35px;
+      }
+}
+
+h2 {
+    font-family: "sansus_webissimo";
+    font-size: 35px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 5px 0px;
 }
 
 section {

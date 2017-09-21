@@ -5,6 +5,13 @@ block variables
 
 block content
   include ../common/welcome-page_blog
+  .triangle
+    .triangle-left
+      svg.triangle-svg.triangle--blog-white(viewBox="0 0 1000 100" preserveAspectRatio="none")
+        polygon(points="0,0 0,100 1000,100")
+    .triangle-right
+      svg.triangle-svg.triangle--blog-white(viewBox="0 0 1000 100" preserveAspectRatio="none")
+        polygon(points="0,100 1000,100 1000,0")
   section.blog
     .blog-left
       .blog-left__content
@@ -26,31 +33,31 @@ block content
     .blog-right
       .blog-right__content
         article.article
-          header.article-header
-            h2.article-header__title Препроцессоры или кастомные свойства
-          p.article-date 18 сентября 2017
+          h2.article-header__title Препроцессоры или кастомные свойства
+          .article-date
+            time(datetime="2017-09-18") 18 сентября 2017
           .article-text
-            p.article-text__content Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, et eum. Odit sequi adipisci tempora saepe sint itaque, quo at?
-            p.article-text__content Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum dolorem facere dolore earum sit esse cupiditate dolorum repellat sed molestiae atque ratione consequuntur nostrum incidunt suscipit quibusdam doloribus rem labore eos, officiis, quam autem ipsa optio dignissimos? Quasi, inventore fugit.
+            p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, et eum. Odit sequi adipisci tempora saepe sint itaque, quo at?
+            p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum dolorem facere dolore earum sit esse cupiditate dolorum repellat sed molestiae atque ratione consequuntur nostrum incidunt suscipit quibusdam doloribus rem labore eos, officiis, quam autem ipsa optio dignissimos? Quasi, inventore fugit.
         article.article
-          header.article-header
-            h2.article-header__title Прибиваем футер к низу страницы
-          p.article-date 19 августа 2017
+          h2.article-header__title Прибиваем футер к низу страницы
+          .article-date
+            time(datetime="2017-09-18") 18 сентября 2017
           .article-text
-            p.article-text__content Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, et eum. Odit sequi adipisci tempora saepe sint itaque, quo at?
-            p.article-text__content Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum dolorem facere dolore earum sit esse cupiditate dolorum repellat sed molestiae atque ratione consequuntur nostrum incidunt suscipit quibusdam doloribus rem labore eos, officiis, quam autem ipsa optio dignissimos? Quasi, inventore fugit.
+            p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, et eum. Odit sequi adipisci tempora saepe sint itaque, quo at?
+            p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum dolorem facere dolore earum sit esse cupiditate dolorum repellat sed molestiae atque ratione consequuntur nostrum incidunt suscipit quibusdam doloribus rem labore eos, officiis, quam autem ipsa optio dignissimos? Quasi, inventore fugit.
         article.article
-          header.article-header
-            h2.article-header__title Набор необходимых Gulp плагинов
-          p.article-date 12 июля 2017
+          h2.article-header__title Набор необходимых Gulp плагинов
+          .article-date
+            time(datetime="2017-09-18") 18 сентября 2017
           .article-text
-            p.article-text__content Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, et eum. Odit sequi adipisci tempora saepe sint itaque, quo at?
-            p.article-text__content Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum dolorem facere dolore earum sit esse cupiditate dolorum repellat sed molestiae atque ratione consequuntur nostrum incidunt suscipit quibusdam doloribus rem labore eos, officiis, quam autem ipsa optio dignissimos? Quasi, inventore fugit.
+            p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, et eum. Odit sequi adipisci tempora saepe sint itaque, quo at?
+            p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum dolorem facere dolore earum sit esse cupiditate dolorum repellat sed molestiae atque ratione consequuntur nostrum incidunt suscipit quibusdam doloribus rem labore eos, officiis, quam autem ipsa optio dignissimos? Quasi, inventore fugit.
         article.article
-          header.article-header
-            h2.article-header__title Почему я выбрал Pug
-          p.article-date 1 июня 2017
+          h2.article-header__title Почему я выбрал Pug
+          .article-date
+            time(datetime="2017-09-18") 18 сентября 2017
           .article-text
-            p.article-text__content Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, et eum. Odit sequi adipisci tempora saepe sint itaque, quo at?
-            p.article-text__content Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum dolorem facere dolore earum sit esse cupiditate dolorum repellat sed molestiae atque ratione consequuntur nostrum incidunt suscipit quibusdam doloribus rem labore eos, officiis, quam autem ipsa optio dignissimos? Quasi, inventore fugit.
+            p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, et eum. Odit sequi adipisci tempora saepe sint itaque, quo at?
+            p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum dolorem facere dolore earum sit esse cupiditate dolorum repellat sed molestiae atque ratione consequuntur nostrum incidunt suscipit quibusdam doloribus rem labore eos, officiis, quam autem ipsa optio dignissimos? Quasi, inventore fugit.
   include ../common/footer

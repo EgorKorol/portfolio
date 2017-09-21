@@ -8,8 +8,8 @@
     <meta content="" name="keywords">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
-    <link rel="stylesheet" href="/assets/css/foundation.css">
-    <link rel="stylesheet" href="/assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/foundation.css">
+    <link rel="stylesheet" href="assets/css/app.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i&amp;amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
@@ -27,10 +27,13 @@
                 </svg></a></li>
           </ul>
         </div>
-        <div class="hamburger-menu"><a class="hamburger-link" href="#">
+        <div class="hamburger-menu">
+          <button class="hamburger-link" type="button" href="#">
             <svg class="social-icon" width="40" height="35">
               <use xlink:href="assets/img/sprite.svg#hamburger"></use>
-            </svg></a></div>
+            </svg>
+          </button>
+        </div>
         <div class="portfolio-img">
           <svg class="portfolio-icon" width="1176" height="313">
             <use xlink:href="assets/img/sprite.svg#portfolio_header"></use>
@@ -39,7 +42,7 @@
         <div class="hero">
           <div class="hero-img"><img class="hero-avatar" src="assets/img/myphoto.png" alt="Моя фотография"></div>
           <div class="hero-info">
-            <h2 class="hero-name">Егор Король</h2>
+            <h3 class="hero-name">Егор Король</h3>
             <div class="hero-info">Личный сайт веб разработчика</div>
           </div>
         </div>
@@ -48,13 +51,20 @@
               <use xlink:href="assets/img/sprite.svg#arrow_down"></use>
             </svg></a></div>
       </section>
+      <div class="triangle">
+        <div class="triangle-left">
+          <svg class="triangle-svg triangle--about-beige" viewBox="0 0 1000 100" preserveAspectRatio="none">
+            <polygon points="0,0 0,100 1000,100"></polygon>
+          </svg>
+        </div>
+        <div class="triangle-right">
+          <svg class="triangle-svg triangle--about-white" viewBox="0 0 1000 100" preserveAspectRatio="none">
+            <polygon points="0,100 1000,100 1000,0"></polygon>
+          </svg>
+        </div>
+      </div>
       <section class="about">
         <div class="about-left">
-          <div class="blog-triangle__left">
-            <svg class="triangle triangle-about triangle--beige" viewBox="0 0 1000 150" preserveAspectRatio="none">
-              <polygon points="0,0 0,150 1000,150"></polygon>
-            </svg>
-          </div>
           <div class="about-info">
             <div class="about-left__title">
               <h1 class="about-title">Обо мне</h1>
@@ -77,11 +87,6 @@
           </div>
         </div>
         <div class="about-right">
-          <div class="blog-triangle__right">
-            <svg class="triangle triangle-about triangle--white" viewBox="0 0 1000 150" preserveAspectRatio="none">
-              <polygon points="0,150 1000,150 1000,0"></polygon>
-            </svg>
-          </div>
           <div class="user-description__title">
             <h2 class="subtitle">Чем я могу быть вам полезен</h2>
           </div>
@@ -226,7 +231,7 @@
             </ul>
           </nav>
           <div class="social">
-            <ul class="social-list">
+            <ul class="social-list social-list__footer">
               <li class="social-item"><a class="social-link" href="https://vk.com/korol_egor" target="_blank">
                   <svg class="social-icon social-icon--footer" width="31" height="17">
                     <use xlink:href="assets/img/sprite.svg#vk"></use>
@@ -240,13 +245,13 @@
         </div>
         <div class="footer-col">
           <blockquote>
-            <p class="quote">В будущем на рынке останется два вида компаний: те, кто в Интернет и те, кто вышел из бизнеса.</p>
-            <p class="autor">-Билл Гейтс</p>
+            <div class="quote">В будущем на рынке останется два вида компаний: те, кто в Интернет и те, кто вышел из бизнеса.</div>
+            <cite>-Билл Гейтс</cite>
           </blockquote>
         </div>
       </footer>
     </div>
-    <script src="/assets/js/foundation.js" defer></script>
-    <script src="/assets/js/app.js" defer></script>
+    <script src="assets/js/foundation.js" defer></script>
+    <script src="assets/js/app.js" defer></script>
   </body>
 </html>
