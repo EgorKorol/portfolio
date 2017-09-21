@@ -33,11 +33,12 @@
                 top: 25%;
             }
         }
+        &:last-child {
+            width: 100%;
+            padding: 10px 0;
+        }
     }
-    &:last-child {
-        width: 100%;
-        padding: 10px 0;
-    }
+    
     @include iphone () {
         width: 100%;
 
