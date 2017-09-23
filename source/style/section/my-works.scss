@@ -122,7 +122,11 @@
   overflow: hidden;
 
   @include ipad () {
-    height: 100%;
+    height: 80%;
+  }
+  
+  @include iphone () {
+    height: 60%;
   }
 }
 
@@ -159,17 +163,57 @@
 .slider-buttons__arrow {
   background: none;
   border: none;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  position: relative;
+}
+
+.slider-buttons__arrow-left {
+  background-image: url(../img/work-ioga.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: rgba(176, 183, 170, 0.7);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.slider-buttons__arrow-right {
+  background-image: url(../img/work-trialog.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: rgba(147, 153, 141, 0.7);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
 }
 
 .arrow-icon__slider {
-  fill: #000;
+  fill: #fff;
 }
 
 .comment {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   padding: 50px 0;
   background-image: url(../img/bg-comment.jpg);
   background-repeat: no-repeat;
@@ -191,16 +235,40 @@
   width: 70%;
   text-align: center;
   margin: 0 auto;
+
+  @include ipad () {
+    width: 100%;
+  }
+
+  @include iphone () {
+    width: 110%;
+  }
 }
 
 .comment-info-list {
   display: flex;
   align-items: flex-start;
   justify-content: center;
+  
+  @include iphone () {
+    flex-wrap: wrap;
+  }
 }
 
 .comment-info-item {
   width: 35%;
+
+  @include ipad () {
+    width: 50%;
+  }
+  @include iphone () {
+    width: 100%;
+    margin-bottom: 10%;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .comment-description {
@@ -208,6 +276,15 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.comment-description__text {
+  line-height: 22px;
+  width: 80%;
+
+  @include ipad () {
+    width: 90%;
+  }
 }
 
 .comment-description__from-autor {
@@ -219,8 +296,25 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20px 0 0;
+  padding: 20px 20px 0 20px;
   background-color: rgba(255, 255, 255, 0.15);
+
+/*   &::before {
+    background-image: url(../img/bg-comment.jpg);
+    background-position-x: 0px;
+    background-position-y: center;
+    background-size: cover;
+    background-repeat: initial;
+    background-attachment: fixed;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    filter: blur(5px);
+   } */
 }
 
 .form-title {
@@ -246,4 +340,18 @@
 
 .nav-menu__link--form {
   cursor: pointer;
+}
+
+.nav-menu--form {
+  width: 100%;
+}
+
+
+.arrow-icon--works {
+  transform: rotate(180deg);
+  fill: $lgreen;
+}
+
+.arrow-up {
+  margin-top: 50px;
 }

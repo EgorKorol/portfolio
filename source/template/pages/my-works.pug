@@ -62,7 +62,6 @@ block content
             svg.arrow-icon__slider(width="43" height="27")
               use(xlink:href="assets/img/sprite.svg#portf_arrow_down")
         .slider-buttons__right
-          .slider-buttons__right-img
           button(type="button").slider-buttons__arrow.slider-buttons__arrow-right
             svg.arrow-icon__slider(width="43" height="27")
               use(xlink:href="assets/img/sprite.svg#portf_arrow_up ")
@@ -99,11 +98,15 @@ block content
           input.input-form__comment#email(type="text" placeholder="Email")
           label.visuallyhidden(for="Email") Ваш email
           textarea.textarea-form__comment#message(name="message" placeholder="Ваше сообщение")
-          label.visuallyhidden(for="message") Вашу сообщение
-          .nav-menu
+          label.visuallyhidden(for="message") Ваше сообщение
+          .nav-menu.nav-menu--form
             ul.nav-menu__list
-              li.nav-menu__item
+              li.nav-menu__item.nav-menu__item--works
                 button.nav-menu__link.nav-menu__link--form(form="data-comment" type="submit") Отправить
-              li.nav-menu__item
+              li.nav-menu__item.nav-menu__item--works
                 button.nav-menu__link.nav-menu__link--form(form="data-comment" type="reset") Очистить
+    .arrow-up
+      a.arrow-link(href="#")
+        svg.arrow-icon.arrow-icon--works(width="26" height="16")
+          use(xlink:href="assets/img/sprite.svg#arrow_down")
   include ../common/footer

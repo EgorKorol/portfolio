@@ -14,7 +14,7 @@
   </head>
   <body>
     <div class="wrapper">
-      <section class="welcome-page">
+      <section class="section welcome-page">
         <div class="social welcome-social">
           <ul class="social-list">
             <li class="social-item"><a class="social-link" href="https://vk.com/korol_egor" target="_blank">
@@ -128,7 +128,6 @@
               </button>
             </div>
             <div class="slider-buttons__right">
-              <div class="slider-buttons__right-img"></div>
               <button class="slider-buttons__arrow slider-buttons__arrow-right" type="button">
                 <svg class="arrow-icon__slider" width="43" height="27">
                   <use xlink:href="assets/img/sprite.svg#portf_arrow_up "></use>
@@ -180,13 +179,13 @@
               <input class="input-form__comment" id="email" type="text" placeholder="Email">
               <label class="visuallyhidden" for="Email">Ваш email</label>
               <textarea class="textarea-form__comment" id="message" name="message" placeholder="Ваше сообщение"></textarea>
-              <label class="visuallyhidden" for="message">Вашу сообщение</label>
-              <div class="nav-menu">
+              <label class="visuallyhidden" for="message">Ваше сообщение</label>
+              <div class="nav-menu nav-menu--form">
                 <ul class="nav-menu__list">
-                  <li class="nav-menu__item">
+                  <li class="nav-menu__item nav-menu__item--works">
                     <button class="nav-menu__link nav-menu__link--form" form="data-comment" type="submit">Отправить</button>
                   </li>
-                  <li class="nav-menu__item">
+                  <li class="nav-menu__item nav-menu__item--works">
                     <button class="nav-menu__link nav-menu__link--form" form="data-comment" type="reset">Очистить</button>
                   </li>
                 </ul>
@@ -194,6 +193,10 @@
             </div>
           </form>
         </div>
+        <div class="arrow-up"><a class="arrow-link" href="#">
+            <svg class="arrow-icon arrow-icon--works" width="26" height="16">
+              <use xlink:href="assets/img/sprite.svg#arrow_down"></use>
+            </svg></a></div>
       </section>
       <footer class="footer">
         <div class="footer-col">

@@ -38,6 +38,10 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  @include iphone () {
+    width: 90%;
+  }
 }
 
 .welcome-info {
@@ -66,12 +70,11 @@
 }
 
 .nav-menu__item {
-  margin-right: 2px;
-  box-shadow: 2px 0 1px rgba(#fff, .6);
+  border-right: 1px solid #fff;
+  width: 50%;
 
   &:last-child {
-    margin-right: 0;
-    box-shadow: none;
+    border-right: none;
   }
 }
 
@@ -80,11 +83,10 @@
   color: #fff;
   font-weight: 500;
   transition: .3s;
-  padding: 15px 30px;
-
-  @include iphone () {
-
-  }
+  min-height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   &:hover {
     background-color: $green;
@@ -121,11 +123,6 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-.input-decore__icon--login {
-  width: 15px;
-  height: 17px;
 }
 
 .input-decore__icon--password {
@@ -237,8 +234,9 @@
 }
 
 .nav-menu__link--form {
-  padding: 15px 61px;
   border: none;
+  margin: 0;
+  width: 100%;
 }
 
 .welcome-card--form {
