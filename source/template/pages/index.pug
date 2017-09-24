@@ -7,59 +7,61 @@ block content
   .welcome-page
     .welcome-autorization
       button.autorization-btn(type="button") Авторизоваться
-    .welcome-card
-      .welcome-info
-        .hero-img
-          img.hero-avatar(src="assets/img/myphoto.png" alt="Моя фотография")
-        .hero-info
-          h3.hero-name Егор Король
-          .hero-info Личный сайт веб разработчика
-        .social
-          ul.social-list.social-list--welcome
-            li.social-item
-              a.social-link(href="https://vk.com/korol_egor" target="_blank")
-                svg.social-icon(width="31" height="17")
-                  use(xlink:href="assets/img/sprite.svg#vk")
-            li.social-item
-              a.social-link(href="https://github.com/EgorKorol" target="_blank")
-                svg.social-icon(width="26" height="22")
-                  use(xlink:href="assets/img/sprite.svg#github")
-      nav.nav-menu
-        ul.nav-menu__list
-          li.nav-menu__item
-            a.nav-menu__link(href="my-works.html") Мои работы
-          li.nav-menu__item
-            a.nav-menu__link(href="about.html") Обо мне
-          li.nav-menu__item
-            a.nav-menu__link(href="blog.html") Блог
-    .welcome-card.welcome-card--form.visuallyhidden
-      .welcome-info
-        form.hero-info#data(method="post")
-          h2.hero-title.hero-title__welcome Авторизуйтесь
-          .welcome-input
-            .input-decore
-              svg.input-decore__icon.input-decore__icon--login(width="15" height="17")
-                use(xlink:href="assets/img/sprite.svg#login")
-            input.form-input(type="text" id="login" placeholder="Логин")
-            label.label-input(for="login")
-          .welcome-input
-            .input-decore
-              svg.input-decore__icon.input-decore__icon--password
-                use(xlink:href="assets/img/sprite.svg#password")
-            input.form-input(type="password" id="password" placeholder="Пароль")
-            label.label-input(for="password")
-          .welcome-checkbox
-            input.form-checkbox(type="checkbox" id="checkbox")
-            label.label-checkbox(for="checkbox") Я человек
-          .welcome-radio
-            .welcome-radio__question Вы точно не робот?
-            input.form-radio(type="radio" id="radiobtnYes" name="robot")
-            label.label-radio(for="radiobtnYes") Да
-            input.form-radio(type="radio" id="radiobtnNo" name="robot")
-            label.label-radio(for="radiobtnNo") Не уверен
-      nav.nav-menu
-        ul.nav-menu__list
-          li.nav-menu__item
-            a.nav-menu__link(href="index.html") На главную
-          li.nav-menu__item
-            button.nav-menu__link.nav-menu__link--form(form="data" type="submit") Войти
+    .flipper-box
+      .flipper
+        .welcome-card
+          .welcome-info
+            .hero-img
+              img.hero-avatar(src="assets/img/myphoto.png" alt="Моя фотография")
+            .hero-info
+              h3.hero-name Егор Король
+              .hero-info Личный сайт веб разработчика
+            .social
+              ul.social-list.social-list--welcome
+                li.social-item
+                  a.social-link(href="https://vk.com/korol_egor" target="_blank")
+                    svg.social-icon(width="31" height="17")
+                      use(xlink:href="assets/img/sprite.svg#vk")
+                li.social-item
+                  a.social-link(href="https://github.com/EgorKorol" target="_blank")
+                    svg.social-icon(width="26" height="22")
+                      use(xlink:href="assets/img/sprite.svg#github")
+          nav.nav-menu
+            ul.nav-menu__list
+              li.nav-menu__item
+                a.nav-menu__link(href="my-works.html") Мои работы
+              li.nav-menu__item
+                a.nav-menu__link(href="about.html") Обо мне
+              li.nav-menu__item
+                a.nav-menu__link(href="blog.html") Блог
+        .welcome-card.welcome-card--form
+          .welcome-info
+            form.hero-info#data(method="post")
+              h2.hero-title.hero-title__welcome Авторизуйтесь
+              .welcome-input
+                .input-decore
+                  svg.input-decore__icon.input-decore__icon--login(width="15" height="17")
+                    use(xlink:href="assets/img/sprite.svg#login")
+                input.form-input(type="text" id="login" placeholder="Логин")
+                label.label-input(for="login")
+              .welcome-input
+                .input-decore
+                  svg.input-decore__icon.input-decore__icon--password
+                    use(xlink:href="assets/img/sprite.svg#password")
+                input.form-input(type="password" id="password" placeholder="Пароль")
+                label.label-input(for="password")
+              .welcome-checkbox
+                input.form-checkbox(type="checkbox" id="checkbox")
+                label.label-checkbox(for="checkbox") Я человек
+              .welcome-radio
+                .welcome-radio__question Вы точно не робот?
+                input.form-radio(type="radio" id="radiobtnYes" name="robot")
+                label.label-radio(for="radiobtnYes") Да
+                input.form-radio(type="radio" id="radiobtnNo" name="robot")
+                label.label-radio(for="radiobtnNo") Не уверен
+          nav.nav-menu
+            ul.nav-menu__list
+              li.nav-menu__item
+                a.nav-menu__link(href="index.html") На главную
+              li.nav-menu__item
+                button.nav-menu__link.nav-menu__link--form(form="data" type="submit") Войти

@@ -11,11 +11,12 @@
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: rgba(#f4f5f0, .85);
-}
-
-.map-card {
   color: $gray;
   padding: 0 20px 20px 10px;
+
+  @include iphone () {
+    width: 60%;
+  }
 }
 
 .contacts-item {

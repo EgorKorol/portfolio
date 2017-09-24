@@ -1,247 +1,253 @@
-.welcome-autorization {
-  position: absolute;
-  top: 30px;
-  right: 30px;
-
-  @include iphone () {
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-}
-
-.autorization-btn {
-  background: none;
-  color: #fff;
-  font-weight: 500;
-  padding: 15px 30px;
-  border: 1px solid #fff;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: .3s;
-
-  &:hover {
-    transform: scale(1.05);
-  }
-
-  &:focus {
-    transform: scale(1.05);
-  }
-
-  &:active {
-    color: #BDAEAE;
-  }
-}
-
-.welcome-card {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-  @include iphone () {
-    width: 90%;
-  }
-}
-
-.welcome-info {
-  background-color: rgba(#122620, .6);
-  padding: 40px 69px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  @include iphone () {
-    padding: 10px 20px;
-  }
-}
-
-.social-list--welcome {
-  padding-top: 30px;
-
-  @include iphone () {
-    padding: 20px 0;
-  }
-}
-
-.nav-menu__list {
-  display: flex;
-  align-items: center;
-}
-
-.nav-menu__item {
-  border-right: 1px solid #fff;
-  width: 50%;
-
-  &:last-child {
-    border-right: none;
-  }
-}
-
-.nav-menu__link {
-  background-color: $lgreen;
-  color: #fff;
-  font-weight: 500;
-  transition: .3s;
-  min-height: 45px;
+.welcome-page {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.flipper-box {
+  width: 340px;
+  perspective: 1200;
+  transform-style: preserve-3d;
+  position: relative;
 
   &:hover {
-    background-color: $green;
+    .flipper {
+      transform: rotateY(180deg);
+    }
   }
+}
 
-  &:focus {
-    background-color: $green;
-  }
+.welcome-autorization {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    @include iphone () {
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
 
-  &:active {
+.autorization-btn {
+    background: none;
+    color: #fff;
+    font-weight: 500;
+    padding: 15px 30px;
+    border: 1px solid #fff;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: .3s;
+    &:hover {
+        transform: scale(1.05);
+    }
+    &:focus {
+        transform: scale(1.05);
+    }
+    &:active {
+        color: #BDAEAE;
+    }
+}
+
+.flipper {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: .6s linear;
+}
+
+.welcome-card {
+  width: 340px;
+  backface-visibility: hidden;
+    z-index: 2;
+    transform: rotateY(0deg);
+    @include iphone () {
+        width: 90%;
+    }
+}
+
+.welcome-info {
+  padding: 20px 30px;
+    background-color: rgba(#122620, .6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include iphone () {
+        padding: 10px 20px;
+    }
+}
+
+.social-list--welcome {
+    padding-top: 30px;
+    @include iphone () {
+        padding: 20px 0;
+    }
+}
+
+.nav-menu__list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu__item {
+    border-right: 1px solid #fff;
+    width: 50%;
+    &:last-child {
+        border-right: none;
+    }
+}
+
+.nav-menu__link {
     background-color: $lgreen;
-  }
+    color: #fff;
+    font-weight: 500;
+    transition: .3s;
+    min-height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+        background-color: $green;
+    }
+    &:focus {
+        background-color: $green;
+    }
+    &:active {
+        background-color: $lgreen;
+    }
 }
 
 .hero-title__welcome {
-  font-size: 35px;
+    font-size: 35px;
 }
 
 .welcome-input {
-  display: flex;
-  margin-bottom: 20px;
+    display: flex;
+    margin-bottom: 20px;
 }
 
 .input-decore {
-  background-color: #f0efe9;
-  border-radius: 20px 0 0 20px;
-  position: relative;
-  padding: 20px;
+    background-color: #f0efe9;
+    border-radius: 20px 0 0 20px;
+    position: relative;
+    padding: 20px;
 }
 
 .input-decore__icon {
-  fill: #c3cbcd;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    fill: #c3cbcd;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .input-decore__icon--password {
-  width: 18px;
-  height: 17px;
+    width: 18px;
+    height: 17px;
 }
 
 .form-input {
-  border: none;
-  padding: 10px 5px;
-  border-radius: 0 20px 20px 0;
+    border: none;
+    padding: 10px 5px;
+    border-radius: 0 20px 20px 0;
 }
 
 .welcome-checkbox {
-  padding: 10px;
+    padding: 10px;
 }
 
 .welcome-radio__question {
-  font-weight: 700;
-  padding: 5px;
+    font-weight: 700;
+    padding: 5px;
 }
 
 .form-checkbox {
-  display: none;
-
-  &:checked {
-    +.label-checkbox {
-      &::after {
-        content: "";
-        position: absolute;
-        width: 12px;
-        height: 9px;
-        top: 6px;
-        left: 5px;
-        display: inline-block; 
-        background-image: url(../img/check.png); 
-        background-repeat: no-repeat;
-
-        @include iphone () {
-          top: 5px;
+    display: none;
+    &:checked {
+        +.label-checkbox {
+            &::after {
+                content: "";
+                position: absolute;
+                width: 12px;
+                height: 9px;
+                top: 6px;
+                left: 5px;
+                display: inline-block;
+                background-image: url(../img/check.png);
+                background-repeat: no-repeat;
+                @include iphone () {
+                    top: 5px;
+                }
+            }
         }
-      }
     }
-  }
 }
 
 .label-checkbox {
-  position: relative;
-
-  &::before {
-    content: "";
-    width: 20px;
-    height: 20px;
-    border-radius: 3px;
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 10px;
-    background-color: $lgreen;
-  }
+    position: relative;
+    &::before {
+        content: "";
+        width: 20px;
+        height: 20px;
+        border-radius: 3px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px;
+        background-color: $lgreen;
+    }
 }
 
-
 .form-radio {
-  display: none;
-
-  &:checked {
-    +.label-radio {
-      &::after {
-        content: "";
-        position: absolute;
-        width: 8px;
-        height: 8px;
-        border-radius: 50%;
-        background-color: $lgreen;
-        top: 7px;
-        left: 6px;
-        display: inline-block; 
-
-        @include iphone () {
-          top: 5px;
+    display: none;
+    &:checked {
+        +.label-radio {
+            &::after {
+                content: "";
+                position: absolute;
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background-color: $lgreen;
+                top: 7px;
+                left: 6px;
+                display: inline-block;
+                @include iphone () {
+                    top: 5px;
+                }
+            }
         }
-      }
     }
-  }
 }
 
 .label-radio {
-  margin-right: 40px;
-  position: relative;
-  color: #fff;
-  margin-left: 5px;
-  position: relative;
-  
+    margin-right: 40px;
+    position: relative;
+    color: #fff;
+    margin-left: 5px;
+    position: relative;
     &::before {
-      content: "";
-      width: 20px;
-      height: 20px;
-      border-radius: 50%;
-      display: inline-block;
-      vertical-align: middle;
-      margin-right: 10px;
-      background-color: #fff;
+        content: "";
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px;
+        background-color: #fff;
     }
-
-
-  &:last-child {
-    margin-right: 0;
-  }
+    &:last-child {
+        margin-right: 0;
+    }
 }
 
 .nav-menu__link--form {
-  border: none;
-  margin: 0;
-  width: 100%;
+    border: none;
+    margin: 0;
+    width: 100%;
 }
 
 .welcome-card--form {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    transform: rotateY(-180deg);
 }

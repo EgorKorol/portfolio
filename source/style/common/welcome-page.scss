@@ -1,8 +1,9 @@
 .welcome-page {
   background-image: url(../img/water.jpg);
+  background-attachment: fixed;
   background-position: center;
-  background-size: cover;
   background-repeat: no-repeat;
+  background-size: cover;
   height: 100vh;
   color: #fff;
 }
@@ -76,9 +77,8 @@
   transform: translate(-50%, -50%);
 }
 
-.portfolio-icon {
-  width: 1176px;
-  height: 313px;
+.header-icon {
+  width: 100%;
   fill: rgba(#fff, .12);
 
   @include iphone () {
@@ -91,12 +91,6 @@
   top: 46%;
   left: 50%;
   transform: translateX(-50%);
-}
-
-.blog-icon {
-  width: 303px;
-  height: 208px;
-  fill: rgba(#fff, .12);
 }
 
 .hero {
