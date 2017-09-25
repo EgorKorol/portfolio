@@ -259,6 +259,10 @@
   width: 70%;
   text-align: center;
   margin: 0 auto;
+
+  @include iphone () {
+    font-size: 35px;
+  }
 }
 
 .comment-info-list {
