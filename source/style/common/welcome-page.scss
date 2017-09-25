@@ -1,5 +1,5 @@
 .welcome-page {
-  background-image: url(../img/water.jpg);
+  background-image: url(../img/background/water.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -31,6 +31,7 @@
   position: absolute;
   top: 30px;
   right: 30px;
+  z-index: 10;
 }
 
 .social-link {
@@ -48,26 +49,6 @@
   &:active {
     fill: #fff;
   }
-}
-
-.hamburger-link {
-  border: none;
-  background: none;
-  transition: fill .3s;
-  fill: #fff;
-  cursor: pointer;
-  
-    &:hover {
-      fill: $green;
-    }
-  
-    &:focus {
-      fill: $green;
-    }
-  
-    &:active {
-      fill: $lgreen;
-    }
 }
 
 .portfolio-img {
@@ -151,7 +132,7 @@
   top: 90%;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 10;
+  z-index: 1;
 }
 
 .arrow-link {
