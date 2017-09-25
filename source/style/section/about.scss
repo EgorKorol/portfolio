@@ -1,4 +1,118 @@
-.social-icon__white {
-    fill: #fff;
+.about {
+  display: flex;
+  color: $gray;
+
+  @include ipad () {
+    flex-direction: column;
+  }
 }
 
+.about-left {
+  background-color: #eaefe2;
+  width: 50%;
+
+  @include ipad () {
+    width: 100%;
+  }
+}
+
+.about-right {
+  background-color: #f4f5f0;
+  width: 50%;
+
+  @include ipad () {
+    width: 100%;
+  }
+
+  @include iphone () {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.about-info {
+  display: flex;
+  align-items: flex-start;
+  padding: 20px 0;
+
+  @include ipad () {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.about-left__title {
+  position: relative;
+  width: 50%;
+
+  @include ipad () {
+    margin-bottom: 40px;
+  }
+}
+
+.about-title__img {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  fill: rgba(#93c42e, .1);
+}
+
+.about-left__content {
+  width: 50%;
+}
+
+.about-title {
+  text-align: center;
+  color: $dgray;
+
+  &::after {
+    content: "";
+    width: 89px;
+    height: 3px;
+    display: block;
+    margin: 0 auto;
+    background: $dgray;
+    margin-top: 15px;
+  }
+}
+
+.user-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-description__avatat {
+  width: 95%;
+
+  @include ipad () {
+    width: 100%;
+  }
+
+  @include iphone () {
+    width: 300px;
+  }
+}
+
+.user-description__title {
+  padding: 0 30%;
+
+  @include iphone () {
+    padding: 0 20%;
+  }
+}
+
+.description-text {
+  padding: 0 3%;
+
+  @include iphone () {
+    width: 300px;
+  }
+}
+
+.about-right__content {
+  padding: 0 3%;
+}

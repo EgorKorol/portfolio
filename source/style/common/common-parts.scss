@@ -1,0 +1,19 @@
+
+.subtitle {
+  text-align: center;
+  padding: 20px 0;
+
+  &::after {
+    content: "";
+    width: 89px;
+    height: 3px;
+    display: block;
+    margin: 0 auto;
+    background: $gray;
+    margin-top: 15px;
+  }
+
+  @include iphone () {
+    font-size: 21px;
+  }
+}

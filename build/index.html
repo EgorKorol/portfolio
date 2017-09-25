@@ -8,77 +8,91 @@
     <meta content="" name="keywords">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
-    <link rel="stylesheet" href="/assets/css/foundation.css">
-    <link rel="stylesheet" href="/assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/foundation.css">
+    <link rel="stylesheet" href="assets/css/app.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i&amp;amp;subset=cyrillic" rel="stylesheet">
-    <script src="/assets/js/foundation.js" defer></script>
-    <script src="/assets/js/app.js" defer></script>
   </head>
   <body>
     <div class="wrapper">
-      <div class="section section--welcome"> 
-        <div class="welcome">
-          <div class="welcome-about">
-            <ul class="welcome-list">
-              <li class="welcome-photo"><img class="welcome-photo__photo" src="assets/img/myphoto.png" alt="my photo"></li>
-              <li class="welcome-name">Егор Король</li>
-              <li class="welcome-description">Личный сайт веб разработчика</li>
-              <li class="welcome-social">
-                <ul class="welcome-social__list">
-                  <li class="social-item"><a class="social-link" href="#">
-                      <svg class="social-icon__vk">
-                        <use xlink:href="assets/img/sprite.svg#vk"></use>
-                      </svg></a></li>
-                  <li class="social-item"><a class="social-link" href="#">
-                      <svg class="social-icon__github">
-                        <use xlink:href="assets/img/sprite.svg#github"></use>
-                      </svg></a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-          <nav class="navigation"><a class="navigation-link" href="my-works.pug">Мои работы</a><a class="navigation-link" href="about.pag">Обо мне</a><a class="navigation-link" href="blog.pug">Блог</a></nav>
+      <div class="welcome-page">
+        <div class="welcome-autorization">
+          <button class="autorization-btn" type="button">Авторизоваться</button>
         </div>
-        <div class="autorization">
-          <form class="autorization-form">
-            <h2 class="autorization-title">Авторизируйтесь</h2>
-            <div class="decore-line"></div>
-            <div class="autorization-form__row">
-              <label for="login">
-                <div class="custom-input"> 
-                  <svg class="social-icon__login">
+        <div class="welcome-card visuallyhidden">
+          <div class="welcome-info">
+            <div class="hero-img"><img class="hero-avatar" src="assets/img/myphoto.png" alt="Моя фотография"></div>
+            <div class="hero-info">
+              <h2 class="hero-name">Егор Король</h2>
+              <div class="hero-info">Личный сайт веб разработчика</div>
+            </div>
+            <div class="social">
+              <ul class="social-list social-list--welcome">
+                <li class="social-item"><a class="social-link" href="https://vk.com/korol_egor" target="_blank">
+                    <svg class="social-icon" width="31" height="17">
+                      <use xlink:href="assets/img/sprite.svg#vk"></use>
+                    </svg></a></li>
+                <li class="social-item"><a class="social-link" href="https://github.com/EgorKorol" target="_blank">
+                    <svg class="social-icon" width="26" height="22">
+                      <use xlink:href="assets/img/sprite.svg#github"></use>
+                    </svg></a></li>
+              </ul>
+            </div>
+          </div>
+          <nav class="nav-menu">
+            <ul class="nav-menu__list">
+              <li class="nav-menu__item"><a class="nav-menu__link" href="my-works.html">Мои работы</a></li>
+              <li class="nav-menu__item"><a class="nav-menu__link" href="about.html">Обо мне</a></li>
+              <li class="nav-menu__item"><a class="nav-menu__link" href="blog.html">Блог</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="welcome-card welcome-card--form">
+          <div class="welcome-info">
+            <form class="hero-info" id="data" method="post">
+              <h2 class="hero-title hero-title__welcome">Авторизуйтесь</h2>
+              <div class="welcome-input">
+                <div class="input-decore">
+                  <svg class="input-decore__icon input-decore__icon--login" width="15" height="17">
                     <use xlink:href="assets/img/sprite.svg#login"></use>
                   </svg>
                 </div>
-              </label>
-              <input class="autorization-input" type="text" id="login" placeholder="Login">
-            </div>
-            <div class="autorization-form__row">
-              <label for="password">
-                <div class="custom-input"> 
-                  <svg class="social-icon__password">
+                <input class="form-input" type="text" id="login" placeholder="Логин">
+                <label class="label-input" for="login"></label>
+              </div>
+              <div class="welcome-input">
+                <div class="input-decore">
+                  <svg class="input-decore__icon input-decore__icon--password">
                     <use xlink:href="assets/img/sprite.svg#password"></use>
                   </svg>
                 </div>
-              </label>
-              <input class="autorization-input" type="password" id="password" placeholder="Password">
-            </div>
-            <label class="autorization-question__checkbox" for="human">Я человек
-              <input class="autorization-checkbox" type="checkbox" id="human">
-            </label>
-            <div class="title-radio">Вы точно не робот?</div>
-            <div class="autorization-row">
-              <label class="autorization-answer__radio" for="answer">Да
-                <input class="autorization-radio" type="radio" id="answer">
-              </label>
-              <label class="autorization-answer__radio" for="answer">Не уверен
-                <input class="autorization-radio" type="radio" id="answer">
-              </label>
-            </div>
-          </form><a class="navigation-link navigation-link__autorization" href="index.html">На главную</a>
-          <button class="form-login">Войти</button>
+                <input class="form-input" type="password" id="password" placeholder="Пароль">
+                <label class="label-input" for="password"></label>
+              </div>
+              <div class="welcome-checkbox">
+                <input class="form-checkbox" type="checkbox" id="checkbox">
+                <label class="label-checkbox" for="checkbox">Я человек</label>
+              </div>
+              <div class="welcome-radio">
+                <div class="welcome-radio__question">Вы точно не робот?</div>
+                <input class="form-radio" type="radio" id="radiobtnYes" name="robot">
+                <label class="label-radio" for="radiobtnYes">Да</label>
+                <input class="form-radio" type="radio" id="radiobtnNo" name="robot">
+                <label class="label-radio" for="radiobtnNo">Не уверен</label>
+              </div>
+            </form>
+          </div>
+          <nav class="nav-menu">
+            <ul class="nav-menu__list">
+              <li class="nav-menu__item"><a class="nav-menu__link nav-menu__link--form" href="index.html">На главную</a></li>
+              <li class="nav-menu__item">
+                <button class="nav-menu__link nav-menu__link--form" form="data" type="submit">Войти</button>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
     </div>
+    <script src="assets/js/foundation.js" defer></script>
+    <script src="assets/js/app.js" defer></script>
   </body>
 </html>

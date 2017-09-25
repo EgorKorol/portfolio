@@ -1,0 +1,122 @@
+.footer {
+    display: flex;
+    background-color: rgba(#373e42, .85);
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    @include ipad () {
+        flex-wrap: wrap;
+    }
+}
+
+.footer-col {
+    width: 33%;
+    font-weight: 300;
+    padding: 10px 10px 20px;
+    position: relative;
+    &:first-child {
+        padding: 10px 30px 20px;
+    }
+    @include ipad () {
+        width: 45%;
+        padding: 10px 15px 10px;
+        &:first-child {
+            padding: 10px 5px 10px 40px;
+            &::after {
+                content: "";
+                display: inline-block;
+                position: absolute;
+                width: 1px;
+                height: 89px;
+                background-color: rgba(#fff, .2);
+                left: 95%;
+                top: 25%;
+            }
+        }
+        &:last-child {
+            width: 100%;
+            padding: 10px 0;
+        }
+    }
+    
+    @include iphone () {
+        width: 100%;
+
+        &:last-child {
+          text-align: center;
+        }
+
+        &::after {
+          content: "";
+          display: inline-block;
+          position: absolute;
+          width: 300px;
+          height: 1px;
+          background-color: rgba(#fff, .2);
+          bottom: 95%;
+          left: 3%;
+        }
+    }
+}
+
+.nav-menu__list-footer {
+    display: flex;
+}
+
+.nav-menu__item-footer {
+    margin-right: 20px;
+    padding: 20px 0;
+    &:last-child {
+        margin-right: 0;
+    }
+    @include ipad () {
+        margin-right: 5px;
+    }
+}
+
+.nav-menu__link-footer {
+    color: rgba(#fff, .8);
+    font-weight: 500;
+    transition: .2s;
+    &:hover {
+        color: #fff;
+    }
+    &:focus {
+        color: #fff;
+    }
+    &:active {
+        color: #C5C0B8;
+    }
+}
+
+.social-list__footer {
+    @include iphone () {
+        justify-content: center;
+    }
+}
+
+.social-icon--footer {
+    fill: rgba(#fff, .7);
+    transition: .2s;
+    &:hover {
+        fill: #fff;
+    }
+    &:focus {
+        color: #fff;
+    }
+    &:active {
+        color: #C5C0B8;
+    }
+}
+
+blockquote {
+    font-style: italic;
+}
+
+.quote {
+    margin-bottom: 10px;
+}
+
+cite {
+    font-weight: 700;
+}

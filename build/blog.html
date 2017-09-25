@@ -8,37 +8,158 @@
     <meta content="" name="keywords">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
-    <link rel="stylesheet" href="/assets/css/foundation.css">
-    <link rel="stylesheet" href="/assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/foundation.css">
+    <link rel="stylesheet" href="assets/css/app.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i&amp;amp;subset=cyrillic" rel="stylesheet">
-    <script src="/assets/js/foundation.js" defer></script>
-    <script src="/assets/js/app.js" defer></script>
   </head>
   <body>
     <div class="wrapper">
-      <div class="section section--welcome">
-        <ul class="social__list">
-          <li class="social-item"><a class="social-link" href="#">
-              <svg class="social-icon__vk social-icon__white">
-                <use xlink:href="assets/img/sprite.svg#vk"></use>
-              </svg></a></li>
-          <li class="social-item"><a class="social-link" href="#">
-              <svg class="social-icon__github social-icon__white">
-                <use xlink:href="assets/img/sprite.svg#github"></use>
-              </svg></a></li>
-        </ul><a class="hamburger-menu" href="#">
-          <svg class="hamburger-icon">
-            <use href="assets/img/sprite.svg#hamburger"></use>
-          </svg></a>
-        <ul class="welcome-list welcome-list__main">
-          <li class="welcome-photo"><img class="welcome-photo__photo" src="assets/img/myphoto.png" alt="my photo"></li>
-          <h1 class="blog-title">Блог</h1>
-          <div class="decore-line"></div>
-        </ul><a class="arrow" href="#">
-          <svg class="arrow-down">
-            <use href="assets/img/sprite.svg#arrow_down"></use>
-          </svg></a>
+      <section class="welcome-page">
+        <div class="welcome-page">
+          <div class="social welcome-social">
+            <ul class="social-list">
+              <li class="social-item"><a class="social-link" href="https://vk.com/korol_egor" target="_blank">
+                  <svg class="social-icon" width="31" height="17">
+                    <use xlink:href="assets/img/sprite.svg#vk"></use>
+                  </svg></a></li>
+              <li class="social-item"><a class="social-link" href="https://github.com/EgorKorol" target="_blank">
+                  <svg class="social-icon" width="26" height="22">
+                    <use xlink:href="assets/img/sprite.svg#github"></use>
+                  </svg></a></li>
+            </ul>
+          </div>
+          <div class="hamburger-menu">
+            <button class="hamburger-link" type="button" href="#">
+              <svg class="social-icon" width="40" height="35">
+                <use xlink:href="assets/img/sprite.svg#hamburger"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="blog-img">
+            <svg class="blog-icon" width="303" height="208">
+              <use xlink:href="assets/img/sprite.svg#blog_header"></use>
+            </svg>
+          </div>
+          <div class="hero">
+            <div class="hero-img"><img class="hero-avatar" src="assets/img/myphoto.png" alt="Моя фотография"></div>
+            <div class="hero-info">
+              <h1 class="hero-title">Блог</h1>
+              <div class="hero-info">Мои мысли на тему веб разработки</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="triangle">
+        <div class="triangle-left">
+          <svg class="triangle-svg triangle--blog-white" viewBox="0 0 1000 100" preserveAspectRatio="none">
+            <polygon points="0,0 0,100 1000,100"></polygon>
+          </svg>
+        </div>
+        <div class="triangle-right">
+          <svg class="triangle-svg triangle--blog-white" viewBox="0 0 1000 100" preserveAspectRatio="none">
+            <polygon points="0,100 1000,100 1000,0"></polygon>
+          </svg>
+        </div>
       </div>
+      <section class="blog">
+        <div class="blog-left">
+          <div class="blog-left__content">
+            <aside class="aside">
+              <nav class="aside-nav">
+                <ul class="aside-nav__list">
+                  <li class="aside-nav__item"><a class="aside-nav__link" href="#">
+                      <h3 class="aside-nav__title">Препроцессоры или кастомные свойства CSS</h3></a></li>
+                  <li class="aside-nav__item"><a class="aside-nav__link" href="#">
+                      <h3 class="aside-nav__title">Прибиваем футер к низу страницы</h3></a></li>
+                  <li class="aside-nav__item"><a class="aside-nav__link" href="#">
+                      <h3 class="aside-nav__title">Набор необходимых Gulp плагинов</h3></a></li>
+                  <li class="aside-nav__item"><a class="aside-nav__link" href="#">
+                      <h3 class="aside-nav__title">Почему я выбрал Pug</h3></a></li>
+                </ul>
+              </nav>
+            </aside>
+          </div>
+        </div>
+        <div class="blog-right">
+          <div class="blog-right__content">
+            <article class="article">
+              <h2 class="article-header__title">Препроцессоры или кастомные свойства</h2>
+              <div class="article-date">
+                <time datetime="2017-09-18">18 сентября 2017</time>
+              </div>
+              <div class="article-text">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, et eum. Odit sequi adipisci tempora saepe sint itaque, quo at?</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum dolorem facere dolore earum sit esse cupiditate dolorum repellat sed molestiae atque ratione consequuntur nostrum incidunt suscipit quibusdam doloribus rem labore eos, officiis, quam autem ipsa optio dignissimos? Quasi, inventore fugit.</p>
+              </div>
+            </article>
+            <article class="article">
+              <h2 class="article-header__title">Прибиваем футер к низу страницы</h2>
+              <div class="article-date">
+                <time datetime="2017-09-18">18 сентября 2017</time>
+              </div>
+              <div class="article-text">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, et eum. Odit sequi adipisci tempora saepe sint itaque, quo at?</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum dolorem facere dolore earum sit esse cupiditate dolorum repellat sed molestiae atque ratione consequuntur nostrum incidunt suscipit quibusdam doloribus rem labore eos, officiis, quam autem ipsa optio dignissimos? Quasi, inventore fugit.</p>
+              </div>
+            </article>
+            <article class="article">
+              <h2 class="article-header__title">Набор необходимых Gulp плагинов</h2>
+              <div class="article-date">
+                <time datetime="2017-09-18">18 сентября 2017</time>
+              </div>
+              <div class="article-text">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, et eum. Odit sequi adipisci tempora saepe sint itaque, quo at?</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum dolorem facere dolore earum sit esse cupiditate dolorum repellat sed molestiae atque ratione consequuntur nostrum incidunt suscipit quibusdam doloribus rem labore eos, officiis, quam autem ipsa optio dignissimos? Quasi, inventore fugit.</p>
+              </div>
+            </article>
+            <article class="article">
+              <h2 class="article-header__title">Почему я выбрал Pug</h2>
+              <div class="article-date">
+                <time datetime="2017-09-18">18 сентября 2017</time>
+              </div>
+              <div class="article-text">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, et eum. Odit sequi adipisci tempora saepe sint itaque, quo at?</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum dolorem facere dolore earum sit esse cupiditate dolorum repellat sed molestiae atque ratione consequuntur nostrum incidunt suscipit quibusdam doloribus rem labore eos, officiis, quam autem ipsa optio dignissimos? Quasi, inventore fugit.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer-col">
+          <p>Этот сайт я сделал в рамках обучения в Школе онлайн образования Loftschool</p>
+        </div>
+        <div class="footer-col">
+          <nav class="nav-menu__footer">
+            <ul class="nav-menu__list-footer">
+              <li class="nav-menu__item-footer"><a class="nav-menu__link-footer" href="my-works.html">Мои работы</a></li>
+              <li class="nav-menu__item-footer"><a class="nav-menu__link-footer" href="about.html">Обо мне</a></li>
+              <li class="nav-menu__item-footer"><a class="nav-menu__link-footer" href="blog.html">Блог</a></li>
+              <li class="nav-menu__item-footer"><a class="nav-menu__link-footer" href="index.html">Авторизация</a></li>
+            </ul>
+          </nav>
+          <div class="social">
+            <ul class="social-list social-list__footer">
+              <li class="social-item"><a class="social-link" href="https://vk.com/korol_egor" target="_blank">
+                  <svg class="social-icon social-icon--footer" width="31" height="17">
+                    <use xlink:href="assets/img/sprite.svg#vk"></use>
+                  </svg></a></li>
+              <li class="social-item"><a class="social-link" href="https://github.com/EgorKorol" target="_blank">
+                  <svg class="social-icon social-icon--footer" width="26" height="22">
+                    <use xlink:href="assets/img/sprite.svg#github"></use>
+                  </svg></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-col">
+          <blockquote>
+            <div class="quote">В будущем на рынке останется два вида компаний: те, кто в Интернет и те, кто вышел из бизнеса.</div>
+            <cite>-Билл Гейтс</cite>
+          </blockquote>
+        </div>
+      </footer>
     </div>
+    <script src="assets/js/foundation.js" defer></script>
+    <script src="assets/js/app.js" defer></script>
   </body>
 </html>

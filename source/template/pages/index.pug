@@ -4,52 +4,62 @@ block variables
   - var title = 'Главная'
 
 block content
-  .wrapper
-    .section.section--welcome  
-      .welcome
-        .welcome-about
-          ul.welcome-list
-            li.welcome-photo
-              img.welcome-photo__photo(src="assets/img/myphoto.png", alt="my photo")
-            li.welcome-name Егор Король
-            li.welcome-description Личный сайт веб разработчика
-            li.welcome-social
-              ul.welcome-social__list
-                li.social-item
-                  a.social-link(href='#')
-                    svg.social-icon__vk
-                      use(xlink:href='assets/img/sprite.svg#vk')
-                li.social-item
-                  a.social-link(href='#')
-                    svg.social-icon__github
-                      use(xlink:href='assets/img/sprite.svg#github')
-        nav.navigation
-          a.navigation-link(href='my-works.pug') Мои работы
-          a.navigation-link(href='about.pag') Обо мне
-          a.navigation-link(href='blog.pug') Блог
-      .autorization
-        form.autorization-form
-          h2.autorization-title Авторизируйтесь
-          .decore-line
-          .autorization-form__row
-            label(for="login")
-              .custom-input 
-                svg.social-icon__login
-                    use(xlink:href='assets/img/sprite.svg#login')
-            input.autorization-input(type="text" id="login" placeholder="Login")
-          .autorization-form__row
-            label(for="password")
-              .custom-input 
-                svg.social-icon__password
-                    use(xlink:href='assets/img/sprite.svg#password')
-            input.autorization-input(type="password" id="password" placeholder="Password")
-          label.autorization-question__checkbox(for="human") Я человек
-            input.autorization-checkbox(type="checkbox" id="human")
-          .title-radio Вы точно не робот?
-          .autorization-row
-            label.autorization-answer__radio(for="answer") Да
-              input.autorization-radio(type="radio" id="answer")
-            label.autorization-answer__radio(for="answer") Не уверен
-              input.autorization-radio(type="radio" id="answer")
-        a.navigation-link.navigation-link__autorization(href="index.html") На главную
-        button.form-login Войти
+  .welcome-page
+    .welcome-autorization
+      button.autorization-btn(type="button") Авторизоваться
+    .welcome-card.visuallyhidden
+      .welcome-info
+        .hero-img
+          img.hero-avatar(src="assets/img/myphoto.png" alt="Моя фотография")
+        .hero-info
+          h2.hero-name Егор Король
+          .hero-info Личный сайт веб разработчика
+        .social
+          ul.social-list.social-list--welcome
+            li.social-item
+              a.social-link(href="https://vk.com/korol_egor" target="_blank")
+                svg.social-icon(width="31" height="17")
+                  use(xlink:href="assets/img/sprite.svg#vk")
+            li.social-item
+              a.social-link(href="https://github.com/EgorKorol" target="_blank")
+                svg.social-icon(width="26" height="22")
+                  use(xlink:href="assets/img/sprite.svg#github")
+      nav.nav-menu
+        ul.nav-menu__list
+          li.nav-menu__item
+            a.nav-menu__link(href="my-works.html") Мои работы
+          li.nav-menu__item
+            a.nav-menu__link(href="about.html") Обо мне
+          li.nav-menu__item
+            a.nav-menu__link(href="blog.html") Блог
+    .welcome-card.welcome-card--form
+      .welcome-info
+        form.hero-info#data(method="post")
+          h2.hero-title.hero-title__welcome Авторизуйтесь
+          .welcome-input
+            .input-decore
+              svg.input-decore__icon.input-decore__icon--login(width="15" height="17")
+                use(xlink:href="assets/img/sprite.svg#login")
+            input.form-input(type="text" id="login" placeholder="Логин")
+            label.label-input(for="login")
+          .welcome-input
+            .input-decore
+              svg.input-decore__icon.input-decore__icon--password
+                use(xlink:href="assets/img/sprite.svg#password")
+            input.form-input(type="password" id="password" placeholder="Пароль")
+            label.label-input(for="password")
+          .welcome-checkbox
+            input.form-checkbox(type="checkbox" id="checkbox")
+            label.label-checkbox(for="checkbox") Я человек
+          .welcome-radio
+            .welcome-radio__question Вы точно не робот?
+            input.form-radio(type="radio" id="radiobtnYes" name="robot")
+            label.label-radio(for="radiobtnYes") Да
+            input.form-radio(type="radio" id="radiobtnNo" name="robot")
+            label.label-radio(for="radiobtnNo") Не уверен
+      nav.nav-menu
+        ul.nav-menu__list
+          li.nav-menu__item
+            a.nav-menu__link.nav-menu__link--form(href="index.html") На главную
+          li.nav-menu__item
+            button.nav-menu__link.nav-menu__link--form(form="data" type="submit") Войти
