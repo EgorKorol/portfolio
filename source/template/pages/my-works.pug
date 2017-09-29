@@ -12,11 +12,11 @@ block content
     .triangle-right
       svg.triangle-svg.triangle--works-white(viewBox="0 0 1000 100" preserveAspectRatio="none")
         polygon(points="0,100 1000,100 1000,0")
-  .works-title
-    h1.about-title Мои работы
-    svg.about-title__img(width="506" height="165")
-      use(xlink:href="assets/img/sprite.svg#works_header")
   section.works
+    .works-title
+      h1.about-title.about-title--works Мои работы
+        svg.about-title__img(width="506" height="165")
+          use(xlink:href="assets/img/sprite.svg#works_header")
     .works-slider
       .slider-info
         ul.slider-info__list
@@ -65,11 +65,11 @@ block content
           button(type="button").slider-buttons__arrow.slider-buttons__arrow-right
             svg.arrow-icon__slider(width="43" height="27")
               use(xlink:href="assets/img/sprite.svg#portf_arrow_up ")
-  .comment-title
-      h2.about-title.about-title__comment Что обо мне говорят
-      svg.about-title__img(width="499" height="175")
-        use(xlink:href="assets/img/sprite.svg#about_header")
   section.comment
+    .comment-title
+      h2.about-title.about-title__comment Что обо мне говорят
+        svg.about-title__img(width="499" height="175")
+          use(xlink:href="assets/img/sprite.svg#about_header")
     .comment-info
       ul.comment-info-list
         li.comment-info-item
@@ -99,14 +99,11 @@ block content
           label.visuallyhidden(for="Email") Ваш email
           textarea.textarea-form__comment#message(name="message" placeholder="Ваше сообщение")
           label.visuallyhidden(for="message") Ваше сообщение
-          .nav-menu.nav-menu--form
-            ul.nav-menu__list
-              li.nav-menu__item.nav-menu__item--works
-                button.nav-menu__link.nav-menu__link--form(form="data-comment" type="submit") Отправить
-              li.nav-menu__item.nav-menu__item--works
-                button.nav-menu__link.nav-menu__link--form(form="data-comment" type="reset") Очистить
+        .form-buttons
+          button.form-btn(form="data-comment" type="submit") Отправить
+          button.form-btn(form="data-comment" type="reset") Очистить
     .arrow-up
-      a.arrow-link(href="#")
+      button.arrow-btn.arrow-btn--comment(href="#")
         svg.arrow-icon.arrow-icon--works(width="26" height="16")
           use(xlink:href="assets/img/sprite.svg#arrow_down")
   include ../common/footer

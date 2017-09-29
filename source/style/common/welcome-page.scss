@@ -5,6 +5,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+  min-height: 650px;
   color: #fff;
 }
 
@@ -139,10 +140,13 @@
   z-index: 1;
 }
 
-.arrow-link {
+.arrow-btn {
   fill: rgba(#fff, .7);
   transition: .3s;
-  
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
     &:hover {
       transform: scale(1.1);
       fill: #fff;

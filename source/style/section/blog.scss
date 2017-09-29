@@ -2,6 +2,7 @@
   display: flex;
   color: $gray;
   width: 100%;
+  min-height: 650px;
   position: relative;
   justify-content: space-around;
   background-color: #faf8f0;
@@ -67,18 +68,24 @@
 }
 
 .article {
-  margin-top: 15px;
-  margin-bottom: 50px;
-
   &:last-child {
     &::after {
       opacity: 0;
+      margin-bottom: 130px;
+
+      @include ipad () {
+        margin-bottom: 180px;
+      }
+
+      @include iphone () {
+        margin-bottom: 250px;
+      }
     }
   }
 
   &::after {
     content: "";
-    margin-top: 50px;
+    margin: 50px 0 40px;
     display: block;
     width: 95%;
     height: 5px;
@@ -88,7 +95,7 @@
 
 .article-header__title {
   font-size: 35px;
-  padding: 0 0 10px 0;
+  padding: 10px 0;
 
   @include iphone () {
     font-size: 21px;

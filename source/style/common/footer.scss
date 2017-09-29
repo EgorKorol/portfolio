@@ -4,7 +4,7 @@
     background-color: rgba(#373e42, .85);
     color: #fff;
     position: absolute;
-    top: 100%;
+    bottom: 0;
     @include ipad () {
         flex-wrap: wrap;
     }
@@ -40,14 +40,14 @@
     }
 }
 
-.nav-menu__list-footer {
+.footer-menu__list {
     display: flex;
     @include iphone () {
-        justify-content: center;
+        justify-content: space-around;
     }
 }
 
-.nav-menu__item-footer {
+.footer-menu__list-item {
     margin-right: 20px;
     padding: 5% 0;
     &:last-child {
@@ -58,7 +58,7 @@
     }
 }
 
-.nav-menu__link-footer {
+.footer-menu__list-link {
     color: rgba(#fff, .8);
     font-weight: 500;
     transition: .2s;

@@ -54,6 +54,8 @@
 }
 
 .welcome-card {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
     width: 340px;
     backface-visibility: hidden;
     z-index: 2;
@@ -89,8 +91,14 @@
 .nav-menu__item {
     border-right: 1px solid #fff;
     width: 50%;
+
+    &:first-child {
+        border-bottom-left-radius: 3px;
+    }
+
     &:last-child {
-        border-right: none;
+        border-right: none;.
+        border-bottom-right-radius: 3px;
     }
 }
 

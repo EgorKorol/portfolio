@@ -1,10 +1,12 @@
 .works-title {
   background-color: #f8f9f5;
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 30px 0;
+}
+
+.about-title--works {
+  margin: 30px 0;
 }
 
 .about-title__icon {
@@ -41,7 +43,7 @@
 
   @include iphone () {
 
-    height: 45%;
+    height: 40%;
   }
 }
 
@@ -228,22 +230,16 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  padding: 50px 0;
   background-image: url(../img/background/bg-comment.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.comment-info {
-  padding: 0 30px 30px;
-}
-
-.comment-title {
-  margin: 50px auto 0;
-  position: relative;
-  width: 50%;
-  min-height: 100px;
+.about-title__comment {
+  font-size: 63px;
+  margin: 50px auto;
+  width: 70%;
 
   @include ipad () {
     width: 80%;
@@ -252,13 +248,6 @@
   @include iphone () {
     width: 100%;
   }
-}
-
-.about-title__comment {
-  font-size: 63px;
-  width: 70%;
-  text-align: center;
-  margin: 0 auto;
 
   @include iphone () {
     font-size: 35px;
@@ -269,6 +258,7 @@
   display: flex;
   align-items: flex-start;
   justify-content: center;
+  margin-bottom: 50px;
   
   @include iphone () {
     flex-wrap: wrap;
@@ -325,6 +315,8 @@
   justify-content: center;
   padding: 20px 20px 0 20px;
   background-color: rgba(255, 255, 255, 0.15);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
 }
 
 .form-title {
@@ -346,22 +338,58 @@
   border-radius: 25px;
   margin-bottom: 20px;
   border: none;
+  resize: vertical;
 }
 
-.nav-menu__link--form {
-  cursor: pointer;
-}
-
-.nav-menu--form {
+.form-buttons {
+  display: flex;
   width: 100%;
 }
 
+.form-btn {
+  background-color: $lgreen;
+  border: none;
+  border-right: 1px solid #fff;
+  width: 50%;
+  padding: 10px 10px;
+  color: #fff;
+  cursor: pointer;
+
+  &:first-child {
+    border-bottom-left-radius: 3px;
+  }
+
+  &:hover {
+    background-color: $green;
+  }
+
+  &:active {
+    background-color: $green;
+  }
+
+  &:focus {
+    background-color: $lgreen;
+  }
+
+  &:last-child {
+    border-right: none;
+    border-bottom-right-radius: 3px;
+  }
+}
 
 .arrow-icon--works {
   transform: rotate(180deg);
-  fill: $lgreen;
+  fill: #fff;
 }
 
-.arrow-up {
-  margin-top: 50px;
+.arrow-btn--comment {
+  margin: 50px 0 150px;
+
+  @include ipad () {
+    margin: 50px 0 250px; 
+  }
+
+  @include iphone () {
+    margin: 50px 0 300px; 
+  }
 }

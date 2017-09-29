@@ -67,6 +67,7 @@
 .about-title {
   text-align: center;
   color: $dgray;
+  position: relative;
 
   &::after {
     content: "";
