@@ -6,20 +6,20 @@ block variables
 block content
   include ../common/welcome-page
   .triangle
-    .triangle-left
+    .triangle__left
       svg.triangle-svg.triangle--about-beige(viewBox="0 0 1000 100" preserveAspectRatio="none")
         polygon(points="0,0 0,100 1000,100")
-    .triangle-right
+    .triangle__right
       svg.triangle-svg.triangle--about-white(viewBox="0 0 1000 100" preserveAspectRatio="none")
         polygon(points="0,100 1000,100 1000,0")
   section.about
-    .about-left
-      .about-info
-        .about-left__title
-          h1.about-title Обо мне
+    .about__left
+      .about__info
+        .about__left__title
+          h1.title Обо мне
           svg.about-title__img(width="357" height="125")
             use(xlink:href="assets/img/sprite.svg#about_header")
-        .about-left__content
+        .about__left__content
           .user-description
             .user-description__img
               img.user-description__avatat(src="assets/img/myphoto_about.jpg", alt="Моя фотография")
@@ -28,12 +28,12 @@ block content
             .description-text
               p Я веб разработчик из Череповца. Мне 22 года. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится изучать новые технологии и применять их на практике.
               p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нем свой свои работы, а пока посмотрите, как тут все классно и красиво!
-    .about-right
+    .about__right
       .user-description__title
         h2.subtitle Чем я могу быть вам полезен
       .description-text
         p Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачина Backend. Но давайте по порядку.
-      .about-right__content
+      .about__right__content
         ul.skills-list
           li.skills-item
             .skills-row

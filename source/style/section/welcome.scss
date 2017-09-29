@@ -4,19 +4,7 @@
     justify-content: center;
 }
 
-.flipper-box {
-    width: 340px;
-    perspective: 1200;
-    transform-style: preserve-3d;
-    position: relative;
-    &:hover {
-        .flipper {
-            transform: rotateY(180deg);
-        }
-    }
-}
-
-.welcome-autorization {
+.welcome-page__autorization {
     position: absolute;
     top: 30px;
     right: 30px;
@@ -34,6 +22,7 @@
     padding: 15px 30px;
     border: 1px solid #fff;
     border-radius: 25px;
+    opacity: 1;
     cursor: pointer;
     transition: .3s;
     &:hover {
@@ -45,6 +34,18 @@
     &:active {
         color: #BDAEAE;
     }
+}
+
+.autorization-btn--active {
+    opacity: 0;
+    transition: opacity .3s;
+}
+
+.flipper-box {
+    width: 340px;
+    perspective: 1200;
+    transform-style: preserve-3d;
+    position: relative;
 }
 
 .flipper {
@@ -76,13 +77,6 @@
     }
 }
 
-.social-list--welcome {
-    padding-top: 30px;
-    @include iphone () {
-        padding: 20px 0;
-    }
-}
-
 .nav-menu__list {
     display: flex;
     align-items: center;
@@ -97,7 +91,7 @@
     }
 
     &:last-child {
-        border-right: none;.
+        border-right: none;
         border-bottom-right-radius: 3px;
     }
 }
@@ -122,8 +116,24 @@
     }
 }
 
-.hero-title__welcome {
+.welcome-card--form {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateY(-180deg);
+}
+
+.title__welcome {
     font-size: 35px;
+    color: #fff;
+    font-family: "sansus_webissimo";
+    font-weight: 400;
+    text-transform: uppercase;
+
+    &::after {
+        background: #fff;
+        margin-bottom: 25px;
+    }
 }
 
 .welcome-input {
@@ -163,7 +173,7 @@
 
 .welcome-radio__question {
     font-weight: 700;
-    padding: 5px;
+    padding: 5px 0 10px;
 }
 
 .form-checkbox {
@@ -173,16 +183,13 @@
             &::after {
                 content: "";
                 position: absolute;
-                width: 12px;
-                height: 9px;
-                top: 6px;
-                left: 5px;
+                width: 18px;
+                height: 14px;
+                top: 3px;
+                left: 1px;
                 display: inline-block;
                 background-image: url(../img/check.svg);
                 background-repeat: no-repeat;
-                @include iphone () {
-                    top: 5px;
-                }
             }
         }
     }
@@ -245,15 +252,19 @@
     }
 }
 
+.welcome-card__form-buttons {
+    display: flex;
+}
+
 .nav-menu__link--form {
     border: none;
     margin: 0;
-    width: 100%;
+    width: 50%;
+    border-right: 1px solid #fff;
+    cursor: pointer;
+
+    &:last-child {
+        border-right: none;
+    }
 }
 
-.welcome-card--form {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: rotateY(-180deg);
-}

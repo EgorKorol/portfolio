@@ -6,15 +6,15 @@ block variables
 block content
   include ../common/welcome-page
   .triangle
-    .triangle-left
+    .triangle__left
       svg.triangle-svg.triangle--works-white(viewBox="0 0 1000 100" preserveAspectRatio="none")
         polygon(points="0,0 0,100 1000,100")
-    .triangle-right
+    .triangle__right
       svg.triangle-svg.triangle--works-white(viewBox="0 0 1000 100" preserveAspectRatio="none")
         polygon(points="0,100 1000,100 1000,0")
   section.works
-    .works-title
-      h1.about-title.about-title--works Мои работы
+    .works__title
+      h1.title Мои работы
         svg.about-title__img(width="506" height="165")
           use(xlink:href="assets/img/sprite.svg#works_header")
     .works-slider
@@ -48,13 +48,13 @@ block content
                 svg.slider-info__btn-icon(width="20" height="19")
                   use(xlink:href="assets/img/sprite.svg#link")
       .slider-slide
-        ul.slide-list
-          li.slide-item
-            img.slide-img(src="assets/img/works/work_loft.png", alt="Сайт школы LoftSchool")
-          li.slide-item
-            img.slide-img(src="assets/img/works/work_ioga.jpg", alt="Сайт йоги")
-          li.slide-item
-            img.slide-img(src="assets/img/works/work_trialog.jpg", alt="Сайт мебели")
+        ul.slide__list
+          li.slide__item
+            img.slide__img(src="assets/img/works/work_loft.png", alt="Сайт школы LoftSchool")
+          li.slide__item
+            img.slide__img(src="assets/img/works/work_ioga.jpg", alt="Сайт йоги")
+          li.slide__item
+            img.slide__img(src="assets/img/works/work_trialog.jpg", alt="Сайт мебели")
       .slider-buttons
         .slider-buttons__left
           .slider-buttons__left-img
@@ -67,7 +67,7 @@ block content
               use(xlink:href="assets/img/sprite.svg#portf_arrow_up ")
   section.comment
     .comment-title
-      h2.about-title.about-title__comment Что обо мне говорят
+      h2.title.title__comment Что обо мне говорят
         svg.about-title__img(width="499" height="175")
           use(xlink:href="assets/img/sprite.svg#about_header")
     .comment-info

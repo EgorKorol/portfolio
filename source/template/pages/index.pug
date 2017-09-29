@@ -5,9 +5,8 @@ block variables
 
 block content
   .welcome-page
-    .welcome-autorization
-      button.autorization-btn(type="button") Авторизоваться
-    .flipper-box(ontouchstart="this.classList.toggle('hover')")
+    button.autorization-btn.welcome-page__autorization(type="button") Авторизоваться
+    .flipper-box
       .flipper
         .welcome-card
           .welcome-info
@@ -17,13 +16,13 @@ block content
               .hero-name Егор Король
               .hero-info Личный сайт веб разработчика
             .social
-              ul.social-list.social-list--welcome
-                li.social-item
-                  a.social-link(href="https://vk.com/korol_egor" target="_blank")
+              ul.social__list
+                li.social__item
+                  a.social__link(href="https://vk.com/korol_egor" target="_blank")
                     svg.social-icon(width="31" height="17")
                       use(xlink:href="assets/img/sprite.svg#vk")
-                li.social-item
-                  a.social-link(href="https://github.com/EgorKorol" target="_blank")
+                li.social__item
+                  a.social__link(href="https://github.com/EgorKorol" target="_blank")
                     svg.social-icon(width="26" height="22")
                       use(xlink:href="assets/img/sprite.svg#github")
           nav.nav-menu
@@ -37,7 +36,7 @@ block content
         .welcome-card.welcome-card--form
           .welcome-info
             form.hero-info#data(method="post")
-              .hero-title.hero-title__welcome Авторизуйтесь
+              .title.title__welcome Авторизуйтесь
               .welcome-input
                 .input-decore
                   svg.input-decore__icon.input-decore__icon--login(width="15" height="17")
@@ -59,9 +58,6 @@ block content
                 label.label-radio(for="radiobtnYes") Да
                 input.form-radio(type="radio" id="radiobtnNo" name="robot")
                 label.label-radio(for="radiobtnNo") Не уверен
-          .nav-menu
-            ul.nav-menu__list
-              li.nav-menu__item
-                a.nav-menu__link(href="index.html") На главную
-              li.nav-menu__item
-                button.nav-menu__link.nav-menu__link--form(form="data" type="submit") Войти
+          .welcome-card__form-buttons
+            a.nav-menu__link.nav-menu__link--form.nav-menu__link--flipback-js(href="#") На главную
+            button.nav-menu__link.nav-menu__link--form(form="data" type="submit") Войти
