@@ -24,7 +24,7 @@ $.gulp.task('default', $.gulp.series(
   $.gulp.parallel(
     'sass',
     'pug',
-    'js:foundation',
+/*     'js:foundation', */
     'js:process',
     'copy:image',
     'copy:fonts',
@@ -43,7 +43,7 @@ $.gulp.task('build', $.gulp.series(
   $.gulp.parallel(
     'sass',
     'pug',
-    'js:foundation',
+/*     'js:foundation', */
     'js:process',
     'copy:image',
     'copy:fonts',
@@ -51,5 +51,9 @@ $.gulp.task('build', $.gulp.series(
     'sprite:svg',
     'webpack',
     'immin'
-  )
+  )/* , 
+  $.gulp.series(
+    'compress-css',
+    'compress-js'
+  ) */
 ));

@@ -42,9 +42,33 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	__webpack_require__(1);
+	__webpack_require__(2);
+	module.exports = __webpack_require__(3);
+
+
+/***/ }),
+/* 1 */
 /***/ (function(module, exports) {
 
-	// flipper welcome page
+	// fsmenu
+
+	var hamburger = document.querySelector(".hamburger"),
+	fsmenu = document.querySelector(".fsmenu");
+
+	hamburger.addEventListener("click", function () {
+	  hamburger.classList.toggle("is-active");
+	  fsmenu.classList.toggle("fsmenu--open");
+	});
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports) {
+
+	"use strict"
+
 	var flipper = document.querySelector(".flipper"),
 	  button = document.querySelector(".autorization-btn"),
 	  flipBack = document.querySelector('.nav-menu__link--flipback-js');
@@ -61,19 +85,11 @@
 	    button.classList.toggle("autorization-btn--active");
 	  });
 
+/***/ }),
+/* 3 */
+/***/ (function(module, exports) {
 
-	//hamburger transform
-	// Look for .hamburger
-	var hamburger = document.querySelector(".hamburger");
-	// On click
-	hamburger.addEventListener("click", function () {
-	  // Toggle class "is-active"
-	  hamburger.classList.toggle("is-active");
-	  // Do something else, like open/close menu
-	});
-
-
-	//full screen menu onclick
+	
 
 /***/ })
 /******/ ]);

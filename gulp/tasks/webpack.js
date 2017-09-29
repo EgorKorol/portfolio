@@ -2,7 +2,7 @@
 
 module.exports = function() {
     $.gulp.task('webpack', function() {
-        return $.gulp.src('source/js/app.js')
+        return $.gulp.src('source/js/**/*.js')
           .pipe($.gp.webpack({
               output: {
                   filename: 'app.js'
