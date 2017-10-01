@@ -6,29 +6,28 @@ block variables
 block content
   include ../common/welcome-page_blog
   .triangle
-    .triangle-left
+    .triangle__left
       svg.triangle-svg.triangle--blog-white(viewBox="0 0 1000 100" preserveAspectRatio="none")
         polygon(points="0,0 0,100 1000,100")
-    .triangle-right
+    .triangle__right
       svg.triangle-svg.triangle--blog-white(viewBox="0 0 1000 100" preserveAspectRatio="none")
         polygon(points="0,100 1000,100 1000,0")
   section.blog
     .blog__aside
-      aside.aside
-        nav.aside-nav
-          ul.aside-nav__list
-            li.aside-nav__item
-              a.aside-nav__link(href="#")
-                h3.aside-nav__title Препроцессоры или кастомные свойства CSS
-            li.aside-nav__item
-              a.aside-nav__link(href="#")
-                h3.aside-nav__title Прибиваем футер к низу страницы
-            li.aside-nav__item
-              a.aside-nav__link(href="#")
-                h3.aside-nav__title Набор необходимых Gulp плагинов
-            li.aside-nav__item
-              a.aside-nav__link(href="#")
-                h3.aside-nav__title Почему я выбрал Pug
+      aside.aside-nav
+        ul.aside-nav__list
+          li.aside-nav__item
+            a.aside-nav__link(href="#")
+              .aside-nav__title Препроцессоры или кастомные свойства CSS
+          li.aside-nav__item
+            a.aside-nav__link(href="#")
+              .aside-nav__title Прибиваем футер к низу страницы
+          li.aside-nav__item
+            a.aside-nav__link(href="#")
+              .aside-nav__title Набор необходимых Gulp плагинов
+          li.aside-nav__item
+            a.aside-nav__link(href="#")
+              .aside-nav__title Почему я выбрал Pug
     .blog__article
       article.article
         h2.article-header__title Препроцессоры или кастомные свойства

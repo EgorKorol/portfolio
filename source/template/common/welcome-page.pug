@@ -1,6 +1,6 @@
 section.section.welcome-page
 	include ./fsmenu
-	.social.welcome__social
+	.social.welcome-page__social
 		ul.social__list
 			li.social__item
 				a.social__link(href="https://vk.com/korol_egor" target="_blank")
@@ -10,16 +10,15 @@ section.section.welcome-page
 				a.social__link(href="https://github.com/EgorKorol" target="_blank")
 					svg.social-icon(width="26" height="22")
 						use(xlink:href="assets/img/sprite.svg#github")
-	.hamburger-menu
+	.hamburger-menu__welcome-page
 		button.hamburger.hamburger--spin(type="button" href="#")
 			span.hamburger-box
 				span.hamburger-inner
-	.welcome-title__img
+	.title__img
 		svg.header-icon(width="1176" height="313")
 			use(xlink:href="assets/img/sprite.svg#portfolio_header")
 	.hero.welcome-page__hero
-		.hero-img
-			img.hero-avatar(src="assets/img/myphoto.png", alt="Моя фотография")
+		.hero-img.hero-avatar
 		.hero-info
 			.hero-name Егор Король
 			.hero-info Личный сайт веб разработчика

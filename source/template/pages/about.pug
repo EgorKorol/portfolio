@@ -15,14 +15,14 @@ block content
   section.about
     .about__left
       .about__info
-        .about__left__title
+        .about__left-title
           h1.title Обо мне
           svg.about-title__img(width="357" height="125")
             use(xlink:href="assets/img/sprite.svg#about_header")
         .about__left__content
           .user-description
             .user-description__img
-              img.user-description__avatat(src="assets/img/myphoto_about.jpg", alt="Моя фотография")
+              img.user-description__avatat(src="assets/img/myphoto.jpg", alt="Моя фотография")
             .user-description__title
               h2.subtitle Кто я
             .description-text
@@ -117,21 +117,21 @@ block content
     .map-card
       .contacts
         h2.subtitle Контакты
-      ul.contacts-list
-        li.contacts-item
-          svg.contacts-icon(width="24" height="24")
+      ul.contacts
+        li.contacts__item
+          svg.contacts__item-icon(width="24" height="24")
             use(xlink:href="assets/img/sprite.svg#skype")
-          .contacts-description egor.korol.
-        li.contacts-item
-          svg.contacts-icon(width="23" height="16")
+          .contacts__description egor.korol.
+        li.contacts__item
+          svg.contacts__item-icon(width="23" height="16")
             use(xlink:href="assets/img/sprite.svg#envelope2")
-          a.contacts-description(href="mailto:egor.korol@mail.ru") egor.korol@mail.ru
-        li.contacts-item
-          svg.contacts-icon(width="23" height="20")
+          a.contacts__description(href="mailto:egor.korol@mail.ru") egor.korol@mail.ru
+        li.contacts__item
+          svg.contacts__item-icon(width="23" height="20")
             use(xlink:href="assets/img/sprite.svg#phone")
-          a.contacts-description(href="tel:+79210547326") +7 (921) 054-73-26
-        li.contacts-item
-          svg.contacts-icon(width="23" height="21")
+          a.contacts__description(href="tel:+79210547326") +7 (921) 054-73-26
+        li.contacts__item
+          svg.contacts__item-icon(width="23" height="21")
             use(xlink:href="assets/img/sprite.svg#map_marker")
-          .contacts-description г.Череповец
+          .contacts__description г.Череповец
   include ../common/footer

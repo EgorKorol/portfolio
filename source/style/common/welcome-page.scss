@@ -9,7 +9,7 @@
   color: #fff;
 }
 
-.welcome__social {
+.welcome-page__social {
   position: absolute;
   top: 34px;
   left: 30px;
@@ -45,7 +45,7 @@
   }
 }
 
-.welcome-title__img {
+.title__img {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -53,7 +53,6 @@
 }
 
 .header-icon {
-  width: 100%;
   fill: rgba(#fff, .12);
 
   @include iphone () {
@@ -75,11 +74,24 @@
   transform: translate(-50%, -50%);
 }
 
+.blog__img {
+  position: absolute;
+  top: 45%;
+  left: 40%;
+}
+
 .hero-img {
   width: 141px;
   height: 141px;
   overflow: hidden;
   border-radius: 50%;
+}
+
+.hero-avatar {
+  background-image: url("../img/myphoto.jpg");
+  background-size: 161px 145px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .hero-info {
@@ -92,7 +104,7 @@
 .hero-name {
   font-size: 35px;
   font-weight: 500;
-  margin: 5px 0;
+  padding: 5px 0;
 
   @include iphone () {
     font-size: 24px;
@@ -100,7 +112,23 @@
 }
 
 .hero-info {
-  margin: 10px 0;
+  padding: 10px 0;
+}
+
+.title--blog {
+  text-align: center;
+  color: #fff;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 89px;
+    height: 3px;
+    display: block;
+    margin: 0 auto;
+    background-color: #fff;
+    margin-top: 15px;
+  }
 }
 
 .welcome-page__arrow-down {

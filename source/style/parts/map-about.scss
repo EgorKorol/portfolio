@@ -24,12 +24,12 @@
   }
 }
 
-.contacts-item {
+.contacts__item {
   display: flex;
   align-items: center;
 }
 
-.contacts-icon {
+.contacts__item-icon {
   fill: $lgreen;
   transition: .1s;
   padding: 10px;
@@ -39,7 +39,7 @@
   }
 }
 
-.contacts-description {
+.contacts__description {
   color: $gray;
   font-weight: 500;
   transition: .2s;

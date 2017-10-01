@@ -77,6 +77,10 @@
     }
 }
 
+.welcome-info--form {
+    padding: 10px 0;
+}
+
 .nav-menu__list {
     display: flex;
     align-items: center;
@@ -136,9 +140,14 @@
     }
 }
 
+.hero-info {
+    width: 90%;
+}
+
 .welcome-input {
     display: flex;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
+    width: 100%;
 }
 
 .input-decore {
@@ -165,6 +174,7 @@
     border: none;
     padding: 10px 5px;
     border-radius: 0 20px 20px 0;
+    width: 100%;
 }
 
 .welcome-checkbox {

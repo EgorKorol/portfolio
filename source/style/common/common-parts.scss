@@ -1,6 +1,6 @@
 .title {
   text-align: center;
-  color: $dgray;
+  color: $gray;
   position: relative;
 
   &::after {
@@ -9,7 +9,7 @@
     height: 3px;
     display: block;
     margin: 0 auto;
-    background: $dgray;
+    background-color: $gray;
     margin-top: 15px;
   }
 }
