@@ -129,7 +129,7 @@
   }
 }
 
-.slide__list {
+.slide-slide__list {
   width: 600px;
   height: 400px;
   overflow: hidden;
@@ -143,12 +143,12 @@
   }
 }
 
-.slide__item {
+.slide-slide__item {
   margin-bottom: 200px;
   text-align: center;
 }
 
-.slide__img {
+.slide-slide__img {
   width: 100%;
 
   @include ipad () {
@@ -182,7 +182,7 @@
   position: relative;
 }
 
-.slider-buttons__arrow-left {
+.slider-buttons__arrow--left {
   background-image: url(../img/works/work-ioga.jpg);
   background-position: center;
   background-size: cover;
@@ -218,7 +218,7 @@
   }
 }
 
-.slider-buttons__arrow-right {
+.slider-buttons__arrow--right {
   background-image: url(../img/works/work-trialog.jpg);
   background-position: center;
   background-size: cover;
@@ -293,7 +293,7 @@
   }
 }
 
-.comment-info-list {
+.comment-info__list {
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -304,7 +304,7 @@
   }
 }
 
-.comment-info-item {
+.comment-info__item {
   width: 35%;
 
   @include ipad () {
@@ -362,7 +362,7 @@
   color: $gray;
 }
 
-.input-form__comment {
+.form-markup__input {
   padding: 15px;
   width: 90%;
   border-radius: 25px;
@@ -370,7 +370,7 @@
   border: none;
 }
 
-.textarea-form__comment{
+.form-markup__textarea{
   padding: 15px;
   width: 90%;
   height: 130px;
@@ -385,7 +385,7 @@
   width: 100%;
 }
 
-.form-btn {
+.form-buttons__btn {
   background-color: $lgreen;
   border: none;
   border-right: 1px solid #fff;

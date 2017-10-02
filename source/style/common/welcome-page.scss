@@ -9,6 +9,13 @@
   color: #fff;
 }
 
+.welcome-page__hamburger-menu {
+  position: absolute;
+  top: 3%;
+  right: 5%;
+  z-index: 10;
+}
+
 .welcome-page__social {
   position: absolute;
   top: 34px;

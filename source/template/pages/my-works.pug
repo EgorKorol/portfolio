@@ -15,7 +15,7 @@ block content
   section.works
     .works__title
       h1.title Мои работы
-        svg.about-title__img(width="506" height="165")
+        svg.title-img(width="506" height="165")
           use(xlink:href="assets/img/sprite.svg#works_header")
     .works-slider
       .slider-info
@@ -48,60 +48,59 @@ block content
                 svg.slider-info__btn-icon(width="20" height="19")
                   use(xlink:href="assets/img/sprite.svg#link")
       .slider-slide
-        ul.slide__list
-          li.slide__item
-            img.slide__img(src="assets/img/works/work_loft.png", alt="Сайт школы LoftSchool")
-          li.slide__item
-            img.slide__img(src="assets/img/works/work_ioga.jpg", alt="Сайт йоги")
-          li.slide__item
-            img.slide__img(src="assets/img/works/work_trialog.jpg", alt="Сайт мебели")
+        ul.slide-slide__list
+          li.slide-slide__item
+            img.slide-slide__img(src="assets/img/works/work_loft.png", alt="Сайт школы LoftSchool")
+          li.slide-slide__item
+            img.slide-slide__img(src="assets/img/works/work_ioga.jpg", alt="Сайт йоги")
+          li.slide-slide__item
+            img.slide-slide__img(src="assets/img/works/work_trialog.jpg", alt="Сайт мебели")
       .slider-buttons
         .slider-buttons__left
-          .slider-buttons__left-img
-          button(type="button").slider-buttons__arrow.slider-buttons__arrow-left
+          button(type="button").slider-buttons__arrow.slider-buttons__arrow--left
             svg.arrow-icon__slider(width="43" height="27")
               use(xlink:href="assets/img/sprite.svg#portf_arrow_down")
         .slider-buttons__right
-          button(type="button").slider-buttons__arrow.slider-buttons__arrow-right
+          button(type="button").slider-buttons__arrow.slider-buttons__arrow--right
             svg.arrow-icon__slider(width="43" height="27")
               use(xlink:href="assets/img/sprite.svg#portf_arrow_up ")
   section.comment
     .comment-title
       h2.title.title__comment Что обо мне говорят
-        svg.about-title__img(width="499" height="175")
+        svg.title-img(width="499" height="175")
           use(xlink:href="assets/img/sprite.svg#about_header")
     .comment-info
-      ul.comment-info-list
-        li.comment-info-item
+      ul.comment-info__list
+        li.comment-info__item
           .comment-description
             .comment-description__img
               img.comment-description__avatar(src="assets/img/dkovaldn.jpg", alt="")
             blockquote.comment-description__text Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 4 месяца только самых тяжелых испытаний и бессонных ночей!
-            cite.comment-description__from
-              .comment-description__from-autor Ковальчук Дмитрий
-              .comment-description__from-position - основатель LoftSchool
-        li.comment-info-item
+              cite.comment-description__from
+                .comment-description__from-autor Ковальчук Дмитрий
+                .comment-description__from-position - основатель LoftSchool
+        li.comment-info__item
           .comment-description
             .comment-description__img
               img.comment-description__avatar(src="assets/img/vsabanc.jpg", alt="")
             blockquote.comment-description__text Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
-            cite.comment-description__from
-              .comment-description__from-autor Владимир Сабанцев
-              .comment-description__from-position - преподаватель в LoftSchool
+              cite.comment-description__from
+                .comment-description__from-autor Владимир Сабанцев
+                .comment-description__from-position - преподаватель в LoftSchool
     .comment-form
       form#data-comment.form(action="")
         .form-markup
           .form-title
             h2.subtitle Связаться со мной
-          input.input-form__comment#name(type="text" placeholder="Имя")
+          input.form-markup__input#name(type="text" placeholder="Имя")
           label.visuallyhidden(for="name") Ваше имя
-          input.input-form__comment#email(type="text" placeholder="Email")
+          input.form-markup__input#email(type="text" placeholder="Email")
           label.visuallyhidden(for="Email") Ваш email
-          textarea.textarea-form__comment#message(name="message" placeholder="Ваше сообщение")
+          textarea.form-markup__textarea#message(name="message" placeholder="Ваше сообщение")
           label.visuallyhidden(for="message") Ваше сообщение
         .form-buttons
-          button.form-btn(form="data-comment" type="submit") Отправить
-          button.form-btn(form="data-comment" type="reset") Очистить
+          button.form-buttons__btn(form="data-comment" type="submit") Отправить
+          button.form-buttons__btn(form="data-comment" type="reset") Очистить
     .arrow-up
       button.arrow-btn.arrow-btn--comment(href="#")
         svg.arrow-icon.arrow-icon--works(width="26" height="16")
