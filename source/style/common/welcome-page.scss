@@ -46,6 +46,7 @@
 }
 
 .title__img {
+  width: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -54,6 +55,8 @@
 
 .header-icon {
   fill: rgba(#fff, .12);
+  width: 100%;
+  height: 100%;
 
   @include iphone () {
     display: none;
@@ -75,9 +78,11 @@
 }
 
 .blog__img {
+  width: 100%;
   position: absolute;
   top: 45%;
-  left: 40%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .hero-img {
@@ -88,10 +93,9 @@
 }
 
 .hero-avatar {
-  background-image: url("../img/myphoto.jpg");
-  background-size: 161px 145px;
-  background-repeat: no-repeat;
-  background-position: center;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .hero-info {

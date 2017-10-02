@@ -11,7 +11,7 @@
     @include iphone () {
         top: 10px;
         left: 50%;
-        transform: translateX(-55%);
+        transform: translateX(-50%);
     }
 }
 
@@ -55,14 +55,16 @@
 }
 
 .welcome-card {
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     width: 340px;
     backface-visibility: hidden;
     z-index: 2;
     transform: rotateY(0deg);
+
     @include iphone () {
         width: 90%;
+        margin: 0 auto;
     }
 }
 
@@ -83,32 +85,35 @@
 
 .nav-menu__list {
     display: flex;
-    align-items: center;
 }
 
 .nav-menu__item {
     border-right: 1px solid #fff;
-    width: 50%;
-
-    &:first-child {
-        border-bottom-left-radius: 3px;
-    }
+    display: flex;
+    flex: 1;
 
     &:last-child {
         border-right: none;
-        border-bottom-right-radius: 3px;
     }
 }
 
 .nav-menu__link {
     background-color: $lgreen;
-    color: #fff;
-    font-weight: 500;
     transition: .3s;
     min-height: 45px;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex: 1;
+    width: 100%;
+
+    &:first-child {
+        border-bottom-left-radius: 5px;
+    }
+    &:last-child {
+        border-bottom-right-radius: 5px;
+    }
+
     &:hover {
         background-color: $green;
     }
@@ -118,6 +123,11 @@
     &:active {
         background-color: $lgreen;
     }
+}
+
+.nav-menu__link-text {
+    color: #fff;
+    font-weight: 500;
 }
 
 .welcome-card--form {

@@ -42,15 +42,6 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	__webpack_require__(1);
-	__webpack_require__(2);
-	module.exports = __webpack_require__(3);
-
-
-/***/ }),
-/* 1 */
 /***/ (function(module, exports) {
 
 	// fsmenu
@@ -62,34 +53,6 @@
 	  hamburger.classList.toggle("is-active");
 	  fsmenu.classList.toggle("fsmenu--open");
 	});
-
-/***/ }),
-/* 2 */
-/***/ (function(module, exports) {
-
-	"use strict"
-
-	var flipper = document.querySelector(".flipper"),
-	  button = document.querySelector(".autorization-btn"),
-	  flipBack = document.querySelector('.nav-menu__link--flipback-js');
-
-	button.addEventListener("click", function () {
-	    flipper.style.transform = "rotateY(180deg)";
-	    button.style.cursor = "auto";
-	    button.classList.toggle("autorization-btn--active");
-	  }),
-
-	  flipBack.addEventListener("click", function (e) {
-	    e.preventDefault();
-	    flipper.style.transform = "";
-	    button.classList.toggle("autorization-btn--active");
-	  });
-
-/***/ }),
-/* 3 */
-/***/ (function(module, exports) {
-
-	
 
 /***/ })
 /******/ ]);

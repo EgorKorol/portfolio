@@ -1,5 +1,4 @@
 section.section.welcome-page
-	include ./fsmenu
 	.social.welcome-page__social
 		ul.social__list
 			li.social__item
@@ -15,10 +14,11 @@ section.section.welcome-page
 			span.hamburger-box
 				span.hamburger-inner
 	.title__img
-		svg.header-icon(width="1176" height="313")
+		svg.header-icon
 			use(xlink:href="assets/img/sprite.svg#portfolio_header")
 	.hero.welcome-page__hero
-		.hero-img.hero-avatar
+		.hero-img
+			img.hero-avatar(src="assets/img/myphoto.jpg", alt="Моя фотография")
 		.hero-info
 			.hero-name Егор Король
 			.hero-info Личный сайт веб разработчика

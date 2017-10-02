@@ -3,6 +3,7 @@
 var flipper = document.querySelector(".flipper"),
   button = document.querySelector(".autorization-btn"),
   flipBack = document.querySelector('.nav-menu__link--flipback-js');
+  console.log('button');
 
 button.addEventListener("click", function () {
     flipper.style.transform = "rotateY(180deg)";

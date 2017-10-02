@@ -15,20 +15,6 @@
   <body>
     <div class="wrapper">
       <section class="section welcome-page">
-        <div class="fsmenu">
-          <nav class="fsmenu-nav">
-            <ul class="fsmenu-list">
-              <li class="fsmenu-list__item"><a class="fsmenu-list__link" href="my-works.html">
-                  <div class="title fsmenu__title">Мои работы</div></a></li>
-              <li class="fsmenu-list__item"><a class="fsmenu-list__link" href="blog.html">
-                  <div class="title fsmenu__title">Блог</div></a></li>
-              <li class="fsmenu-list__item"><a class="fsmenu-list__link" href="about.html">
-                  <div class="title fsmenu__title">Обо мне</div></a></li>
-              <li class="fsmenu-list__item"><a class="fsmenu-list__link" href="index.html">
-                  <div class="title fsmenu__title">Авторизация</div></a></li>
-            </ul>
-          </nav>
-        </div>
         <div class="social welcome-page__social">
           <ul class="social__list">
             <li class="social__item"><a class="social__link" href="https://vk.com/korol_egor" target="_blank">
@@ -45,12 +31,12 @@
           <button class="hamburger hamburger--spin" type="button" href="#"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
         </div>
         <div class="title__img">
-          <svg class="header-icon" width="1176" height="313">
+          <svg class="header-icon">
             <use xlink:href="assets/img/sprite.svg#portfolio_header"></use>
           </svg>
         </div>
         <div class="hero welcome-page__hero">
-          <div class="hero-img hero-avatar"></div>
+          <div class="hero-img"><img class="hero-avatar" src="assets/img/myphoto.jpg" alt="Моя фотография"></div>
           <div class="hero-info">
             <div class="hero-name">Егор Король</div>
             <div class="hero-info">Личный сайт веб разработчика</div>
@@ -81,7 +67,7 @@
           <div class="about__info">
             <div class="about__left-title">
               <h1 class="title">Обо мне</h1>
-              <svg class="about-title__img" width="357" height="125">
+              <svg class="about-title__img">
                 <use xlink:href="assets/img/sprite.svg#about_header"></use>
               </svg>
             </div>
@@ -285,6 +271,16 @@
           </blockquote>
         </div>
       </footer>
+      <div class="fsmenu">
+        <nav class="fsmenu-nav">
+          <ul class="fsmenu-list">
+            <li class="fsmenu-list__item"><a class="fsmenu-list__link" href="my-works.html"><span class="title fsmenu__title">Мои работы</span></a></li>
+            <li class="fsmenu-list__item"><a class="fsmenu-list__link" href="blog.html"><span class="title fsmenu__title">Блог</span></a></li>
+            <li class="fsmenu-list__item"><a class="fsmenu-list__link" href="about.html"><span class="title fsmenu__title">Обо мне</span></a></li>
+            <li class="fsmenu-list__item"><a class="fsmenu-list__link" href="index.html"><span class="title fsmenu__title">Авторизация</span></a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
     <script src="assets/js/app.js" defer></script>
   </body>
