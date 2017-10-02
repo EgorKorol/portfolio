@@ -15,7 +15,7 @@
   <body>
     <div class="wrapper">
       <section class="section welcome-page">
-        <div class="social welcome-page__social">
+        <div class="social social--welcome-page">
           <ul class="social__list">
             <li class="social__item"><a class="social__link" href="https://vk.com/korol_egor" target="_blank">
                 <svg class="social-icon" width="31" height="17">
@@ -25,12 +25,16 @@
                 <svg class="social-icon" width="26" height="22">
                   <use xlink:href="assets/img/sprite.svg#github"></use>
                 </svg></a></li>
+            <li class="social__item"><a class="social__link" href="https://www.linkedin.com/in/%D0%B5%D0%B3%D0%BE%D1%80-%D0%BA%D0%BE%D1%80%D0%BE%D0%BB%D1%8C-b03544150/" target="_blank">
+                <svg class="social-icon" width="24" height="22">
+                  <use xlink:href="assets/img/sprite.svg#in"></use>
+                </svg></a></li>
           </ul>
         </div>
-        <div class="hamburger-menu__welcome-page">
+        <div class="welcome-page__hamburger-menu">
           <button class="hamburger hamburger--spin" type="button" href="#"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
         </div>
-        <div class="blog__img">
+        <div class="title-img">
           <svg class="header-icon">
             <use xlink:href="assets/img/sprite.svg#blog_header"></use>
           </svg>
@@ -38,8 +42,8 @@
         <div class="hero welcome-page__hero">
           <div class="hero-img"><img class="hero-avatar" src="assets/img/myphoto.jpg" alt="Моя фотография"></div>
           <div class="hero-info">
-            <h1 class="title--blog">Блог</h1>
-            <div class="hero-info">Мои мысли на тему веб разработки</div>
+            <h1 class="title-blog">Блог</h1>
+            <div class="hero-info__description">Мои мысли на тему веб разработки</div>
           </div>
         </div>
       </section>
@@ -56,57 +60,53 @@
         </div>
       </div>
       <section class="blog">
-        <div class="blog__aside">
-          <aside class="aside-nav">
-            <ul class="aside-nav__list">
-              <li class="aside-nav__item"><a class="aside-nav__link" href="#">
-                  <div class="aside-nav__title">Препроцессоры или кастомные свойства CSS</div></a></li>
-              <li class="aside-nav__item"><a class="aside-nav__link" href="#">
-                  <div class="aside-nav__title">Прибиваем футер к низу страницы</div></a></li>
-              <li class="aside-nav__item"><a class="aside-nav__link" href="#">
-                  <div class="aside-nav__title">Набор необходимых Gulp плагинов</div></a></li>
-              <li class="aside-nav__item"><a class="aside-nav__link" href="#">
-                  <div class="aside-nav__title">Почему я выбрал Pug</div></a></li>
+        <div class="blog-aside"> 
+          <aside class="aside">
+            <ul class="aside-list">
+              <li class="aside-list__item"><a class="aside-list__link" href="#"><span class="aside-list__link-title">Препроцессоры или кастомные свойства CSS</span></a></li>
+              <li class="aside-list__item"><a class="aside-list__link" href="#"><span class="aside-list__link-title">Прибиваем футер к низу страницы</span></a></li>
+              <li class="aside-list__item"><a class="aside-list__link" href="#"><span class="aside-list__link-title">Набор необходимых Gulp плагинов</span></a></li>
+              <li class="aside-list__item"><a class="aside-list__link" href="#"><span class="aside-list__link-title">Почему я выбрал Pug</span></a></li>
             </ul>
           </aside>
         </div>
         <div class="blog__article">
           <article class="article">
-            <h2 class="article-header__title">Препроцессоры или кастомные свойства</h2>
-            <div class="article-date">
+            <h2 class="article__title">Препроцессоры или кастомные свойства</h2>
+            <div class="article__date">
               <time datetime="2017-09-18">18 сентября 2017</time>
             </div>
-            <div class="article-text">
+            <div class="article__text">
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, et eum. Odit sequi adipisci tempora saepe sint itaque, quo at?</p>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, odit veritatis, officia minus ut vel excepturi id aut voluptate suscipit deserunt iure quisquam ullam non quas. Eligendi recusandae, dicta, optio totam fugit blanditiis deserunt corrupti quas labore nemo qui nostrum! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum dolorem facere dolore earum sit esse cupiditate dolorum repellat sed molestiae atque ratione consequuntur nostrum incidunt suscipit quibusdam doloribus rem labore eos, officiis, quam autem ipsa optio dignissimos? Quasi, inventore fugit.</p>
             </div>
           </article>
           <article class="article">
-            <h2 class="article-header__title">Прибиваем футер к низу страницы</h2>
-            <div class="article-date">
+            <h2 class="article__title">Прибиваем футер к низу страницы</h2>
+            <div class="article__date">
               <time datetime="2017-09-18">18 сентября 2017</time>
             </div>
-            <div class="article-text">
+            <div class="article__text">
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, et eum. Odit sequi adipisci tempora saepe sint itaque, quo at?</p>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eaque at quis minus, ipsa maxime laboriosam quasi dolorem! Consectetur quam sint itaque voluptatibus pariatur debitis ut molestias nostrum distinctio vero, tenetur quo expedita quod incidunt impedit corporis provident voluptate explicabo?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum dolorem facere dolore earum sit esse cupiditate dolorum repellat sed molestiae atque ratione consequuntur nostrum incidunt suscipit quibusdam doloribus rem labore eos, officiis, quam autem ipsa optio dignissimos? Quasi, inventore fugit.</p>
             </div>
           </article>
           <article class="article">
-            <h2 class="article-header__title">Набор необходимых Gulp плагинов</h2>
-            <div class="article-date">
+            <h2 class="article__title">Набор необходимых Gulp плагинов</h2>
+            <div class="article__date">
               <time datetime="2017-09-18">18 сентября 2017</time>
             </div>
-            <div class="article-text">
+            <div class="article__text">
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, et eum. Odit sequi adipisci tempora saepe sint itaque, quo at?</p>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eaque at quis minus, ipsa maxime laboriosam quasi dolorem! Consectetur quam sint itaque voluptatibus pariatur debitis ut molestias nostrum distinctio vero, tenetur quo expedita quod incidunt impedit corporis provident voluptate explicabo?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum dolorem facere dolore earum sit esse cupiditate dolorum repellat sed molestiae atque ratione consequuntur nostrum incidunt suscipit quibusdam doloribus rem labore eos, officiis, quam autem ipsa optio dignissimos? Quasi, inventore fugit.</p>
             </div>
           </article>
           <article class="article">
-            <h2 class="article-header__title">Почему я выбрал Pug</h2>
-            <div class="article-date">
+            <h2 class="article__title">Почему я выбрал Pug</h2>
+            <div class="article__date">
               <time datetime="2017-09-18">18 сентября 2017</time>
             </div>
-            <div class="article-text">
+            <div class="article__text">
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, et eum. Odit sequi adipisci tempora saepe sint itaque, quo at?</p>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eaque at quis minus, ipsa maxime laboriosam quasi dolorem! Consectetur quam sint itaque voluptatibus pariatur debitis ut molestias nostrum distinctio vero, tenetur quo expedita quod incidunt impedit corporis provident voluptate explicabo?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum dolorem facere dolore earum sit esse cupiditate dolorum repellat sed molestiae atque ratione consequuntur nostrum incidunt suscipit quibusdam doloribus rem labore eos, officiis, quam autem ipsa optio dignissimos? Quasi, inventore fugit.</p>
             </div>
@@ -127,14 +127,18 @@
             </ul>
           </nav>
           <div class="social">
-            <ul class="social__list social-list__footer">
-              <li class="social__item"><a class="social__link" href="https://vk.com/korol_egor" target="_blank">
+            <ul class="social__list social__list--footer">
+              <li class="social__item"><a class="social__link social__link--footer" href="https://vk.com/korol_egor" target="_blank">
                   <svg class="social-icon social-icon--footer" width="31" height="17">
                     <use xlink:href="assets/img/sprite.svg#vk"></use>
                   </svg></a></li>
-              <li class="social__item"><a class="social__link" href="https://github.com/EgorKorol" target="_blank">
+              <li class="social__item"><a class="social__link social__link--footer" href="https://github.com/EgorKorol" target="_blank">
                   <svg class="social-icon social-icon--footer" width="26" height="22">
                     <use xlink:href="assets/img/sprite.svg#github"></use>
+                  </svg></a></li>
+              <li class="social__item"><a class="social__link social__link--footer" href="https://www.linkedin.com/in/%D0%B5%D0%B3%D0%BE%D1%80-%D0%BA%D0%BE%D1%80%D0%BE%D0%BB%D1%8C-b03544150/" target="_blank">
+                  <svg class="social-icon social-icon--footer" width="24" height="22">
+                    <use xlink:href="assets/img/sprite.svg#in"></use>
                   </svg></a></li>
             </ul>
           </div>

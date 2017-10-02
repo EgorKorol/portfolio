@@ -13,18 +13,9 @@ block content
             .hero-img
               img.hero-avatar(src="assets/img/myphoto.jpg", alt="Моя фотография")
             .hero-info
-              .hero-name Егор Король
-              .hero-info Личный сайт веб разработчика
-            .social
-              ul.social__list
-                li.social__item
-                  a.social__link(href="https://vk.com/korol_egor" target="_blank")
-                    svg.social-icon(width="31" height="17")
-                      use(xlink:href="assets/img/sprite.svg#vk")
-                li.social__item
-                  a.social__link(href="https://github.com/EgorKorol" target="_blank")
-                    svg.social-icon(width="26" height="22")
-                      use(xlink:href="assets/img/sprite.svg#github")
+              .hero-info__name Егор Король
+              .hero-info__description Личный сайт веб разработчика
+            include ../common/social
           nav.nav-menu
             ul.nav-menu__list
               li.nav-menu__item
@@ -38,25 +29,25 @@ block content
                   span.nav-menu__link-text Блог
         .welcome-card.welcome-card--form
           .welcome-info.welcome-info--form
-            form.hero-info#data(method="post")
-              .title.title--welcome Авторизуйтесь
-              .welcome-input
+            form.welcome-form#data(method="post")
+              .title.title--welcome-form Авторизуйтесь
+              .welcome-form__input
                 .input-decore
                   svg.input-decore__icon.input-decore__icon--login(width="15" height="17")
                     use(xlink:href="assets/img/sprite.svg#login")
                 input.form-input(type="text" id="login" placeholder="Логин")
                 label.label-input(for="login")
-              .welcome-input
+              .welcome-form__input
                 .input-decore
                   svg.input-decore__icon.input-decore__icon--password
                     use(xlink:href="assets/img/sprite.svg#password")
                 input.form-input(type="password" id="password" placeholder="Пароль")
                 label.label-input(for="password")
-              .welcome-checkbox
+              .welcome-form__checkbox
                 input.form-checkbox(type="checkbox" id="checkbox")
                 label.label-checkbox(for="checkbox") Я человек
-              .welcome-radio
-                .welcome-radio__question Вы точно не робот?
+              .welcome-form__radio
+                .welcome-form__radio-question Вы точно не робот?
                 input.form-radio(type="radio" id="radiobtnYes" name="robot")
                 label.label-radio(for="radiobtnYes") Да
                 input.form-radio(type="radio" id="radiobtnNo" name="robot")
@@ -64,3 +55,5 @@ block content
           .welcome-card__form-buttons
             button.nav-menu__link.nav-menu__link--form.nav-menu__link--flipback-js(href="#") На главную
             button.nav-menu__link.nav-menu__link--form(form="data" type="submit") Войти
+    footer.welcome-footer
+      span.welcome-footer__text &#169 Егор Король | LoftSchool | 2017

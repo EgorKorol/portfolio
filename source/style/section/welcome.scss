@@ -42,7 +42,7 @@
 }
 
 .flipper-box {
-    width: 340px;
+    width: 380px;
     perspective: 1200;
     transform-style: preserve-3d;
     position: relative;
@@ -57,7 +57,7 @@
 .welcome-card {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    width: 340px;
+    width: 380px;
     backface-visibility: hidden;
     z-index: 2;
     transform: rotateY(0deg);
@@ -69,7 +69,7 @@
 }
 
 .welcome-info {
-    padding: 20px 30px;
+    padding: 20px 20px;
     background-color: rgba(#122620, .6);
     display: flex;
     flex-direction: column;
@@ -77,10 +77,6 @@
     @include iphone () {
         padding: 10px 20px;
     }
-}
-
-.welcome-info--form {
-    padding: 10px 0;
 }
 
 .nav-menu__list {
@@ -107,13 +103,6 @@
     flex: 1;
     width: 100%;
 
-    &:first-child {
-        border-bottom-left-radius: 5px;
-    }
-    &:last-child {
-        border-bottom-right-radius: 5px;
-    }
-
     &:hover {
         background-color: $green;
     }
@@ -137,7 +126,18 @@
     transform: rotateY(-180deg);
 }
 
-.title--welcome {
+.welcome-info--form {
+    padding: 10px 0;
+}
+
+.welcome-form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+}
+
+.title--welcome-form {
     font-size: 35px;
     color: #fff;
     font-family: "sansus_webissimo";
@@ -154,9 +154,9 @@
     width: 90%;
 }
 
-.welcome-input {
+.welcome-form__input {
     display: flex;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
     width: 100%;
 }
 
@@ -187,11 +187,15 @@
     width: 100%;
 }
 
-.welcome-checkbox {
-    padding: 10px;
+.welcome-form__checkbox {
+    margin-bottom: 10px;
 }
 
-.welcome-radio__question {
+.welcome-form__radio {
+    margin-bottom: 30px;
+}
+
+.welcome-form__radio-question {
     font-weight: 700;
     padding: 5px 0 10px;
 }
@@ -282,9 +286,17 @@
     width: 50%;
     border-right: 1px solid #fff;
     cursor: pointer;
+    color: #fff;
+    font-weight: 600;
 
     &:last-child {
         border-right: none;
     }
 }
 
+.welcome-footer {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}

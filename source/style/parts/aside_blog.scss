@@ -1,0 +1,55 @@
+.blog-aside {
+  background-color: #faf8f0;
+  width: 26%;
+
+  @include ipad () {
+    display: none;
+  }
+}
+
+.aside {
+  position: sticky;
+  top: 20px;
+}
+
+.aside-list {
+  padding: 8px;
+  text-align: right;
+}
+
+.aside-list__item {
+  margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.aside-list__link-title {
+  font-size: 16px;
+  font-weight: 400;
+  color: $gray;
+  transition: .2s;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  
+    &:hover, &:active {
+      color: $green;
+
+      &::after {display: inline-block;}
+    }
+
+    &::after {
+      content: "";
+      display: none;
+      position: absolute;
+      right: -10px;
+      top: 50%;
+      transform: translateY(-50%);
+      margin-left: 15px;
+      width: 3px;
+      height: 42px;
+      background-color: $green;
+    }
+}

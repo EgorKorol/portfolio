@@ -22,8 +22,8 @@
               <div class="welcome-info">
                 <div class="hero-img"><img class="hero-avatar" src="assets/img/myphoto.jpg" alt="Моя фотография"></div>
                 <div class="hero-info">
-                  <div class="hero-name">Егор Король</div>
-                  <div class="hero-info">Личный сайт веб разработчика</div>
+                  <div class="hero-info__name">Егор Король</div>
+                  <div class="hero-info__description">Личный сайт веб разработчика</div>
                 </div>
                 <div class="social">
                   <ul class="social__list">
@@ -34,6 +34,10 @@
                     <li class="social__item"><a class="social__link" href="https://github.com/EgorKorol" target="_blank">
                         <svg class="social-icon" width="26" height="22">
                           <use xlink:href="assets/img/sprite.svg#github"></use>
+                        </svg></a></li>
+                    <li class="social__item"><a class="social__link" href="https://www.linkedin.com/in/%D0%B5%D0%B3%D0%BE%D1%80-%D0%BA%D0%BE%D1%80%D0%BE%D0%BB%D1%8C-b03544150/" target="_blank">
+                        <svg class="social-icon" width="24" height="22">
+                          <use xlink:href="assets/img/sprite.svg#in"></use>
                         </svg></a></li>
                   </ul>
                 </div>
@@ -48,9 +52,9 @@
             </div>
             <div class="welcome-card welcome-card--form">
               <div class="welcome-info welcome-info--form">
-                <form class="hero-info" id="data" method="post">
-                  <div class="title title__welcome">Авторизуйтесь</div>
-                  <div class="welcome-input">
+                <form class="welcome-form" id="data" method="post">
+                  <div class="title title--welcome-form">Авторизуйтесь</div>
+                  <div class="welcome-form__input">
                     <div class="input-decore">
                       <svg class="input-decore__icon input-decore__icon--login" width="15" height="17">
                         <use xlink:href="assets/img/sprite.svg#login"></use>
@@ -59,7 +63,7 @@
                     <input class="form-input" type="text" id="login" placeholder="Логин">
                     <label class="label-input" for="login"></label>
                   </div>
-                  <div class="welcome-input">
+                  <div class="welcome-form__input">
                     <div class="input-decore">
                       <svg class="input-decore__icon input-decore__icon--password">
                         <use xlink:href="assets/img/sprite.svg#password"></use>
@@ -68,12 +72,12 @@
                     <input class="form-input" type="password" id="password" placeholder="Пароль">
                     <label class="label-input" for="password"></label>
                   </div>
-                  <div class="welcome-checkbox">
+                  <div class="welcome-form__checkbox">
                     <input class="form-checkbox" type="checkbox" id="checkbox">
                     <label class="label-checkbox" for="checkbox">Я человек</label>
                   </div>
-                  <div class="welcome-radio">
-                    <div class="welcome-radio__question">Вы точно не робот?</div>
+                  <div class="welcome-form__radio">
+                    <div class="welcome-form__radio-question">Вы точно не робот?</div>
                     <input class="form-radio" type="radio" id="radiobtnYes" name="robot">
                     <label class="label-radio" for="radiobtnYes">Да</label>
                     <input class="form-radio" type="radio" id="radiobtnNo" name="robot">
@@ -88,6 +92,7 @@
             </div>
           </div>
         </div>
+        <footer class="welcome-footer"><span class="welcome-footer__text">&#169 Егор Король | LoftSchool | 2017</span></footer>
       </div>
     </div>
     <script src="assets/js/app.js" defer></script>

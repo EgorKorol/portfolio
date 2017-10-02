@@ -1,0 +1,52 @@
+.blog__article {
+  background-color: #faf8f0;
+  width: 66%;
+
+  @include ipad () {
+    width: 90%;
+  }
+}
+
+.article {
+  &:last-child {
+    &::after {
+      opacity: 0;
+      margin-bottom: 100px;
+
+      @include ipad () {
+        margin-bottom: 150px;
+      }
+
+      @include iphone () {
+        margin-bottom: 220px;
+      }
+    }
+  }
+
+  &::after {
+    content: "";
+    margin: 50px 0 40px;
+    display: block;
+    width: 95%;
+    height: 5px;
+    background-color: rgba(#373e42, .07);
+  }
+}
+
+.article__title {
+  font-size: 35px;
+  margin-bottom: 20px;
+
+  @include iphone () {
+    font-size: 21px;
+  }
+}
+
+.article__date {
+  color: $lgreen;
+  margin-bottom: 20px;
+
+  @include iphone () {
+    padding: 5px 0;
+  }
+}

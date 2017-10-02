@@ -13,7 +13,6 @@
 .footer-col {
     width: 30%;
     font-weight: 300;
-    padding: 1%;
     position: relative;
 
     @include ipad () {
@@ -43,9 +42,6 @@
 .footer-menu__list {
     display: flex;
     justify-content: space-around;
-}
-
-.footer-menu__list-item {
     padding: 5% 0;
 }
 
@@ -55,24 +51,6 @@
     transition: .2s;
     &:hover {
         color: #fff;
-    }
-    &:focus {
-        color: #fff;
-    }
-    &:active {
-        color: #C5C0B8;
-    }
-}
-
-.social-list--footer {
-        justify-content: center;
-}
-
-.social-icon--footer {
-    fill: rgba(#fff, .7);
-    transition: .2s;
-    &:hover {
-        fill: #fff;
     }
     &:focus {
         color: #fff;

@@ -15,7 +15,7 @@
   <body>
     <div class="wrapper">
       <section class="section welcome-page">
-        <div class="social welcome-page__social">
+        <div class="social social--welcome-page">
           <ul class="social__list">
             <li class="social__item"><a class="social__link" href="https://vk.com/korol_egor" target="_blank">
                 <svg class="social-icon" width="31" height="17">
@@ -25,12 +25,16 @@
                 <svg class="social-icon" width="26" height="22">
                   <use xlink:href="assets/img/sprite.svg#github"></use>
                 </svg></a></li>
+            <li class="social__item"><a class="social__link" href="https://www.linkedin.com/in/%D0%B5%D0%B3%D0%BE%D1%80-%D0%BA%D0%BE%D1%80%D0%BE%D0%BB%D1%8C-b03544150/" target="_blank">
+                <svg class="social-icon" width="24" height="22">
+                  <use xlink:href="assets/img/sprite.svg#in"></use>
+                </svg></a></li>
           </ul>
         </div>
-        <div class="hamburger-menu__welcome-page">
+        <div class="welcome-page__hamburger-menu">
           <button class="hamburger hamburger--spin" type="button" href="#"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
         </div>
-        <div class="title__img">
+        <div class="title-img">
           <svg class="header-icon">
             <use xlink:href="assets/img/sprite.svg#portfolio_header"></use>
           </svg>
@@ -39,10 +43,10 @@
           <div class="hero-img"><img class="hero-avatar" src="assets/img/myphoto.jpg" alt="Моя фотография"></div>
           <div class="hero-info">
             <div class="hero-name">Егор Король</div>
-            <div class="hero-info">Личный сайт веб разработчика</div>
+            <div class="hero-info__description">Личный сайт веб разработчика</div>
           </div>
         </div>
-        <div class="arrow welcome-page__arrow-down">
+        <div class="arrow welcome-page__arrow">
           <button class="arrow-btn" href="#">
             <svg class="arrow-icon" width="26" height="16">
               <use xlink:href="assets/img/sprite.svg#arrow_down"></use>
@@ -65,7 +69,7 @@
       <section class="works">
         <div class="works__title">
           <h1 class="title">Мои работы
-            <svg class="about-title__img" width="506" height="165">
+            <svg class="title-img" width="506" height="165">
               <use xlink:href="assets/img/sprite.svg#works_header"></use>
             </svg>
           </h1>
@@ -112,23 +116,22 @@
             </ul>
           </div>
           <div class="slider-slide">
-            <ul class="slide__list">
-              <li class="slide__item"><img class="slide__img" src="assets/img/works/work_loft.png" alt="Сайт школы LoftSchool"></li>
-              <li class="slide__item"><img class="slide__img" src="assets/img/works/work_ioga.jpg" alt="Сайт йоги"></li>
-              <li class="slide__item"><img class="slide__img" src="assets/img/works/work_trialog.jpg" alt="Сайт мебели"></li>
+            <ul class="slide-slide__list">
+              <li class="slide-slide__item"><img class="slide-slide__img" src="assets/img/works/work_loft.png" alt="Сайт школы LoftSchool"></li>
+              <li class="slide-slide__item"><img class="slide-slide__img" src="assets/img/works/work_ioga.jpg" alt="Сайт йоги"></li>
+              <li class="slide-slide__item"><img class="slide-slide__img" src="assets/img/works/work_trialog.jpg" alt="Сайт мебели"></li>
             </ul>
           </div>
           <div class="slider-buttons">
             <div class="slider-buttons__left">
-              <div class="slider-buttons__left-img"></div>
-              <button class="slider-buttons__arrow slider-buttons__arrow-left" type="button">
+              <button class="slider-buttons__arrow slider-buttons__arrow--left" type="button">
                 <svg class="arrow-icon__slider" width="43" height="27">
                   <use xlink:href="assets/img/sprite.svg#portf_arrow_down"></use>
                 </svg>
               </button>
             </div>
             <div class="slider-buttons__right">
-              <button class="slider-buttons__arrow slider-buttons__arrow-right" type="button">
+              <button class="slider-buttons__arrow slider-buttons__arrow--right" type="button">
                 <svg class="arrow-icon__slider" width="43" height="27">
                   <use xlink:href="assets/img/sprite.svg#portf_arrow_up "></use>
                 </svg>
@@ -138,33 +141,35 @@
         </div>
       </section>
       <section class="comment">
-        <div class="comment-title">
+        <div class="comment__title">
           <h2 class="title title__comment">Что обо мне говорят
-            <svg class="about-title__img" width="499" height="175">
+            <svg class="title-img" width="499" height="175">
               <use xlink:href="assets/img/sprite.svg#about_header"></use>
             </svg>
           </h2>
         </div>
         <div class="comment-info">
-          <ul class="comment-info-list">
-            <li class="comment-info-item">
+          <ul class="comment-info__list">
+            <li class="comment-info__item">
               <div class="comment-description">
                 <div class="comment-description__img"><img class="comment-description__avatar" src="assets/img/dkovaldn.jpg" alt=""></div>
-                <blockquote class="comment-description__text">Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 4 месяца только самых тяжелых испытаний и бессонных ночей!</blockquote>
-                <cite class="comment-description__from">
-                  <div class="comment-description__from-autor">Ковальчук Дмитрий</div>
-                  <div class="comment-description__from-position">- основатель LoftSchool</div>
-                </cite>
+                <blockquote class="comment-description__text">Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 4 месяца только самых тяжелых испытаний и бессонных ночей!
+                  <cite class="comment-description__from">
+                    <div class="comment-description__from-autor">Ковальчук Дмитрий</div>
+                    <div class="comment-description__from-position">- основатель LoftSchool</div>
+                  </cite>
+                </blockquote>
               </div>
             </li>
-            <li class="comment-info-item">
+            <li class="comment-info__item">
               <div class="comment-description">
                 <div class="comment-description__img"><img class="comment-description__avatar" src="assets/img/vsabanc.jpg" alt=""></div>
-                <blockquote class="comment-description__text">Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!</blockquote>
-                <cite class="comment-description__from">
-                  <div class="comment-description__from-autor">Владимир Сабанцев</div>
-                  <div class="comment-description__from-position">- преподаватель в LoftSchool</div>
-                </cite>
+                <blockquote class="comment-description__text">Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
+                  <cite class="comment-description__from">
+                    <div class="comment-description__from-autor">Владимир Сабанцев</div>
+                    <div class="comment-description__from-position">- преподаватель в LoftSchool</div>
+                  </cite>
+                </blockquote>
               </div>
             </li>
           </ul>
@@ -172,25 +177,25 @@
         <div class="comment-form">
           <form class="form" id="data-comment" action="">
             <div class="form-markup">
-              <div class="form-title">
+              <div class="form-markup__title">
                 <h2 class="subtitle">Связаться со мной</h2>
               </div>
-              <input class="input-form__comment" id="name" type="text" placeholder="Имя">
+              <input class="form-markup__input" id="name" type="text" placeholder="Имя">
               <label class="visuallyhidden" for="name">Ваше имя</label>
-              <input class="input-form__comment" id="email" type="text" placeholder="Email">
+              <input class="form-markup__input" id="email" type="text" placeholder="Email">
               <label class="visuallyhidden" for="Email">Ваш email</label>
-              <textarea class="textarea-form__comment" id="message" name="message" placeholder="Ваше сообщение"></textarea>
+              <textarea class="form-markup__textarea" id="message" name="message" placeholder="Ваше сообщение"></textarea>
               <label class="visuallyhidden" for="message">Ваше сообщение</label>
             </div>
             <div class="form-buttons">
-              <button class="form-btn" form="data-comment" type="submit">Отправить</button>
-              <button class="form-btn" form="data-comment" type="reset">Очистить</button>
+              <button class="form-buttons__btn" form="data-comment" type="submit">Отправить</button>
+              <button class="form-buttons__btn" form="data-comment" type="reset">Очистить</button>
             </div>
           </form>
         </div>
         <div class="arrow-up">
           <button class="arrow-btn arrow-btn--comment" href="#">
-            <svg class="arrow-icon arrow-icon--works" width="26" height="16">
+            <svg class="arrow-icon arrow-icon--comment" width="26" height="16">
               <use xlink:href="assets/img/sprite.svg#arrow_down"></use>
             </svg>
           </button>
@@ -210,14 +215,18 @@
             </ul>
           </nav>
           <div class="social">
-            <ul class="social__list social-list__footer">
-              <li class="social__item"><a class="social__link" href="https://vk.com/korol_egor" target="_blank">
+            <ul class="social__list social__list--footer">
+              <li class="social__item"><a class="social__link social__link--footer" href="https://vk.com/korol_egor" target="_blank">
                   <svg class="social-icon social-icon--footer" width="31" height="17">
                     <use xlink:href="assets/img/sprite.svg#vk"></use>
                   </svg></a></li>
-              <li class="social__item"><a class="social__link" href="https://github.com/EgorKorol" target="_blank">
+              <li class="social__item"><a class="social__link social__link--footer" href="https://github.com/EgorKorol" target="_blank">
                   <svg class="social-icon social-icon--footer" width="26" height="22">
                     <use xlink:href="assets/img/sprite.svg#github"></use>
+                  </svg></a></li>
+              <li class="social__item"><a class="social__link social__link--footer" href="https://www.linkedin.com/in/%D0%B5%D0%B3%D0%BE%D1%80-%D0%BA%D0%BE%D1%80%D0%BE%D0%BB%D1%8C-b03544150/" target="_blank">
+                  <svg class="social-icon social-icon--footer" width="24" height="22">
+                    <use xlink:href="assets/img/sprite.svg#in"></use>
                   </svg></a></li>
             </ul>
           </div>

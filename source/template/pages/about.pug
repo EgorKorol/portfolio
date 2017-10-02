@@ -14,12 +14,12 @@ block content
         polygon(points="0,100 1000,100 1000,0")
   section.about
     .about__left
-      .about__info
-        .about__left-title
+      .about-info
+        .about-info__title
           h1.title Обо мне
           svg.title-img
             use(xlink:href="assets/img/sprite.svg#about_header")
-        .about__left__content
+        .about-info__content
           .user-description
             .user-description__img
               img.user-description__avatat(src="assets/img/myphoto.jpg", alt="Моя фотография")
@@ -33,106 +33,8 @@ block content
         h2.subtitle Чем я могу быть вам полезен
       .description-text
         p Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачина Backend. Но давайте по порядку.
-      .about__right__content
-        ul.skills-list
-          li.skills-item
-            .skills-row
-              .skills-row__title Frontend
-              ul.skills-row__list
-                li.skills-row__item
-                  .slill-item
-                    svg.circles(viewBox="0 0 110 110")
-                      circle.circle__first(r="45" cx="50%" cy="50%" fill="none")
-                      circle.circle__second.circle-85(r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)")
-                    span.skills-title HTML
-                li.skills-row__item
-                  .slill-item
-                    svg.circles(viewBox="0 0 110 110")
-                      circle.circle__first(r="45" cx="50%" cy="50%" fill="none")
-                      circle.circle__second.circle-85(r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)")
-                    span.skills-title CSS
-                li.skills-row__item
-                  .slill-item
-                    svg.circles(viewBox="0 0 110 110")
-                      circle.circle__first(r="45" cx="50%" cy="50%" fill="none")
-                      circle.circle__second.circle-25(r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)")
-                    span.skills-title JavaScript
-          li.skills-item
-            .skills-row
-              .skills-row__title Backend
-              ul.skills-row__list
-                li.skills-row__item
-                  .slill-item
-                    svg.circles(viewBox="0 0 110 110")
-                      circle.circle__first(r="45" cx="50%" cy="50%" fill="none")
-                      circle.circle__second.circle-15(r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)")
-                    span.skills-title PHP
-                  li.skills-row__item
-                    .slill-item
-                      svg.circles(viewBox="0 0 110 110")
-                        circle.circle__first(r="45" cx="50%" cy="50%" fill="none")
-                        circle.circle__second.circle-15(r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)")
-                      span.skills-title mySQL
-                li.skills-row__item
-                  .slill-item
-                    svg.circles(viewBox="0 0 110 110")
-                      circle.circle__first(r="45" cx="50%" cy="50%" fill="none")
-                      circle.circle__second.circle-15(r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)")
-                    span.skills-title Node.js
-                li.skills-row__item
-                  .slill-item
-                    svg.circles(viewBox="0 0 110 110")
-                      circle.circle__first(r="45" cx="50%" cy="50%" fill="none")
-                      circle.circle__second.circle-15(r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)")
-                    span.skills-title Mongo.db
-          li.skills-item
-            .skills-row
-              .skills-row__title Workflow
-              ul.skills-row__list
-                li.skills-row__item
-                  .slill-item
-                    svg.circles(viewBox="0 0 110 110")
-                      circle.circle__first(r="45" cx="50%" cy="50%" fill="none")
-                      circle.circle__second.circle-80(r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)")
-                    span.skills-title Git
-                li.skills-row__item
-                  .slill-item
-                    svg.circles(viewBox="0 0 110 110")
-                      circle.circle__first(r="45" cx="50%" cy="50%" fill="none")
-                      circle.circle__second.circle-75(r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)")
-                    span.skills-title npm
-                li.skills-row__item
-                  .slill-item
-                    svg.circles(viewBox="0 0 110 110")
-                      circle.circle__first(r="45" cx="50%" cy="50%" fill="none")
-                      circle.circle__second.circle-75(r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)")
-                    span.skills-title Gulp
-                li.skills-row__item
-                  .slill-item
-                    svg.circles(viewBox="0 0 110 110")
-                      circle.circle__first(r="45" cx="50%" cy="50%" fill="none")
-                      circle.circle__second.circle-65(r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)")
-                    span.skills-title Webpack
-  section.section.map
-    .map-card
-      .contacts
-        h2.subtitle Контакты
-      ul.contacts
-        li.contacts__item
-          svg.contacts__item-icon(width="24" height="24")
-            use(xlink:href="assets/img/sprite.svg#skype")
-          .contacts__description egor.korol.
-        li.contacts__item
-          svg.contacts__item-icon(width="23" height="16")
-            use(xlink:href="assets/img/sprite.svg#envelope2")
-          a.contacts__description(href="mailto:egor.korol@mail.ru") egor.korol@mail.ru
-        li.contacts__item
-          svg.contacts__item-icon(width="23" height="20")
-            use(xlink:href="assets/img/sprite.svg#phone")
-          a.contacts__description(href="tel:+79210547326") +7 (921) 054-73-26
-        li.contacts__item
-          svg.contacts__item-icon(width="23" height="21")
-            use(xlink:href="assets/img/sprite.svg#map_marker")
-          .contacts__description г.Череповец
+      .about__right-content
+        include ../parts/skills_about
+  include ../parts/map_about
   include ../common/footer
   include ../common/fsmenu

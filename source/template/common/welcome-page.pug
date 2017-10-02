@@ -1,14 +1,5 @@
 section.section.welcome-page
-	.social.welcome-page__social
-		ul.social__list
-			li.social__item
-				a.social__link(href="https://vk.com/korol_egor" target="_blank")
-					svg.social-icon(width="31" height="17")
-						use(xlink:href="assets/img/sprite.svg#vk")
-			li.social__item
-				a.social__link(href="https://github.com/EgorKorol" target="_blank")
-					svg.social-icon(width="26" height="22")
-						use(xlink:href="assets/img/sprite.svg#github")
+	include ../common/social_welcome	
 	.welcome-page__hamburger-menu
 		button.hamburger.hamburger--spin(type="button" href="#")
 			span.hamburger-box
@@ -21,8 +12,8 @@ section.section.welcome-page
 			img.hero-avatar(src="assets/img/myphoto.jpg", alt="Моя фотография")
 		.hero-info
 			.hero-name Егор Король
-			.hero-info Личный сайт веб разработчика
-	.arrow.welcome-page__arrow-down
+			.hero-info__description Личный сайт веб разработчика
+	.arrow.welcome-page__arrow
 		button.arrow-btn(href="#")
 			svg.arrow-icon(width="26" height="16")
 				use(xlink:href="assets/img/sprite.svg#arrow_down")
