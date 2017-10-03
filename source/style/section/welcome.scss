@@ -26,6 +26,16 @@
     cursor: pointer;
     transition: .3s;
 
+    &:hover {
+        transform: scale(1.05);
+    }
+    &:focus {
+        transform: scale(1.05);
+    }
+    &:active {
+        color: #BDAEAE;
+    }
+
     @include iphone () {
         &:hover {
             transform: translateX(-50%) scale(1.05);
@@ -37,16 +47,6 @@
             color: #BDAEAE;
         }
     }
-
-    &:hover {
-        transform: scale(1.05);
-    }
-    &:focus {
-        transform: scale(1.05);
-    }
-    &:active {
-        color: #BDAEAE;
-    }
 }
 
 .autorization-btn--active {
@@ -55,7 +55,7 @@
 }
 
 .flipper-box {
-    width: 380px;
+    width: 90%;
     perspective: 1200;
     transform-style: preserve-3d;
     position: relative;
@@ -74,14 +74,12 @@
 .welcome-card {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    width: 380px;
     backface-visibility: hidden;
     z-index: 2;
     transform: rotateY(0deg);
 
     @include iphone () {
-        width: 90%;
-        margin: 0 auto;
+        width: 100%;
     }
 }
 
@@ -268,7 +266,11 @@
 }
 
 .welcome-form__radio-input {
-    margin-right: 40px;
+    display: inline-block;
+
+    &:not(:last-child) {
+        margin-right: 40px;
+    }
 }
 
 .welcome-card__form-buttons {
