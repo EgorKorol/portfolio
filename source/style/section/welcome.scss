@@ -55,10 +55,14 @@
 }
 
 .flipper-box {
-    width: 90%;
+    width: 380px;
     perspective: 1200;
     transform-style: preserve-3d;
     position: relative;
+
+    @include iphone () {
+        width: 90%;
+    }
 }
 
 .flipper {
@@ -76,6 +80,7 @@
     border-top-right-radius: 5px;
     backface-visibility: hidden;
     z-index: 2;
+    width: 380px;
     transform: rotateY(0deg);
 
     @include iphone () {
