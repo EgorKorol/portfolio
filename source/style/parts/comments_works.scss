@@ -81,8 +81,13 @@
   }
 }
 
+.comment-description__from {
+  text-align: right;
+}
+
 .comment-description__from-autor {
   color: $green;
+  margin-top: 20px;
 }
 
 .form-markup {
