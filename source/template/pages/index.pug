@@ -7,26 +7,26 @@ block content
   .welcome-page
     button.autorization-btn.welcome-page__autorization(type="button") Авторизоваться
     .flipper-box
-      .flipper
+      .flipper.flipper--open
         .welcome-card
           .welcome-info
-            .hero-img
+            .hero-img.welcome-info__hero-img
               img.hero-avatar(src="assets/img/myphoto.jpg", alt="Моя фотография")
-            .hero-info
+            .hero-info.welcome-info__hero-info
               .hero-info__name Егор Король
               .hero-info__description Личный сайт веб разработчика
             include ../common/social
           nav.nav-menu
             ul.nav-menu__list
               li.nav-menu__item
-                a.nav-menu__link(href="my-works.html") 
-                  span.nav-menu__link-text Мои работы
+                a.main-button(href="my-works.html") 
+                  span.main-button__text Мои работы
               li.nav-menu__item
-                a.nav-menu__link(href="about.html") 
-                  span.nav-menu__link-text Обо мне
+                a.main-button(href="about.html") 
+                  span.main-button__text Обо мне
               li.nav-menu__item
-                a.nav-menu__link(href="blog.html") 
-                  span.nav-menu__link-text Блог
+                a.main-button(href="blog.html") 
+                  span.main-button__text Блог
         .welcome-card.welcome-card--form
           .welcome-info.welcome-info--form
             form.welcome-form#data(method="post")
@@ -48,12 +48,14 @@ block content
                 label.label-checkbox(for="checkbox") Я человек
               .welcome-form__radio
                 .welcome-form__radio-question Вы точно не робот?
-                input.form-radio(type="radio" id="radiobtnYes" name="robot")
-                label.label-radio(for="radiobtnYes") Да
-                input.form-radio(type="radio" id="radiobtnNo" name="robot")
-                label.label-radio(for="radiobtnNo") Не уверен
+                .welcome-form__radio-input
+                  input.form-radio(type="radio" id="radiobtnYes" name="robot")
+                  label.label-radio(for="radiobtnYes") Да              
+                .welcome-form__radio-input
+                  input.form-radio(type="radio" id="radiobtnNo" name="robot")
+                  label.label-radio(for="radiobtnNo") Не уверен
           .welcome-card__form-buttons
-            button.nav-menu__link.nav-menu__link--form.nav-menu__link--flipback-js(href="#") На главную
-            button.nav-menu__link.nav-menu__link--form(form="data" type="submit") Войти
+            button.main-button.main-button--form.main-button--flipback-js(href="#") На главную
+            button.main-button.main-button--form(form="data" type="submit") Войти
     footer.welcome-footer
       span.welcome-footer__text &#169 Егор Король | LoftSchool | 2017

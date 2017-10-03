@@ -1,6 +1,6 @@
 section.comment
   .comment__title
-    h2.title.title__comment Что обо мне говорят
+    h2.title.title--comment Что обо мне говорят
       svg.title-img(width="499" height="175")
         use(xlink:href="assets/img/sprite.svg#about_header")
   .comment-info
@@ -24,17 +24,20 @@ section.comment
   .comment-form
     form#data-comment.form(action="")
       .form-markup
-        .form-markup__title
+        .form-markup__title.form-markup__title-form
           h2.subtitle Связаться со мной
-        input.form-markup__input#name(type="text" placeholder="Имя")
-        label.visuallyhidden(for="name") Ваше имя
-        input.form-markup__input#email(type="text" placeholder="Email")
-        label.visuallyhidden(for="Email") Ваш email
-        textarea.form-markup__textarea#message(name="message" placeholder="Ваше сообщение")
-        label.visuallyhidden(for="message") Ваше сообщение
+        .form-markup__input-box
+          input.form-markup__input#name(type="text" placeholder="Имя")
+          label.visuallyhidden(for="name") Ваше имя
+        .form-markup__input-box
+          input.form-markup__input#email(type="text" placeholder="Email")
+          label.visuallyhidden(for="Email") Ваш email
+        .form-markup__textarea-box
+          textarea.form-markup__textarea#message(name="message" placeholder="Ваше сообщение")
+          label.visuallyhidden(for="message") Ваше сообщение
       .form-buttons
-        button.form-buttons__btn(form="data-comment" type="submit") Отправить
-        button.form-buttons__btn(form="data-comment" type="reset") Очистить
+        button.main-button.main-button--form(form="data-comment" type="submit") Отправить
+        button.main-button.main-button--form(form="data-comment" type="reset") Очистить
   .arrow-up
     button.arrow-btn.arrow-btn--comment(href="#")
       svg.arrow-icon.arrow-icon--comment(width="26" height="16")

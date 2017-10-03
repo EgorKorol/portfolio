@@ -16,8 +16,9 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 0;
+    width: 50%;
     height: 100vh;
+    transform: translateX(-100%);
   }
 
   &::after {
@@ -26,24 +27,24 @@
     display: block;
     position: absolute;
     top: 0;
+    width: 50%;
     right: 0;
-    width: 0;
     height: 100vh;
+    transform: translateX(100%);
   }
 }
 
 .fsmenu--open {
   z-index: 5;
-  transition: .3s;
   display: flex;
-  transition: .5s;
+  transition: 5s;
 
   &::before {
-    width: 50%;
+    transform: translateX(0);
   }
 
   &::after {
-  width: 50%;
+    transform: translateX(0);
   }
 }
 

@@ -1,9 +1,9 @@
-.social__list {
+.social-list {
   display: flex;
   align-items: center;
 }
 
-.social__item {
+.social-list__item {
   margin-right: 30px;
 
   &:last-child {
@@ -11,7 +11,7 @@
   }
 }
 
-.social__link {
+.social-list__link {
   fill: #fff;
   transition: fill .3s;
 
@@ -28,13 +28,13 @@
   }
 }
 
-.social--welcome-page {
+.social__welcome-page {
   position: absolute;
   top: 34px;
   left: 30px;
 }
 
-.social__list--footer {
+.social-list--footer {
   justify-content: center;
 }
 

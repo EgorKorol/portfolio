@@ -14,7 +14,7 @@
   width: 40%;
 }
 
-.title__comment {
+.title--comment {
   font-size: 63px;
   position: relative;
 
@@ -105,12 +105,25 @@
   color: $gray;
 }
 
+.form-markup__title-form {
+  margin-bottom: 20px;
+}
+
+.form-markup__input-box {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
 .form-markup__input {
   padding: 15px;
   width: 90%;
   border-radius: 25px;
-  margin-bottom: 20px;
   border: none;
+}
+
+.form-markup__textarea-box {
+  margin-bottom: 20px;
+  width: 100%;
 }
 
 .form-markup__textarea{
@@ -118,7 +131,6 @@
   width: 90%;
   height: 130px;
   border-radius: 25px;
-  margin-bottom: 20px;
   border: none;
   resize: vertical;
 }
@@ -126,38 +138,6 @@
 .form-buttons {
   display: flex;
   width: 100%;
-}
-
-.form-buttons__btn {
-  background-color: $lgreen;
-  border: none;
-  border-right: 1px solid #fff;
-  width: 50%;
-  padding: 15px 10px;
-  color: #fff;
-  cursor: pointer;
-  transition: .3s;
-
-  &:first-child {
-    border-bottom-left-radius: 3px;
-  }
-
-  &:hover {
-    background-color: $green;
-  }
-
-  &:active {
-    background-color: $green;
-  }
-
-  &:focus {
-    background-color: $lgreen;
-  }
-
-  &:last-child {
-    border-right: none;
-    border-bottom-right-radius: 3px;
-  }
 }
 
 .arrow-icon--comment {

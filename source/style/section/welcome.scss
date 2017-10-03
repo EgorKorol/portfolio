@@ -25,6 +25,19 @@
     opacity: 1;
     cursor: pointer;
     transition: .3s;
+
+    @include iphone () {
+        &:hover {
+            transform: translateX(-50%) scale(1.05);
+        }
+        &:focus {
+            transform: translateX(-50%) scale(1.05);
+        }
+        &:active {
+            color: #BDAEAE;
+        }
+    }
+
     &:hover {
         transform: scale(1.05);
     }
@@ -52,6 +65,10 @@
     position: relative;
     transform-style: preserve-3d;
     transition: .6s linear;
+}
+
+.flipper--open {
+    transform: rotateY(180deg);
 }
 
 .welcome-card {
@@ -93,28 +110,7 @@
     }
 }
 
-.nav-menu__link {
-    background-color: $lgreen;
-    transition: .3s;
-    min-height: 45px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex: 1;
-    width: 100%;
-
-    &:hover {
-        background-color: $green;
-    }
-    &:focus {
-        background-color: $green;
-    }
-    &:active {
-        background-color: $lgreen;
-    }
-}
-
-.nav-menu__link-text {
+.main-button__text {
     color: #fff;
     font-weight: 500;
 }
@@ -197,7 +193,7 @@
 
 .welcome-form__radio-question {
     font-weight: 700;
-    padding: 5px 0 10px;
+    margin-bottom: 10px;
 }
 
 .form-checkbox {
@@ -256,11 +252,9 @@
 }
 
 .label-radio {
-    margin-right: 40px;
     position: relative;
     color: #fff;
-    margin-left: 5px;
-    position: relative;
+
     &::before {
         content: "";
         width: 20px;
@@ -271,27 +265,14 @@
         margin-right: 10px;
         background-color: #fff;
     }
-    &:last-child {
-        margin-right: 0;
-    }
+}
+
+.welcome-form__radio-input {
+    margin-right: 40px;
 }
 
 .welcome-card__form-buttons {
     display: flex;
-}
-
-.nav-menu__link--form {
-    border: none;
-    margin: 0;
-    width: 50%;
-    border-right: 1px solid #fff;
-    cursor: pointer;
-    color: #fff;
-    font-weight: 600;
-
-    &:last-child {
-        border-right: none;
-    }
 }
 
 .welcome-footer {
