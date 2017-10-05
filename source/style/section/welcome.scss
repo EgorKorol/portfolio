@@ -11,7 +11,7 @@
     @include iphone () {
         top: 10px;
         left: 50%;
-        transform: translateX(-55%);
+        transform: translateX(-50%);
     }
 }
 
@@ -25,6 +25,7 @@
     opacity: 1;
     cursor: pointer;
     transition: .3s;
+
     &:hover {
         transform: scale(1.05);
     }
@@ -34,6 +35,18 @@
     &:active {
         color: #BDAEAE;
     }
+
+    @include iphone () {
+        &:hover {
+            transform: translateX(-50%) scale(1.05);
+        }
+        &:focus {
+            transform: translateX(-50%) scale(1.05);
+        }
+        &:active {
+            color: #BDAEAE;
+        }
+    }
 }
 
 .autorization-btn--active {
@@ -42,10 +55,14 @@
 }
 
 .flipper-box {
-    width: 340px;
+    width: 380px;
     perspective: 1200;
     transform-style: preserve-3d;
     position: relative;
+
+    @include iphone () {
+        width: 90%;
+    }
 }
 
 .flipper {
@@ -54,20 +71,25 @@
     transition: .6s linear;
 }
 
+.flipper--open {
+    transform: rotateY(180deg);
+}
+
 .welcome-card {
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    width: 340px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     backface-visibility: hidden;
     z-index: 2;
+    width: 380px;
     transform: rotateY(0deg);
+
     @include iphone () {
-        width: 90%;
+        width: 100%;
     }
 }
 
 .welcome-info {
-    padding: 20px 30px;
+    padding: 20px 20px;
     background-color: rgba(#122620, .6);
     display: flex;
     flex-direction: column;
@@ -79,41 +101,21 @@
 
 .nav-menu__list {
     display: flex;
-    align-items: center;
 }
 
 .nav-menu__item {
     border-right: 1px solid #fff;
-    width: 50%;
-
-    &:first-child {
-        border-bottom-left-radius: 3px;
-    }
+    display: flex;
+    flex: 1;
 
     &:last-child {
         border-right: none;
-        border-bottom-right-radius: 3px;
     }
 }
 
-.nav-menu__link {
-    background-color: $lgreen;
+.main-button__text {
     color: #fff;
     font-weight: 500;
-    transition: .3s;
-    min-height: 45px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    &:hover {
-        background-color: $green;
-    }
-    &:focus {
-        background-color: $green;
-    }
-    &:active {
-        background-color: $lgreen;
-    }
 }
 
 .welcome-card--form {
@@ -123,7 +125,18 @@
     transform: rotateY(-180deg);
 }
 
-.title__welcome {
+.welcome-info--form {
+    padding: 10px 0;
+}
+
+.welcome-form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+}
+
+.title--welcome-form {
     font-size: 35px;
     color: #fff;
     font-family: "sansus_webissimo";
@@ -136,9 +149,14 @@
     }
 }
 
-.welcome-input {
+.hero-info {
+    width: 90%;
+}
+
+.welcome-form__input {
     display: flex;
     margin-bottom: 20px;
+    width: 100%;
 }
 
 .input-decore {
@@ -165,15 +183,20 @@
     border: none;
     padding: 10px 5px;
     border-radius: 0 20px 20px 0;
+    width: 100%;
 }
 
-.welcome-checkbox {
-    padding: 10px;
+.welcome-form__checkbox {
+    margin-bottom: 10px;
 }
 
-.welcome-radio__question {
+.welcome-form__radio {
+    margin-bottom: 30px;
+}
+
+.welcome-form__radio-question {
     font-weight: 700;
-    padding: 5px 0 10px;
+    margin-bottom: 10px;
 }
 
 .form-checkbox {
@@ -232,11 +255,9 @@
 }
 
 .label-radio {
-    margin-right: 40px;
     position: relative;
     color: #fff;
-    margin-left: 5px;
-    position: relative;
+
     &::before {
         content: "";
         width: 20px;
@@ -247,8 +268,13 @@
         margin-right: 10px;
         background-color: #fff;
     }
-    &:last-child {
-        margin-right: 0;
+}
+
+.welcome-form__radio-input {
+    display: inline-block;
+
+    &:not(:last-child) {
+        margin-right: 40px;
     }
 }
 
@@ -256,15 +282,13 @@
     display: flex;
 }
 
-.nav-menu__link--form {
-    border: none;
-    margin: 0;
-    width: 50%;
-    border-right: 1px solid #fff;
-    cursor: pointer;
+.welcome-footer {
+    position: absolute;
+    bottom: 8%;
+    left: 50%;
+    transform: translateX(-50%);
 
-    &:last-child {
-        border-right: none;
+    @include iphone () {
+        width: 220px;
     }
 }
-

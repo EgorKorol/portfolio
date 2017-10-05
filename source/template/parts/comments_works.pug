@@ -1,0 +1,44 @@
+section.comment
+  .comment__title
+    h2.title.title--comment Что обо мне говорят
+      svg.title-img(width="499" height="175")
+        use(xlink:href="assets/img/sprite.svg#about_header")
+  .comment-info
+    ul.comment-info__list
+      li.comment-info__item
+        .comment-description
+          .comment-description__img
+            img.comment-description__avatar(src="assets/img/dkovaldn.jpg", alt="")
+          blockquote.comment-description__text Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 4 месяца только самых тяжелых испытаний и бессонных ночей!
+            cite.comment-description__from
+              .comment-description__from-autor Ковальчук Дмитрий
+              .comment-description__from-position - основатель LoftSchool
+      li.comment-info__item
+        .comment-description
+          .comment-description__img
+            img.comment-description__avatar(src="assets/img/vsabanc.jpg", alt="")
+          blockquote.comment-description__text Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
+            cite.comment-description__from
+              .comment-description__from-autor Владимир Сабанцев
+              .comment-description__from-position - преподаватель в LoftSchool
+  .comment-form
+    form#data-comment.form(action="")
+      .form-markup
+        .form-markup__title.form-markup__title-form
+          h2.subtitle Связаться со мной
+        .form-markup__input-box
+          input.form-markup__input#name(type="text" placeholder="Имя")
+          label.visuallyhidden(for="name") Ваше имя
+        .form-markup__input-box
+          input.form-markup__input#email(type="text" placeholder="Email")
+          label.visuallyhidden(for="Email") Ваш email
+        .form-markup__textarea-box
+          textarea.form-markup__textarea#message(name="message" placeholder="Ваше сообщение")
+          label.visuallyhidden(for="message") Ваше сообщение
+      .form-buttons
+        button.main-button.main-button--form(form="data-comment" type="submit") Отправить
+        button.main-button.main-button--form(form="data-comment" type="reset") Очистить
+  .arrow
+    button.arrow__btn.arrow__btn--comment(href="#")
+      svg.arrow-icon.arrow-icon--comment(width="26" height="16")
+        use(xlink:href="assets/img/sprite.svg#arrow_down")

@@ -1,25 +1,15 @@
 section.section.welcome-page
-	include ./fsmenu
-	.social.welcome__social
-		ul.social__list
-			li.social__item
-				a.social__link(href="https://vk.com/korol_egor" target="_blank")
-					svg.social-icon(width="31" height="17")
-						use(xlink:href="assets/img/sprite.svg#vk")
-			li.social__item
-				a.social__link(href="https://github.com/EgorKorol" target="_blank")
-					svg.social-icon(width="26" height="22")
-						use(xlink:href="assets/img/sprite.svg#github")
-	.hamburger-menu
+	include ../common/social_welcome	
+	.welcome-page__hamburger-menu
 		button.hamburger.hamburger--spin(type="button" href="#")
 			span.hamburger-box
 				span.hamburger-inner
-	.blog-img
-		svg.header-icon(width="303" height="208")
+	.title-img
+		svg.header-icon
 			use(xlink:href="assets/img/sprite.svg#blog_header")
 	.hero.welcome-page__hero
-		.hero-img
-			img.hero-avatar(src="assets/img/myphoto.png", alt="Моя фотография")
+		.hero-img.hero__hero-img
+			img.hero-avatar(src="assets/img/myphoto.jpg", alt="Моя фотография")
 		.hero-info
-			h1.hero-title Блог
-			.hero-info Мои мысли на тему веб разработки
+			h1.title-blog Блог
+			.hero-info__description Мои мысли на тему веб разработки
