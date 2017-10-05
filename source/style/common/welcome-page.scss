@@ -1,24 +1,26 @@
 .welcome-page {
-  background-image: url(../img/water.jpg);
+  background-image: url(../img/background/water.jpg);
+  background-attachment: fixed;
   background-position: center;
-  background-size: cover;
   background-repeat: no-repeat;
+  background-size: cover;
   height: 100vh;
+  min-height: 650px;
   color: #fff;
 }
 
-.welcome-social {
+.welcome__social {
   position: absolute;
   top: 34px;
   left: 30px;
 }
 
-.social-list {
+.social__list {
   display: flex;
   align-items: center;
 }
 
-.social-item {
+.social__item {
   margin-right: 30px;
 
   &:last-child {
@@ -26,13 +28,7 @@
   }
 }
 
-.hamburger-menu {
-  position: absolute;
-  top: 30px;
-  right: 30px;
-}
-
-.social-link {
+.social__link {
   fill: #fff;
   transition: fill .3s;
 
@@ -49,36 +45,15 @@
   }
 }
 
-.hamburger-link {
-  border: none;
-  background: none;
-  transition: fill .3s;
-  fill: #fff;
-  cursor: pointer;
-  
-    &:hover {
-      fill: $green;
-    }
-  
-    &:focus {
-      fill: $green;
-    }
-  
-    &:active {
-      fill: $lgreen;
-    }
-}
-
-.portfolio-img {
+.welcome-title__img {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-.portfolio-icon {
-  width: 1176px;
-  height: 313px;
+.header-icon {
+  width: 100%;
   fill: rgba(#fff, .12);
 
   @include iphone () {
@@ -86,28 +61,18 @@
   }
 }
 
-.blog-img {
-  position: absolute;
-  top: 46%;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.blog-icon {
-  width: 303px;
-  height: 208px;
-  fill: rgba(#fff, .12);
-}
-
 .hero {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.welcome-page__hero {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .hero-img {
@@ -115,7 +80,6 @@
   height: 141px;
   overflow: hidden;
   border-radius: 50%;
-  margin-bottom: 30px;
 }
 
 .hero-info {
@@ -123,52 +87,37 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-
-  @include iphone () {
-    width: 150%;
-  }
 }
 
 .hero-name {
   font-size: 35px;
   font-weight: 500;
-  margin-bottom: 10px;
+  margin: 5px 0;
 
   @include iphone () {
     font-size: 24px;
   }
 }
 
-.hero-title {
-  font-family: "sansus_webissimo";
-  font-size: 63px;
-  font-weight: 400;
-  text-transform: uppercase;
-  margin-bottom: 30px;
-
-  &::after {
-    content: "";
-    width: 89px;
-    height: 3px;
-    display: block;
-    margin: 0 auto;
-    background: #fff;
-    margin-top: 15px;
-  }
+.hero-info {
+  margin: 10px 0;
 }
 
-.arrow-down {
+.welcome-page__arrow-down {
   position: absolute;
   top: 90%;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 10;
+  z-index: 1;
 }
 
-.arrow-link {
+.arrow-btn {
   fill: rgba(#fff, .7);
   transition: .3s;
-  
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
     &:hover {
       transform: scale(1.1);
       fill: #fff;

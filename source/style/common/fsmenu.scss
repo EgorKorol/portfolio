@@ -1,0 +1,86 @@
+.fsmenu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+  transition: .3s;
+  display: none;
+
+  &::before {
+    content: "";
+    background-color: rgba($lgreen, .8);
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  &::after {
+    content: "";
+    background-color: rgba($lgreen, .8);
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+.fsmenu--open {
+  z-index: 5;
+  transition: .3s;
+  display: flex;
+
+  &::before {
+    right: 50%;
+  }
+
+  &::after {
+    left: 50%;
+  }
+}
+
+.fsmenu-nav {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.fsmenu-list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 70%;
+  z-index: 5;
+}
+
+.fsmenu__title {
+  font-family: "sansus_webissimo";
+  font-size: 63px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 5px 10px;
+  color: inherit;
+
+  &::after {
+    background: #fff;
+  }
+
+  @include iphone () {
+      font-size: 35px;
+    }
+}
+
+.fsmenu-list__link {
+  color: #fff;
+
+  &:hover {
+    color: rgba(#fff, .8);
+  }
+}

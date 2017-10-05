@@ -14,65 +14,78 @@
   </head>
   <body>
     <div class="wrapper">
-      <section class="welcome-page">
-        <div class="social welcome-social">
-          <ul class="social-list">
-            <li class="social-item"><a class="social-link" href="https://vk.com/korol_egor" target="_blank">
+      <section class="section welcome-page">
+        <div class="fsmenu">
+          <nav class="fsmenu-nav">
+            <ul class="fsmenu-list">
+              <li class="fsmenu-list__item"><a class="fsmenu-list__link" href="my-works.html">
+                  <div class="title fsmenu__title">Мои работы</div></a></li>
+              <li class="fsmenu-list__item"><a class="fsmenu-list__link" href="blog.html">
+                  <div class="title fsmenu__title">Блог</div></a></li>
+              <li class="fsmenu-list__item"><a class="fsmenu-list__link" href="about.html">
+                  <div class="title fsmenu__title">Обо мне</div></a></li>
+              <li class="fsmenu-list__item"><a class="fsmenu-list__link" href="index.html">
+                  <div class="title fsmenu__title">Авторизация</div></a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="social welcome__social">
+          <ul class="social__list">
+            <li class="social__item"><a class="social__link" href="https://vk.com/korol_egor" target="_blank">
                 <svg class="social-icon" width="31" height="17">
                   <use xlink:href="assets/img/sprite.svg#vk"></use>
                 </svg></a></li>
-            <li class="social-item"><a class="social-link" href="https://github.com/EgorKorol" target="_blank">
+            <li class="social__item"><a class="social__link" href="https://github.com/EgorKorol" target="_blank">
                 <svg class="social-icon" width="26" height="22">
                   <use xlink:href="assets/img/sprite.svg#github"></use>
                 </svg></a></li>
           </ul>
         </div>
         <div class="hamburger-menu">
-          <button class="hamburger-link" type="button" href="#">
-            <svg class="social-icon" width="40" height="35">
-              <use xlink:href="assets/img/sprite.svg#hamburger"></use>
-            </svg>
-          </button>
+          <button class="hamburger hamburger--spin" type="button" href="#"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
         </div>
-        <div class="portfolio-img">
-          <svg class="portfolio-icon" width="1176" height="313">
+        <div class="welcome-title__img">
+          <svg class="header-icon" width="1176" height="313">
             <use xlink:href="assets/img/sprite.svg#portfolio_header"></use>
           </svg>
         </div>
-        <div class="hero">
+        <div class="hero welcome-page__hero">
           <div class="hero-img"><img class="hero-avatar" src="assets/img/myphoto.png" alt="Моя фотография"></div>
           <div class="hero-info">
-            <h3 class="hero-name">Егор Король</h3>
+            <div class="hero-name">Егор Король</div>
             <div class="hero-info">Личный сайт веб разработчика</div>
           </div>
         </div>
-        <div class="arrow-down"><a class="arrow-link" href="#">
+        <div class="arrow welcome-page__arrow-down">
+          <button class="arrow-btn" href="#">
             <svg class="arrow-icon" width="26" height="16">
               <use xlink:href="assets/img/sprite.svg#arrow_down"></use>
-            </svg></a></div>
+            </svg>
+          </button>
+        </div>
       </section>
       <div class="triangle">
-        <div class="triangle-left">
+        <div class="triangle__left">
           <svg class="triangle-svg triangle--about-beige" viewBox="0 0 1000 100" preserveAspectRatio="none">
             <polygon points="0,0 0,100 1000,100"></polygon>
           </svg>
         </div>
-        <div class="triangle-right">
+        <div class="triangle__right">
           <svg class="triangle-svg triangle--about-white" viewBox="0 0 1000 100" preserveAspectRatio="none">
             <polygon points="0,100 1000,100 1000,0"></polygon>
           </svg>
         </div>
       </div>
       <section class="about">
-        <div class="about-left">
-          <div class="about-info">
-            <div class="about-left__title">
-              <h1 class="about-title">Обо мне</h1>
+        <div class="about__left">
+          <div class="about__info">
+            <div class="about__left__title">
+              <h1 class="title">Обо мне</h1>
               <svg class="about-title__img" width="357" height="125">
                 <use xlink:href="assets/img/sprite.svg#about_header"></use>
               </svg>
             </div>
-            <div class="about-left__content">
+            <div class="about__left__content">
               <div class="user-description">
                 <div class="user-description__img"><img class="user-description__avatat" src="assets/img/myphoto_about.jpg" alt="Моя фотография"></div>
                 <div class="user-description__title">
@@ -86,36 +99,42 @@
             </div>
           </div>
         </div>
-        <div class="about-right">
+        <div class="about__right">
           <div class="user-description__title">
             <h2 class="subtitle">Чем я могу быть вам полезен</h2>
           </div>
           <div class="description-text">
             <p>Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачина Backend. Но давайте по порядку.</p>
           </div>
-          <div class="about-right__content">
+          <div class="about__right__content">
             <ul class="skills-list">
               <li class="skills-item">
                 <div class="skills-row">
                   <div class="skills-row__title">Frontend</div>
                   <ul class="skills-row__list">
                     <li class="skills-row__item">
-                      <svg class="circles" viewBox="0 0 110 110">
-                        <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
-                        <circle class="circle__second circle-85" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
-                      </svg><span class="skills-title">HTML</span>
+                      <div class="slill-item">
+                        <svg class="circles" viewBox="0 0 110 110">
+                          <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
+                          <circle class="circle__second circle-85" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+                        </svg><span class="skills-title">HTML</span>
+                      </div>
                     </li>
                     <li class="skills-row__item">
-                      <svg class="circles" viewBox="0 0 110 110">
-                        <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
-                        <circle class="circle__second circle-85" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
-                      </svg><span class="skills-title">CSS</span>
+                      <div class="slill-item">
+                        <svg class="circles" viewBox="0 0 110 110">
+                          <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
+                          <circle class="circle__second circle-85" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+                        </svg><span class="skills-title">CSS</span>
+                      </div>
                     </li>
                     <li class="skills-row__item">
-                      <svg class="circles" viewBox="0 0 110 110">
-                        <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
-                        <circle class="circle__second circle-25" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
-                      </svg><span class="skills-title">JavaScript</span>
+                      <div class="slill-item">
+                        <svg class="circles" viewBox="0 0 110 110">
+                          <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
+                          <circle class="circle__second circle-25" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+                        </svg><span class="skills-title">JavaScript</span>
+                      </div>
                     </li>
                   </ul>
                 </div>
@@ -125,28 +144,36 @@
                   <div class="skills-row__title">Backend</div>
                   <ul class="skills-row__list">
                     <li class="skills-row__item">
-                      <svg class="circles" viewBox="0 0 110 110">
-                        <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
-                        <circle class="circle__second circle-15" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
-                      </svg><span class="skills-title">PHP</span>
+                      <div class="slill-item">
+                        <svg class="circles" viewBox="0 0 110 110">
+                          <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
+                          <circle class="circle__second circle-15" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+                        </svg><span class="skills-title">PHP</span>
+                      </div>
+                      <li class="skills-row__item">
+                        <div class="slill-item">
+                          <svg class="circles" viewBox="0 0 110 110">
+                            <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
+                            <circle class="circle__second circle-15" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+                          </svg><span class="skills-title">mySQL</span>
+                        </div>
+                      </li>
                     </li>
                     <li class="skills-row__item">
-                      <svg class="circles" viewBox="0 0 110 110">
-                        <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
-                        <circle class="circle__second circle-15" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
-                      </svg><span class="skills-title">mySQL</span>
+                      <div class="slill-item">
+                        <svg class="circles" viewBox="0 0 110 110">
+                          <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
+                          <circle class="circle__second circle-15" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+                        </svg><span class="skills-title">Node.js</span>
+                      </div>
                     </li>
                     <li class="skills-row__item">
-                      <svg class="circles" viewBox="0 0 110 110">
-                        <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
-                        <circle class="circle__second circle-15" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
-                      </svg><span class="skills-title">Node.js</span>
-                    </li>
-                    <li class="skills-row__item">
-                      <svg class="circles" viewBox="0 0 110 110">
-                        <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
-                        <circle class="circle__second circle-15" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
-                      </svg><span class="skills-title">Mongo.db</span>
+                      <div class="slill-item">
+                        <svg class="circles" viewBox="0 0 110 110">
+                          <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
+                          <circle class="circle__second circle-15" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+                        </svg><span class="skills-title">Mongo.db</span>
+                      </div>
                     </li>
                   </ul>
                 </div>
@@ -156,28 +183,36 @@
                   <div class="skills-row__title">Workflow</div>
                   <ul class="skills-row__list">
                     <li class="skills-row__item">
-                      <svg class="circles" viewBox="0 0 110 110">
-                        <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
-                        <circle class="circle__second circle-80" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
-                      </svg><span class="skills-title">Git</span>
+                      <div class="slill-item">
+                        <svg class="circles" viewBox="0 0 110 110">
+                          <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
+                          <circle class="circle__second circle-80" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+                        </svg><span class="skills-title">Git</span>
+                      </div>
                     </li>
                     <li class="skills-row__item">
-                      <svg class="circles" viewBox="0 0 110 110">
-                        <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
-                        <circle class="circle__second circle-75" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
-                      </svg><span class="skills-title">npm</span>
+                      <div class="slill-item">
+                        <svg class="circles" viewBox="0 0 110 110">
+                          <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
+                          <circle class="circle__second circle-75" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+                        </svg><span class="skills-title">npm</span>
+                      </div>
                     </li>
                     <li class="skills-row__item">
-                      <svg class="circles" viewBox="0 0 110 110">
-                        <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
-                        <circle class="circle__second circle-75" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
-                      </svg><span class="skills-title">Gulp</span>
+                      <div class="slill-item">
+                        <svg class="circles" viewBox="0 0 110 110">
+                          <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
+                          <circle class="circle__second circle-75" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+                        </svg><span class="skills-title">Gulp</span>
+                      </div>
                     </li>
                     <li class="skills-row__item">
-                      <svg class="circles" viewBox="0 0 110 110">
-                        <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
-                        <circle class="circle__second circle-65" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
-                      </svg><span class="skills-title">Webpack</span>
+                      <div class="slill-item">
+                        <svg class="circles" viewBox="0 0 110 110">
+                          <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
+                          <circle class="circle__second circle-65" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+                        </svg><span class="skills-title">Webpack</span>
+                      </div>
                     </li>
                   </ul>
                 </div>
@@ -186,7 +221,7 @@
           </div>
         </div>
       </section>
-      <section class="map">
+      <section class="section map">
         <div class="map-card">
           <div class="contacts">
             <h2 class="subtitle">Контакты</h2>
@@ -222,21 +257,21 @@
           <p>Этот сайт я сделал в рамках обучения в Школе онлайн образования Loftschool</p>
         </div>
         <div class="footer-col">
-          <nav class="nav-menu__footer">
-            <ul class="nav-menu__list-footer">
-              <li class="nav-menu__item-footer"><a class="nav-menu__link-footer" href="my-works.html">Мои работы</a></li>
-              <li class="nav-menu__item-footer"><a class="nav-menu__link-footer" href="about.html">Обо мне</a></li>
-              <li class="nav-menu__item-footer"><a class="nav-menu__link-footer" href="blog.html">Блог</a></li>
-              <li class="nav-menu__item-footer"><a class="nav-menu__link-footer" href="index.html">Авторизация</a></li>
+          <nav class="footer-menu">
+            <ul class="footer-menu__list">
+              <li class="footer-menu__list-item"><a class="footer-menu__list-link" href="my-works.html">Мои работы</a></li>
+              <li class="footer-menu__list-item"><a class="footer-menu__list-link" href="about.html">Обо мне</a></li>
+              <li class="footer-menu__list-item"><a class="footer-menu__list-link" href="blog.html">Блог</a></li>
+              <li class="footer-menu__list-item"><a class="footer-menu__list-link" href="index.html">Авторизация</a></li>
             </ul>
           </nav>
           <div class="social">
-            <ul class="social-list social-list__footer">
-              <li class="social-item"><a class="social-link" href="https://vk.com/korol_egor" target="_blank">
+            <ul class="social__list social-list__footer">
+              <li class="social__item"><a class="social__link" href="https://vk.com/korol_egor" target="_blank">
                   <svg class="social-icon social-icon--footer" width="31" height="17">
                     <use xlink:href="assets/img/sprite.svg#vk"></use>
                   </svg></a></li>
-              <li class="social-item"><a class="social-link" href="https://github.com/EgorKorol" target="_blank">
+              <li class="social__item"><a class="social__link" href="https://github.com/EgorKorol" target="_blank">
                   <svg class="social-icon social-icon--footer" width="26" height="22">
                     <use xlink:href="assets/img/sprite.svg#github"></use>
                   </svg></a></li>
@@ -251,7 +286,6 @@
         </div>
       </footer>
     </div>
-    <script src="assets/js/foundation.js" defer></script>
     <script src="assets/js/app.js" defer></script>
   </body>
 </html>

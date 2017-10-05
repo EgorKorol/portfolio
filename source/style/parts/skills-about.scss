@@ -13,6 +13,7 @@
 .skills-row__list {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 
   @include ipad () {
     justify-content: center;

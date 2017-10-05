@@ -1,3 +1,18 @@
+.title {
+  text-align: center;
+  color: $dgray;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 89px;
+    height: 3px;
+    display: block;
+    margin: 0 auto;
+    background: $dgray;
+    margin-top: 15px;
+  }
+}
 
 .subtitle {
   text-align: center;
@@ -14,6 +29,6 @@
   }
 
   @include iphone () {
-    font-size: 21px;
+    font-size: 26px;
   }
 }

@@ -6,20 +6,20 @@ block variables
 block content
   include ../common/welcome-page
   .triangle
-    .triangle-left
+    .triangle__left
       svg.triangle-svg.triangle--about-beige(viewBox="0 0 1000 100" preserveAspectRatio="none")
         polygon(points="0,0 0,100 1000,100")
-    .triangle-right
+    .triangle__right
       svg.triangle-svg.triangle--about-white(viewBox="0 0 1000 100" preserveAspectRatio="none")
         polygon(points="0,100 1000,100 1000,0")
   section.about
-    .about-left
-      .about-info
-        .about-left__title
-          h1.about-title Обо мне
+    .about__left
+      .about__info
+        .about__left__title
+          h1.title Обо мне
           svg.about-title__img(width="357" height="125")
             use(xlink:href="assets/img/sprite.svg#about_header")
-        .about-left__content
+        .about__left__content
           .user-description
             .user-description__img
               img.user-description__avatat(src="assets/img/myphoto_about.jpg", alt="Моя фотография")
@@ -28,81 +28,92 @@ block content
             .description-text
               p Я веб разработчик из Череповца. Мне 22 года. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится изучать новые технологии и применять их на практике.
               p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нем свой свои работы, а пока посмотрите, как тут все классно и красиво!
-    .about-right
+    .about__right
       .user-description__title
         h2.subtitle Чем я могу быть вам полезен
       .description-text
         p Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачина Backend. Но давайте по порядку.
-      .about-right__content
+      .about__right__content
         ul.skills-list
           li.skills-item
             .skills-row
               .skills-row__title Frontend
               ul.skills-row__list
                 li.skills-row__item
-                  svg.circles(viewBox="0 0 110 110")
-                    circle.circle__first(r="45" cx="50%" cy="50%" fill="none")
-                    circle.circle__second.circle-85(r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)")
-                  span.skills-title HTML
+                  .slill-item
+                    svg.circles(viewBox="0 0 110 110")
+                      circle.circle__first(r="45" cx="50%" cy="50%" fill="none")
+                      circle.circle__second.circle-85(r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)")
+                    span.skills-title HTML
                 li.skills-row__item
-                  svg.circles(viewBox="0 0 110 110")
-                    circle.circle__first(r="45" cx="50%" cy="50%" fill="none")
-                    circle.circle__second.circle-85(r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)")
-                  span.skills-title CSS
+                  .slill-item
+                    svg.circles(viewBox="0 0 110 110")
+                      circle.circle__first(r="45" cx="50%" cy="50%" fill="none")
+                      circle.circle__second.circle-85(r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)")
+                    span.skills-title CSS
                 li.skills-row__item
-                  svg.circles(viewBox="0 0 110 110")
-                    circle.circle__first(r="45" cx="50%" cy="50%" fill="none")
-                    circle.circle__second.circle-25(r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)")
-                  span.skills-title JavaScript
+                  .slill-item
+                    svg.circles(viewBox="0 0 110 110")
+                      circle.circle__first(r="45" cx="50%" cy="50%" fill="none")
+                      circle.circle__second.circle-25(r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)")
+                    span.skills-title JavaScript
           li.skills-item
             .skills-row
               .skills-row__title Backend
               ul.skills-row__list
                 li.skills-row__item
-                  svg.circles(viewBox="0 0 110 110")
-                    circle.circle__first(r="45" cx="50%" cy="50%" fill="none")
-                    circle.circle__second.circle-15(r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)")
-                  span.skills-title PHP
+                  .slill-item
+                    svg.circles(viewBox="0 0 110 110")
+                      circle.circle__first(r="45" cx="50%" cy="50%" fill="none")
+                      circle.circle__second.circle-15(r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)")
+                    span.skills-title PHP
+                  li.skills-row__item
+                    .slill-item
+                      svg.circles(viewBox="0 0 110 110")
+                        circle.circle__first(r="45" cx="50%" cy="50%" fill="none")
+                        circle.circle__second.circle-15(r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)")
+                      span.skills-title mySQL
                 li.skills-row__item
-                  svg.circles(viewBox="0 0 110 110")
-                    circle.circle__first(r="45" cx="50%" cy="50%" fill="none")
-                    circle.circle__second.circle-15(r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)")
-                  span.skills-title mySQL
+                  .slill-item
+                    svg.circles(viewBox="0 0 110 110")
+                      circle.circle__first(r="45" cx="50%" cy="50%" fill="none")
+                      circle.circle__second.circle-15(r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)")
+                    span.skills-title Node.js
                 li.skills-row__item
-                  svg.circles(viewBox="0 0 110 110")
-                    circle.circle__first(r="45" cx="50%" cy="50%" fill="none")
-                    circle.circle__second.circle-15(r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)")
-                  span.skills-title Node.js
-                li.skills-row__item
-                  svg.circles(viewBox="0 0 110 110")
-                    circle.circle__first(r="45" cx="50%" cy="50%" fill="none")
-                    circle.circle__second.circle-15(r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)")
-                  span.skills-title Mongo.db
+                  .slill-item
+                    svg.circles(viewBox="0 0 110 110")
+                      circle.circle__first(r="45" cx="50%" cy="50%" fill="none")
+                      circle.circle__second.circle-15(r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)")
+                    span.skills-title Mongo.db
           li.skills-item
             .skills-row
               .skills-row__title Workflow
               ul.skills-row__list
                 li.skills-row__item
-                  svg.circles(viewBox="0 0 110 110")
-                    circle.circle__first(r="45" cx="50%" cy="50%" fill="none")
-                    circle.circle__second.circle-80(r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)")
-                  span.skills-title Git
+                  .slill-item
+                    svg.circles(viewBox="0 0 110 110")
+                      circle.circle__first(r="45" cx="50%" cy="50%" fill="none")
+                      circle.circle__second.circle-80(r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)")
+                    span.skills-title Git
                 li.skills-row__item
-                  svg.circles(viewBox="0 0 110 110")
-                    circle.circle__first(r="45" cx="50%" cy="50%" fill="none")
-                    circle.circle__second.circle-75(r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)")
-                  span.skills-title npm
+                  .slill-item
+                    svg.circles(viewBox="0 0 110 110")
+                      circle.circle__first(r="45" cx="50%" cy="50%" fill="none")
+                      circle.circle__second.circle-75(r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)")
+                    span.skills-title npm
                 li.skills-row__item
-                  svg.circles(viewBox="0 0 110 110")
-                    circle.circle__first(r="45" cx="50%" cy="50%" fill="none")
-                    circle.circle__second.circle-75(r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)")
-                  span.skills-title Gulp
+                  .slill-item
+                    svg.circles(viewBox="0 0 110 110")
+                      circle.circle__first(r="45" cx="50%" cy="50%" fill="none")
+                      circle.circle__second.circle-75(r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)")
+                    span.skills-title Gulp
                 li.skills-row__item
-                  svg.circles(viewBox="0 0 110 110")
-                    circle.circle__first(r="45" cx="50%" cy="50%" fill="none")
-                    circle.circle__second.circle-65(r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)")
-                  span.skills-title Webpack
-  section.map
+                  .slill-item
+                    svg.circles(viewBox="0 0 110 110")
+                      circle.circle__first(r="45" cx="50%" cy="50%" fill="none")
+                      circle.circle__second.circle-65(r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)")
+                    span.skills-title Webpack
+  section.section.map
     .map-card
       .contacts
         h2.subtitle Контакты

@@ -1,28 +1,29 @@
-section.welcome-page
-	.social.welcome-social
-		ul.social-list
-			li.social-item
-				a.social-link(href="https://vk.com/korol_egor" target="_blank")
+section.section.welcome-page
+	include ./fsmenu
+	.social.welcome__social
+		ul.social__list
+			li.social__item
+				a.social__link(href="https://vk.com/korol_egor" target="_blank")
 					svg.social-icon(width="31" height="17")
 						use(xlink:href="assets/img/sprite.svg#vk")
-			li.social-item
-				a.social-link(href="https://github.com/EgorKorol" target="_blank")
+			li.social__item
+				a.social__link(href="https://github.com/EgorKorol" target="_blank")
 					svg.social-icon(width="26" height="22")
 						use(xlink:href="assets/img/sprite.svg#github")
 	.hamburger-menu
-		button.hamburger-link(type="button" href="#")
-			svg.social-icon(width="40" height="35")
-				use(xlink:href="assets/img/sprite.svg#hamburger")
-	.portfolio-img
-		svg.portfolio-icon(width="1176" height="313")
+		button.hamburger.hamburger--spin(type="button" href="#")
+			span.hamburger-box
+				span.hamburger-inner
+	.welcome-title__img
+		svg.header-icon(width="1176" height="313")
 			use(xlink:href="assets/img/sprite.svg#portfolio_header")
-	.hero
+	.hero.welcome-page__hero
 		.hero-img
 			img.hero-avatar(src="assets/img/myphoto.png", alt="Моя фотография")
 		.hero-info
-			h3.hero-name Егор Король
+			.hero-name Егор Король
 			.hero-info Личный сайт веб разработчика
-	.arrow-down
-		a.arrow-link(href="#")
+	.arrow.welcome-page__arrow-down
+		button.arrow-btn(href="#")
 			svg.arrow-icon(width="26" height="16")
 				use(xlink:href="assets/img/sprite.svg#arrow_down")

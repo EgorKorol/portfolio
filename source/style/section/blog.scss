@@ -1,38 +1,39 @@
 .blog {
   display: flex;
-  justify-content: space-between;
   color: $gray;
   width: 100%;
+  min-height: 650px;
+  position: relative;
+  justify-content: space-around;
+  background-color: #faf8f0;
+  padding: 5% 0 0 0;
 }
 
-.blog-left {
+.blog__aside {
   background-color: #faf8f0;
-  flex-shrink: 1;
-  padding-top: 50px;
+  width: 26%;
 
   @include ipad () {
     display: none;
   }
 }
 
-.blog-right {
+.aside {
+  position: sticky;
+  top: 0;
+}
+
+.blog__article {
   background-color: #faf8f0;
-  flex-shrink: 3;
-  padding: 50px 120px 0 120px;
+  width: 66%;
 
   @include ipad () {
-    padding: 20px 30px 0 30px;
-    width: 100%;
-  }
-
-  @include iphone () {
-    padding: 20px 10px 0 10px;
-    width: 100%;
+    width: 90%;
   }
 }
 
 .aside-nav {
-  padding: 0 20px;
+  padding: 0 10px 0 10px;
   text-align: right;
 }
 
@@ -41,8 +42,7 @@
   font-weight: 400;
   color: $gray;
   transition: .2s;
-  padding: 10px 10px;
-  margin-bottom: 30px;
+  padding: 5px 10px;
   display: inline-block;
   vertical-align: middle;
   position: relative;
@@ -68,13 +68,26 @@
 }
 
 .article {
-  margin-bottom: 50px;
+  &:last-child {
+    &::after {
+      opacity: 0;
+      margin-bottom: 130px;
+
+      @include ipad () {
+        margin-bottom: 180px;
+      }
+
+      @include iphone () {
+        margin-bottom: 250px;
+      }
+    }
+  }
 
   &::after {
     content: "";
-    margin-top: 50px;
+    margin: 50px 0 40px;
     display: block;
-    width: 681px;
+    width: 95%;
     height: 5px;
     background-color: rgba(#373e42, .07);
   }
@@ -82,7 +95,7 @@
 
 .article-header__title {
   font-size: 35px;
-  padding: 0 0 10px 0;
+  padding: 10px 0;
 
   @include iphone () {
     font-size: 21px;

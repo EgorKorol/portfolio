@@ -6,17 +6,17 @@ block variables
 block content
   include ../common/welcome-page
   .triangle
-    .triangle-left
+    .triangle__left
       svg.triangle-svg.triangle--works-white(viewBox="0 0 1000 100" preserveAspectRatio="none")
         polygon(points="0,0 0,100 1000,100")
-    .triangle-right
+    .triangle__right
       svg.triangle-svg.triangle--works-white(viewBox="0 0 1000 100" preserveAspectRatio="none")
         polygon(points="0,100 1000,100 1000,0")
-  .works-title
-    h1.about-title Мои работы
-    svg.about-title__icon(width="506" height="165")
-      use(xlink:href="assets/img/sprite.svg#works_header")
   section.works
+    .works__title
+      h1.title Мои работы
+        svg.about-title__img(width="506" height="165")
+          use(xlink:href="assets/img/sprite.svg#works_header")
     .works-slider
       .slider-info
         ul.slider-info__list
@@ -48,13 +48,13 @@ block content
                 svg.slider-info__btn-icon(width="20" height="19")
                   use(xlink:href="assets/img/sprite.svg#link")
       .slider-slide
-        ul.slide-list
-          li.slide-item
-            img.slide-img(src="assets/img/work_loft.png", alt="Сайт школы LoftSchool")
-          li.slide-item
-            img.slide-img(src="assets/img/work_ioga.jpg", alt="Сайт йоги")
-          li.slide-item
-            img.slide-img(src="assets/img/work_trialog.jpg", alt="Сайт мебели")
+        ul.slide__list
+          li.slide__item
+            img.slide__img(src="assets/img/works/work_loft.png", alt="Сайт школы LoftSchool")
+          li.slide__item
+            img.slide__img(src="assets/img/works/work_ioga.jpg", alt="Сайт йоги")
+          li.slide__item
+            img.slide__img(src="assets/img/works/work_trialog.jpg", alt="Сайт мебели")
       .slider-buttons
         .slider-buttons__left
           .slider-buttons__left-img
@@ -62,15 +62,14 @@ block content
             svg.arrow-icon__slider(width="43" height="27")
               use(xlink:href="assets/img/sprite.svg#portf_arrow_down")
         .slider-buttons__right
-          .slider-buttons__right-img
           button(type="button").slider-buttons__arrow.slider-buttons__arrow-right
             svg.arrow-icon__slider(width="43" height="27")
               use(xlink:href="assets/img/sprite.svg#portf_arrow_up ")
-  .comment-title
-      h2.about-title.about-title__comment Что обо мне говорят
-      svg.about-title__icon(width="499" height="175")
-        use(xlink:href="assets/img/sprite.svg#about_header")
   section.comment
+    .comment-title
+      h2.title.title__comment Что обо мне говорят
+        svg.about-title__img(width="499" height="175")
+          use(xlink:href="assets/img/sprite.svg#about_header")
     .comment-info
       ul.comment-info-list
         li.comment-info-item
@@ -99,11 +98,12 @@ block content
           input.input-form__comment#email(type="text" placeholder="Email")
           label.visuallyhidden(for="Email") Ваш email
           textarea.textarea-form__comment#message(name="message" placeholder="Ваше сообщение")
-          label.visuallyhidden(for="message") Вашу сообщение
-          .nav-menu
-            ul.nav-menu__list
-              li.nav-menu__item
-                button.nav-menu__link.nav-menu__link--form(form="data-comment" type="submit") Отправить
-              li.nav-menu__item
-                button.nav-menu__link.nav-menu__link--form(form="data-comment" type="reset") Очистить
+          label.visuallyhidden(for="message") Ваше сообщение
+        .form-buttons
+          button.form-btn(form="data-comment" type="submit") Отправить
+          button.form-btn(form="data-comment" type="reset") Очистить
+    .arrow-up
+      button.arrow-btn.arrow-btn--comment(href="#")
+        svg.arrow-icon.arrow-icon--works(width="26" height="16")
+          use(xlink:href="assets/img/sprite.svg#arrow_down")
   include ../common/footer

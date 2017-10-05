@@ -1,5 +1,6 @@
 .footer {
     display: flex;
+    justify-content: space-around;
     background-color: rgba(#373e42, .85);
     color: #fff;
     position: absolute;
@@ -10,71 +11,45 @@
 }
 
 .footer-col {
-    width: 33%;
+    width: 30%;
     font-weight: 300;
-    padding: 10px 10px 20px;
+    padding: 1%;
     position: relative;
-    &:first-child {
-        padding: 10px 30px 20px;
-    }
+
     @include ipad () {
         width: 45%;
-        padding: 10px 15px 10px;
-        &:first-child {
-            padding: 10px 5px 10px 40px;
-            &::after {
-                content: "";
-                display: inline-block;
-                position: absolute;
-                width: 1px;
-                height: 89px;
-                background-color: rgba(#fff, .2);
-                left: 95%;
-                top: 25%;
-            }
-        }
         &:last-child {
             width: 100%;
-            padding: 10px 0;
+        }
+        
+        &:first-child {
+            border-right: 1px solid #fff;
         }
     }
-    
+
     @include iphone () {
-        width: 100%;
-
+        width: 90%;
+        text-align: center;
+        border-bottom: 1px solid #fff;
+        &:first-child {
+            border-right: none;
+        }
         &:last-child {
-          text-align: center;
-        }
-
-        &::after {
-          content: "";
-          display: inline-block;
-          position: absolute;
-          width: 300px;
-          height: 1px;
-          background-color: rgba(#fff, .2);
-          bottom: 95%;
-          left: 3%;
+            border-bottom: none;
         }
     }
 }
 
-.nav-menu__list-footer {
+.footer-menu__list {
     display: flex;
+    justify-content: space-around;
 }
 
-.nav-menu__item-footer {
-    margin-right: 20px;
-    padding: 20px 0;
-    &:last-child {
-        margin-right: 0;
-    }
-    @include ipad () {
-        margin-right: 5px;
-    }
+.footer-menu__list-item {
+    padding: 5% 0;
 }
 
-.nav-menu__link-footer {
+.footer-menu__list-link {
     color: rgba(#fff, .8);
     font-weight: 500;
     transition: .2s;
@@ -90,9 +65,7 @@
 }
 
 .social-list__footer {
-    @include iphone () {
         justify-content: center;
-    }
 }
 
 .social-icon--footer {
