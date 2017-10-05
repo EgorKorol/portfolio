@@ -36,13 +36,13 @@ block content
                   svg.input-decore__icon.input-decore__icon--login(width="15" height="17")
                     use(xlink:href="assets/img/sprite.svg#login")
                 input.form-input(type="text" id="login" placeholder="Логин")
-                label.label-input(for="login")
+                label.label-input.visuallyhidden(for="login") Введите логин
               .welcome-form__input
                 .input-decore
                   svg.input-decore__icon.input-decore__icon--password
                     use(xlink:href="assets/img/sprite.svg#password")
                 input.form-input(type="password" id="password" placeholder="Пароль")
-                label.label-input(for="password")
+                label.label-input.visuallyhidden(for="password") Введите пароль
               .welcome-form__checkbox
                 input.form-checkbox(type="checkbox" id="checkbox")
                 label.label-checkbox(for="checkbox") Я человек

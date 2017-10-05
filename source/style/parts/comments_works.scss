@@ -10,7 +10,7 @@
 }
 
 .comment__title {
-  padding: 50px 0;
+  margin: 50px auto;
   width: 40%;
 }
 
@@ -142,10 +142,10 @@
 
 .arrow-icon--comment {
   transform: rotate(180deg);
-  fill: #fff;
+  fill: $lgreen;
 }
 
-.arrow-btn--comment {
+.arrow__btn--comment {
   margin: 50px 0 150px;
 
   @include ipad () {
